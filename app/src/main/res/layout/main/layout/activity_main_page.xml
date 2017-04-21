@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:contentDescription="@string/behaviour"
+            android:src="@drawable/behaviour" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/behaviour"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:contentDescription="@string/activity"
+            android:src="@drawable/survey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/activity"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="@string/events"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_login">Reporting</string>
+    <string name="title_activity_main_page">Reporting</string>
+    <string name="app_name">रिपोर्टिङ </string>
+    <string name="name">नाम</string>
+    <string name="save">सेव  </string>
+    <string name="exit">बन्द </string>
+    <string name="age">उमेर</string>
+
+    <!--    Login Page Localization  -->
+    <string name="user">युसर</string>
+    <string name="password">पास्वर्ड</string>
+    <string name="login">लगिन</string>
+
+    <!--Numbers -->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+
+    <!--    Main Page Localization  -->
+    <string name="behaviour">अनुगमन  </string>
+    <string name="activity">सर्वे  </string>
+    <string name="events">गतिबिधी  </string>
+
+    <string name="behaviourS">अनुगमनहरु   </string>
+    <string name="activityS">सर्वेहरु   </string>
+    <string name="eventsS">गतिबिधीहरु   </string>
+
+    <string name="pressForMore">अरु </string>
+    <string name="logout">लग आउट </string>
+
+
+    <!--    Phase Page Localization  -->
+    <string name="p1">पहिलो चरण   </string>
+    <string name="p2">दोस्रो चरण  </string>
+    <string name="p3">तेस्रो चरण  </string>
+    <string name="p4">चौथो चरण  </string>
+
+
+    <!--    Phase One Questions  -->
+    <string name="Phase1Question1">१) तपाईको विवाह कुन उमेरमा भएको थियो ?</string>
+    <string name="Phase1Question2">२) तपाई पहिलो पटक गर्भवती हुदाँ कति बर्षको हुनुहुन्थ्यो ?</string>
+    <string name="Phase1Question3">३) तपाईको यो गर्भ कति महिनाको भयो</string>
+    <string name="Phase1Question4">४) तपाईको विचारमा हामीले कति पटक गर्भवती जाँच गराउनुपर्छ ?</string>
+    <string name="Phase1Question5">५) तपाईले हालसम्म कति पटक गर्भजाँच गराउनु भयो ?</string>
+    <string name="Phase1Question6">६) तपाई गर्भवती जाँच गराउन कोसँग जानु हुन्छ ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question7">७) तपाईले हिजो कति पटक खाना खानुभयो ?</string>
+    <string name="Phase1Question8">८) तपाईले हिजो के-के खानुभएको थियो ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question9">९) के तपाईले सुनौला १००० दिनका बारेमा सुन्नुभएको छ?</string>
+    <string name="Phase1Question10">१०) यदि छ, भने कहाँ-कहाँ बाट सुन्नुभयो ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question11">११) तपाईको काममा अहिले परिवारमा क–कसले सघाउनुहुन्छ ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question12">१२) यदि सघाउनुहुन्छ भने, के–के कुरामा सघाउनुहुन्छ ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question13">१३) यो गर्भको बारेमा तपाईले को-को संग कुराकानि गर्नुहुन्छ ?(बहुउत्तर आउन सकिने)</string>
+    <string name="Phase1Question14">१४) तपाईले सुत्केरी कहाँ गराउने विचार गर्नुभएको छ ?</string>
+    <string name="Phase1Question15">१५)तपाईं दिसापिसाव गर्न कहाँ जानुहुन्छ ?</string>
+    <string name="Phase1Question16">१६) तपाईंले कुन–कुन बेलामा साबुनपानीले हात मिचीमिची धुनुहुन्छ ?(बहुउत्तर आउन सकिन)</string>
+    <string name="Phase1Question17">१७) अवलोकन गर्ने घरमा हात धुने ठाँउ छ कि छैन ?</string>
+    <string name="Phase1Question18">१८) यदि छ भने, साबुन पानीको व्यवस्था छ कि छैन ?</string>
+    <string name="Phase1Question19"> १९) घरमा चर्पिको सुविधा छ कि छैन ?</string>
+    <!--    Phase One Questions Finished -->
+
+
+    <!--    Phase One Answers  -->
+    <string-array name="Phase1Answer1">
+        <item>६ </item>
+        <item>७ </item>
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase1Answer2">
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase1Answer3">
+        <item>१</item>
+        <item>२ </item>
+        <item>३ </item>
+        <item>४ </item>
+        <item>५ </item>
+        <item>६ </item>
+        <item>७ </item>
+        <item>८ </item>
+        <item>९ </item>
+    </string-array>
+    <string-array name="Phase1Answer4">
+        <item>१</item>
+        <item>२ </item>
+        <item>३ </item>
+        <item>४ </item>
+        <item>५ </item>
+        <item>६ </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase1Answer5">
+        <item>१</item>
+        <item>२ </item>
+        <item>३ </item>
+        <item>४ </item>
+        <item>५ </item>
+        <item>६ </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string name="Phase1Answer6a">श्रीमान</string>
+    <string name="Phase1Answer6b">सासु</string>
+    <string name="Phase1Answer6c">आमा</string>
+    <string name="Phase1Answer6d">एक्लै</string>
+    <string name="Phase1Answer6e">ससुरा</string>
+    <string name="Phase1Answer6f">दिदिबहिनी</string>
+    <string name="Phase1Answer6g">नन्द आमाजु </string>
+    <string name="Phase1Answer6h">छिमेकी</string>
+    <string name="Phase1Answer6i">साथी</string>
+    <string name="Phase1Answer6j">महिला स्वंयम सेविका</string>
+    <string-array name="Phase1Answer7">
+        <item>१</item>
+        <item>२ </item>
+        <item>३ </item>
+        <item>४ </item>
+        <item>५ </item>
+        <item>६ </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string name="Phase1Answer8a">अन्न वा कन्दमुल</string>
+    <string name="Phase1Answer8b">गेडागुडी</string>
+    <string name="Phase1Answer8c">दूध तथा दूग्ध पदार्थ</string>
+    <string name="Phase1Answer8d">पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase1Answer8e">अण्डा</string>
+    <string name="Phase1Answer8f">पहेंलो फलफूल र हरियो सागपात</string>
+    <string name="Phase1Answer8g">अन्य फलफूल तथा तरकारी</string>
+    <string-array name="Phase1Answer9">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string name="Phase1Answer10a">रेडियो</string>
+    <string name="Phase1Answer10b">टि.भि. </string>
+    <string name="Phase1Answer10c">स्वास्थ्य संस्था  </string>
+    <string name="Phase1Answer10d"> स्वास्थ्य स्वयं सेविका    </string>
+    <string name="Phase1Answer10e"> वडा नागरिक मञ्च  </string>
+    <string name="Phase1Answer10f">आमा समुहको बैठकमा</string>
+    <string name="Phase1Answer10g">बाल क्लब</string>
+    <string name="Phase1Answer10h"> परिवारका सदस्य</string>
+    <string name="Phase1Answer10i">छिमेकी</string>
+    <string name="Phase1Answer10j">बचत तथा ऋण समूह</string>
+    <string name="Phase1Answer10k">अन्य</string>
+    <string name="Phase1Answer11a">श्रीमान</string>
+    <string name="Phase1Answer11b">सासु</string>
+    <string name="Phase1Answer11c">ससुरा</string>
+    <string name="Phase1Answer11d">जेठानी÷ देउरानी</string>
+    <string name="Phase1Answer11e">नन्द÷आमाजु</string>
+    <string name="Phase1Answer11f">ठुला बालबालिकाहरु</string>
+    <string name="Phase1Answer11g">खासै सघाउनु हुन्न</string>
+    <string name="Phase1Answer12a"> स्वास्थ्य संस्था लैजान</string>
+    <string name="Phase1Answer12b">घाँस दाउरा ल्याउन </string>
+    <string name="Phase1Answer12c">पानी बोक्नरल्याउन </string>
+    <string name="Phase1Answer12d">लुगा धुन</string>
+    <string name="Phase1Answer12e"> खाना पकाउन</string>
+    <string name="Phase1Answer12f">घर सफा गर्न</string>
+    <string name="Phase1Answer12g">अरु बच्चाको हेरचाह गर्न </string>
+    <string name="Phase1Answer12h">पसल चलाउन</string>
+    <string name="Phase1Answer13a">श्रीमान</string>
+    <string name="Phase1Answer13b">आमा</string>
+    <string name="Phase1Answer13c">सासु</string>
+    <string name="Phase1Answer13d">साथी</string>
+    <string name="Phase1Answer13e">जेठानी÷देउरानी  </string>
+    <string name="Phase1Answer13f">नन्द आमाजु</string>
+    <string name="Phase1Answer13g"> दिदि बहिनी  </string>
+    <string name="Phase1Answer13h">खासै छलफल हुंदैन</string>
+    <string-array name="Phase1Answer14">
+        <item>स्वास्थ्य संस्थामा</item>
+        <item>अस्पतालमा</item>
+        <item>घरमा</item>
+        <item>दक्ष प्रसुती कर्मीबाट घरमा</item>
+    </string-array>
+    <string-array name="Phase1Answer15">
+        <item>चर्पि</item>
+        <item> खेतबारी </item>
+        <item>खोल वा पोखरीको नजिक </item>
+        <item> जङ्गल वा झाडी </item>
+    </string-array>
+    <string name="Phase1Answer16a">खाना पकाउनुअघि</string>
+    <string name="Phase1Answer16b">खाना खानु वा खुवाउनु अघि</string>
+    <string name="Phase1Answer16c">चर्पीको प्रयोग गरेपछि</string>
+    <string name="Phase1Answer16d">बच्चाको दिसा धोएपछि</string>
+    <string name="Phase1Answer16e">फोहर चलाएपछि</string>
+    <string-array name="Phase1Answer17">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase1Answer18">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase1Answer19">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+
+    <!-- PHASE ONE ANSWER FINISHED-->
+
+    <!--    Phase Two Questions  -->
+    <string name="Phase2Question1">  १) तपाईको विवाह कति बर्षको उमेरमा भएको थियो ?</string>
+    <string name="Phase2Question2">  २) तपाई पहिलो पटक गर्भवती हुदाँ कति बर्षको हुनुहुन्थ्यो ?</string>
+    <string name="Phase2Question3">    ३) तपाईले यो बच्चा कहाँ जन्माउनु भएको हो ?</string>
+    <string name="Phase2Question4">    ४) तपाईले सुत्केरी जाँच गराउनु भयो ?</string>
+    <string name="Phase2Question5">५) यदि छ भने कति पटक गराउनु भयो ?</string>
+    <string name="Phase2Question6"> ६) सुत्केरी जाँच कहिले-कहिले गराउनु भयो ?</string>
+    <string name="Phase2Question7">  ७) तपाई  सुत्केरी जाँच गराउन कोसँग जानु भएको थियो ?</string>
+    <string name="Phase2Question8"> </string>
+    <string name="Phase2Question9">९) तपाईले हिजो कति पटक खाना खानुभयो ?</string>
+    <string name="Phase2Question10">१०) तपाईले हिजो खानामा के-के खानुभएको थियो ?</string>
+    <string name="Phase2Question11">११) तपाईले बच्चालाई जन्मेको कति समयमा आफ्नो दूध खुवाउनु भएको थियो ?</string>
+    <string name="Phase2Question12">१२) तपाईको बच्चालाई जन्मेको कति समयमा नुहाइदिनु भएको थियो ?</string>
+    <string name="Phase2Question13">१३) तपाईले अहिले बच्चालाई के-के खुवाइ राख्नु भएको छ ?</string>
+    <string name="Phase2Question14">१४) तपाईले हिजो बच्चालाई स्तनपान (आमाको दूध) कति पटक गराउनुभयो ?</string>
+    <string name="Phase2Question15">१५) तपाईको बच्चाको तौल जाँच गराउनु भएको छ ?</string>
+    <string name="Phase2Question16">१६) तपाईको बच्चाको तौल पछिल्लो पटक कुन उमेरमा लिनु भएको थियो ?</string>
+    <string name="Phase2Question17">१७) यदि छ भने, तपाईको बच्चाको तौल कति समयको फरकमा लिने गर्नु भएको छ ?</string>
+    <string name="Phase2Question18"> १८) तपाईले बच्चाको अहिलेसम्मको खोप पूरा गर्नु भएको छ ?</string>
+    <string name="Phase2Question19"> १९) तपाईले बच्चाको जन्म दर्ता गराउनु भएको छ ?</string>
+    <string name="Phase2Question20">२०)  यदि छ भने, जन्मेको कति दिनमा दर्ता गराउनुभयो ?</string>
+    <string name="Phase2Question21"> २१) यदि गरेको छैन भने, दर्ता नगराउनुको कारण के हो ?</string>
+    <string name="Phase2Question22"> २२) तपाईले सुनौला १००० दिनका बारेमा सुन्नुभएको छ?</string>
+    <string name="Phase2Question23">२३) यदि छ भने कहाँ-कहाँ बाट सुन्नुभयो ?</string>
+    <string name="Phase2Question24">२४) तपाईलाई अहिले परिवारमा ककसले सघाउनुहुन्छ ?</string>
+    <string name="Phase2Question25"> २५) यदि सघाउनुहुन्छ भने, बच्चाको हेरचाहमा के–के कुरामा सघाउनुहुन्छ ?</string>
+    <string name="Phase2Question26">  २६) तपाईं दिसापिसाव गर्न कहाँ जानुहुन्छ ?</string>
+    <string name="Phase2Question27"> २७) तपाईलें बच्चाको दिसापिसाव कहाँ फ्याल्ने गर्नु भएको छ ?</string>
+    <string name="Phase2Question28"> २८) तपाई कुन–कुन बेलामा साबुनपानीले हात मिचीमिची धुनुहुन्छ ?</string>
+    <string name="Phase2Question29">२९) अवलोकन गर्ने घरमा हात धुने ठाँउ छ कि छैन ?</string>
+    <string name="Phase2Question30"> ३०)  यदि छ भने, साबुन पानीको व्यवस्था छ कि छैन ?</string>
+    <string name="Phase2Question31">३१) घरमा चर्पिको सुविधा छ  कि छैन ?</string>
+    <!--    Phase Two Questions Finished -->
+
+
+    <!--    Phase Two Answer  -->
+    <string-array name="Phase2Answer1">
+        <item>६ </item>
+        <item>७ </item>
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer2">
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer3">
+        <item>क) स्वास्थ्य संस्थामा </item>
+        <item>ख) अस्पतालमा</item>
+        <item>ग) घरमा</item>
+        <item>घ) दक्ष प्रसुती कर्मीबाट घरमा </item>
+    </string-array>
+    <string-array name="Phase2Answer4">
+        <item>क) छ </item>
+        <item>   ख) छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer5">
+        <item>०</item>
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+    </string-array>
+    <string name="Phase2Answer6a">क) सुत्केरी भएको २४ घण्टा पछि</string>
+    <string name="Phase2Answer6b">ख) सुत्केरी भएको ३ दिन भित्र</string>
+    <string name="Phase2Answer6c">ग) सुत्केरी भएको ७ दिन भित्र</string>
+    <string name="Phase2Answer6d">घ) बच्चालाई खोप लगाउन जाँदा</string>
+    <string name="Phase2Answer7a">क) श्रीमान </string>
+    <string name="Phase2Answer7b">ख) सासु</string>
+    <string name="Phase2Answer7c">ग) आमा </string>
+    <string name="Phase2Answer7d">घ) एक्लै</string>
+    <string name="Phase2Answer7e">ङ) ससुरा </string>
+    <string name="Phase2Answer7f"> च) दिदिबहिनी</string>
+    <string name="Phase2Answer7g">छ) नन्द आमाजु </string>
+    <string name="Phase2Answer7h">ज) छिमेकी</string>
+    <string name="Phase2Answer7i">झ) साथी</string>
+    <string name="Phase2Answer7j">ञ) महिला स्वंयम सेविका</string>
+    <string-array name="Phase2Answer9">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string name="Phase2Answer10a"> क) अन्न वा कन्दमुल</string>
+    <string name="Phase2Answer10b">ख) गेडागुडी </string>
+    <string name="Phase2Answer10c">ग) दूध तथा दूग्ध पदार्थ </string>
+    <string name="Phase2Answer10d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase2Answer10e"> ङ) अण्डा</string>
+    <string name="Phase2Answer10f">च) पहेंलो फलपूmल र हरियो सागपात </string>
+    <string name="Phase2Answer10g">  छ) अन्य फलपूmल तथा तरकारी</string>
+    <string-array name="Phase2Answer11">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer12">
+        <item> जन्मेको २४ घण्टा आगाडि </item>
+        <item>जन्मेको २४ घण्टा पछाडि</item>
+    </string-array>
+    <string-array name="Phase2Answer13">
+        <item>क) आमाको दूध मात्र</item>
+        <item>ख) गाइभैसी वा बाख्राको दूध</item>
+        <item>ग) बट्टाको दूध</item>
+        <item>घ) लिटो वा जाउलो</item>
+        <item>ङ) सेरलेक</item>
+    </string-array>
+    <string-array name="Phase2Answer14">
+        <item>०</item>
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+    </string-array>
+    <string-array name="Phase2Answer15">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer16">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+    </string-array>
+    <string-array name="Phase2Answer17">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+    </string-array>
+    <string-array name="Phase2Answer18">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer19">
+
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer20">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+    </string-array>
+    <string-array name="Phase2Answer22">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+
+    <string name="Phase2Answer23a"> क) रेडियो      </string>
+    <string name="Phase2Answer23b">ख) टि.भि. </string>
+    <string name="Phase2Answer23c">ग) स्वास्थ्य संस्था </string>
+    <string name="Phase2Answer23d">घ) स्वास्थ्य स्वयं सेविका </string>
+    <string name="Phase2Answer23e">ङ) वडा नागरिक मञ्च  </string>
+    <string name="Phase2Answer23f"> च)आमा समुहको बैठकमा</string>
+    <string name="Phase2Answer23g">छ) बाल क्लब</string>
+    <string name="Phase2Answer23h">ज) परिवारका सदस्य</string>
+    <string name="Phase2Answer23i"> झ)छिमेकी</string>
+    <string name="Phase2Answer23j"> ञ) बचत तथा ऋण समूह</string>
+    <string name="Phase2Answer23k">ट) अन्य</string>
+
+    <string name="Phase2Answer24a"> क) श्रीमान</string>
+    <string name="Phase2Answer24b">ख) सासु</string>
+    <string name="Phase2Answer24c">ग) ससुरा</string>
+    <string name="Phase2Answer24d">घ) जेठानी÷ देउरानी</string>
+    <string name="Phase2Answer24e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase2Answer24f">च) ठुला बालबालिकाहरु</string>
+    <string name="Phase2Answer24g">छ) खासै सघाउनु हुन्न</string>
+    <string name="Phase2Answer25a"> क) बच्चालाई खाना खुवाउन</string>
+    <string name="Phase2Answer25b"> ख) बच्चालाई खाना बनाउन</string>
+    <string name="Phase2Answer25c">ग) बच्चाको सरसफाईमा</string>
+    <string name="Phase2Answer25d">घ) स्वास्थ्य संस्था लैजान</string>
+    <string name="Phase2Answer25e">ङ) बच्चालाई खेलाउन</string>
+    <string-array name="Phase2Answer26">
+        <item>क) चर्पि</item>
+        <item>ख) खेतबारी</item>
+        <item>ग) खोल वा पोखरीको नजिक</item>
+        <item>घ) जङ्गल वा झाडी</item>
+    </string-array>
+    <string name="Phase2Answer27a">क) चर्पि</string>
+    <string name="Phase2Answer27b">ख) खेतबारी</string>
+    <string name="Phase2Answer27c">ग) खोल वा पोखरीको नजिक</string>
+    <string name="Phase2Answer27d">घ) जङ्गल वा झाडी</string>
+    <string name="Phase2Answer27e">ङ) कुकुरले खान्छ</string>
+    <string name="Phase2Answer28a"> क) खाना पकाउनुअघि</string>
+    <string name="Phase2Answer28b">ख) खाना खानु वा खुवाउनु अघि</string>
+    <string name="Phase2Answer28c">ग) चर्पीको प्रयोग गरेपछि</string>
+    <string name="Phase2Answer28d">घ) बच्चाको दिसा धोएपछि</string>
+    <string name="Phase2Answer28e">ङ) फोहर चलाएपछि</string>
+    <string-array name="Phase2Answer29">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer30">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase2Answer31">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <!--    Phase Two Answer Finished -->e
+
+
+    <!--    Phase Three Questions  -->
+    <string name="Phase3Question1">१)  तपाईको विवाह कुन उमेरमा भएको थियो ?</string>
+    <string name="Phase3Question2">२) तपाई पहिलो पटक गर्भवती हुदाँ कति बर्षको हुनुहुन्थ्यो ?</string>
+    <string name="Phase3Question3">३) तपाईले यो बच्चालाई कहिलेसम्म आफ्नो दूधमात्र खुवाउनुभएको थियो ?</string>
+    <string name="Phase3Question4">४) तपाईले बच्चालाई अहिले के-के खुवाइरहनु भएको छ ?</string>
+    <string name="Phase3Question5">५) तपाईले आमाको दुध बाहेक अन्य खाना कहिले-कहिले खुवाउनु हुन्छ ?</string>
+    <string name="Phase3Question6">६)  तपाईले बच्चाको अहिलेसम्मको खोप पूरा गर्नु भएको छ ?</string>
+    <string name="Phase3Question7">७)  तपाईको बच्चाको तौल जाँच गराउनु भएको छ ?</string>
+    <string name="Phase3Question8">८) तपाईको बच्चाको तौल पछिल्लो पटक कुन उमेरमा लिनु भएको थियो ?</string>
+    <string name="Phase3Question9">९)  यदि छ भने, तपाईको बच्चाको तौल कति समयको फरकमा लिने गर्नु भएको छ ?</string>
+    <string name="Phase3Question10">१०)  तपाईले बच्चाको जन्म दर्ता गराउनु भएको छ ?</string>
+    <string name="Phase3Question11">११)  यदि छ भने, जन्मेको कति दिनमा दर्ता गराउनुभयो?</string>
+    <string name="Phase3Question12">१२) यदि गरेको छैन भने, दर्ता नगराउनुको कारण के हो ?</string>
+    <string name="Phase3Question13">१३) तपाईले सुनौला १००० दिनका बारेमा सुन्नुभएको छ?</string>
+    <string name="Phase3Question14">१४) यदि छ भने कहाँ-कहाँ बाट सुन्नुभयो ?</string>
+    <string name="Phase3Question15">१५) तपाईलाई अहिले परिवारमा ककसले सघाउनुहुन्छ ?</string>
+    <string name="Phase3Question16">१६)  यदि सघाउनुहुन्छ भने, बच्चाको हेरचाहमा के–के कुरामा सघाउनुहुन्छ ?</string>
+    <string name="Phase3Question17">१७)  तपाईं दिसापिसाव गर्न कहाँ जानुहुन्छ ?</string>
+    <string name="Phase3Question18">१८)  तपाईलें बच्चाको दिसापिसाव कहाँ व्यवस्थापन गर्नुहुन्छ ?</string>
+    <string name="Phase3Question19">१९) कुन–कुन बेलामा साबुनपानीले हात मिचीमिची धुनुहुन्छ ?</string>
+    <string name="Phase3Question20">२०) घरमा हात धुने ठाँउ छ कि छैन ?</string>
+    <string name="Phase3Question21">२१)  यदि छ भने, साबुन पानीको व्यवस्था छ कि छैन ?</string>
+    <string name="Phase3Question22">२२) घरमा चर्पिको सुविधा छ  कि छैन ?</string>
+
+    <!--    Phase Three Questions Finished -->
+
+    <!--    Phase Three Answer  -->
+    <string-array name="Phase3Answer1">
+        <item>६ </item>
+        <item>७ </item>
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer2">
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer3">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+    <string name="Phase3Answer4a">क) स्तनपान (आमाको दुधमात्र)</string>
+    <string name="Phase3Answer4b">ख) गेडागुडी</string>
+    <string name="Phase3Answer4c">ग) दूध तथा दूग्ध पदार्थ</string>
+    <string name="Phase3Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase3Answer4e">ङ) अण्डा</string>
+    <string name="Phase3Answer4f">च) पहेंलो फलपूmल र हरियो सागपात</string>
+    <string name="Phase3Answer4g">छ) अन्य फलपूmल तथा तरकारी</string>
+    <string name="Phase3Answer4h">ज)अन्न वा कन्दमुल</string>
+
+    <string name="Phase3Answer5a">क) बिहान  </string>
+    <string name="Phase3Answer5b"> ख) दिउँसो  </string>
+    <string name="Phase3Answer5c">ग) साझ  </string>
+    <string name="Phase3Answer5d">घ) अबेर राती  </string>
+    <string-array name="Phase3Answer6">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer7">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer8">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer9">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+
+    <string-array name="Phase3Answer10">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer11">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+    <string-array name="Phase3Answer13">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string name="Phase3Answer14a"> क) रेडियो      </string>
+    <string name="Phase3Answer14b">ख) टि.भि. </string>
+    <string name="Phase3Answer14c">ग) स्वास्थ्य संस्था </string>
+    <string name="Phase3Answer14d">घ) स्वास्थ्य स्वयं सेविका </string>
+    <string name="Phase3Answer14e">ङ) वडा नागरिक मञ्च  </string>
+    <string name="Phase3Answer14f"> च)आमा समुहको बैठकमा</string>
+    <string name="Phase3Answer14g">छ) बाल क्लब</string>
+    <string name="Phase3Answer14h">ज) परिवारका सदस्य</string>
+    <string name="Phase3Answer14i"> झ)छिमेकी</string>
+    <string name="Phase3Answer14j"> ञ) बचत तथा ऋण समूह</string>
+    <string name="Phase3Answer14k">ट) अन्य</string>
+
+    <string name="Phase3Answer15a"> क) श्रीमान</string>
+    <string name="Phase3Answer15b">ख) सासु</string>
+    <string name="Phase3Answer15c">ग) ससुरा</string>
+    <string name="Phase3Answer15d">घ) जेठानी÷ देउरानी</string>
+    <string name="Phase3Answer15e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase3Answer15f">च) ठुला बालबालिकाहरु</string>
+    <string name="Phase3Answer15g">छ) खासै सघाउनु हुन्न</string>
+
+    <string name="Phase3Answer16a"> क) बच्चालाई खाना खुवाउन</string>
+    <string name="Phase3Answer16b"> ख) बच्चालाई खाना बनाउन</string>
+    <string name="Phase3Answer16c">ग) बच्चाको सरसफाईमा</string>
+    <string name="Phase3Answer16d">घ) स्वास्थ्य संस्था लैजान</string>
+    <string name="Phase3Answer16e">ङ) बच्चालाई खेलाउन</string>
+
+    <string-array name="Phase3Answer17">
+        <item>क) चर्पि</item>
+        <item>ख) खेतबारी</item>
+        <item>ग) खोल वा पोखरीको नजिक</item>
+        <item>घ) जङ्गल वा झाडी</item>
+    </string-array>
+
+    <string name="Phase3Answer18a">क) चर्पि</string>
+    <string name="Phase3Answer18b">ख) खेतबारी</string>
+    <string name="Phase3Answer18c">ग) खोल वा पोखरीको नजिक</string>
+    <string name="Phase3Answer18d">घ) जङ्गल वा झाडी</string>
+    <string name="Phase3Answer18e">ङ) कुकुरले खान्छ</string>
+
+    <string name="Phase3Answer19a"> क) खाना पकाउनुअघि</string>
+    <string name="Phase3Answer19b">ख) खाना खानु वा खुवाउनु अघि</string>
+    <string name="Phase3Answer19c">ग) चर्पीको प्रयोग गरेपछि</string>
+    <string name="Phase3Answer19d">घ) बच्चाको दिसा धोएपछि</string>
+    <string name="Phase3Answer19e">ङ) फोहर चलाएपछि</string>
+
+    <string-array name="Phase3Answer20">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer21">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase3Answer22">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <!--    Phase Three Answer Finished  -->
+
+
+    <!--    Phase Four Questions  -->
+    <string name="Phase4Question1">१) तपाईको विवाह कुन उमेरमा भएको थियो ? </string>
+    <string name="Phase4Question2">२) तपाई पहिलो पटक गर्भवती हुदाँ कति बर्षको हुनुहुन्थ्यो ?</string>
+    <string name="Phase4Question3">३) तपाईले बच्चालाई आफ्नो दूधमात्र कहिलेसम्म खुवाउनुभएको थियो ?</string>
+    <string name="Phase4Question4">४) तपाईले बच्चालाई अहिले के-के खुवाइरहनु भएको छ ?</string>
+    <string name="Phase4Question5">५)  तपाईले आमाको दुध बाहेक अन्य खाना कहिले-कहिले खुवाउनु हुन्छ ?</string>
+    <string name="Phase4Question6">६)  तपाईले बच्चाको अहिलेसम्मको खोप पूरा गर्नु भएको छ ?</string>
+    <string name="Phase4Question7">७)   तपाईको बच्चाको तौल जाँच गराउनु भएको छ ?</string>
+    <string name="Phase4Question8">८)  यदि छ भने, तपाईको बच्चाको तौल पछिल्लो पटक कुन महिनामा  लिनु भएको थियो ?</string>
+    <string name="Phase4Question9">९)  यदि छ भने, तपाईको बच्चाको तौल कति समयको फरकमा लिने गर्नु भएको छ ?</string>
+    <string name="Phase4Question10">१०)  तपाईले बच्चाको जन्म दर्ता गराउनु भएको छ ?</string>
+    <string name="Phase4Question11">११)   यदि छ भने, जन्मेको कति दिनमा दर्ता गराउनुभयो?</string>
+    <string name="Phase4Question12">१२)  यदि गरेको छैन भने, दर्ता नगराउनुको कारण के हो ?</string>
+    <string name="Phase4Question13">१३) तपाईले सुनौला १००० दिनका बारेमा सुन्नुभएको छ?</string>
+    <string name="Phase4Question14">१४)  यदि छ भने कहाँ-कहाँ बाट सुन्नुभयो ?</string>
+    <string name="Phase4Question15">१५)  तपाईलाई अहिले परिवारमा ककसले सघाउनुहुन्छ ?</string>
+    <string name="Phase4Question16">१६)  यदि सघाउनुहुन्छ भने, बच्चाको हेरचाहमा के–के कुरामा सघाउनुहुन्छ ?</string>
+    <string name="Phase4Question17">१७)  तपाईं दिसापिसाव गर्न कहाँ जानुहुन्छ ?</string>
+    <string name="Phase4Question18">१८) तपाईले बच्चाको दिसापिसाव कहाँ व्यवस्थापन गर्नुहुन्छ ? </string>
+    <string name="Phase4Question19">१९)  तपाईंले कुन–कुन बेलामा साबुनपानीले हात मिचीमिची धुनुहुन्छ ?</string>
+    <string name="Phase4Question20">२०) घरमा हात धुने ठाँउ छ कि छैन ?</string>
+    <string name="Phase4Question21">२१) यदि छ भने, साबुन पानीको व्यवस्था छ कि छैन ?</string>
+    <string name="Phase4Question22">२२) घरमा चर्पिको सुविधा छ  कि छैन ?</string>
+    <!--    Phase Four Questions Finished -->
+
+    <!--    Phase Four Answer  -->
+    <string-array name="Phase4Answer1">
+        <item>६ </item>
+        <item>७ </item>
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer2">
+        <item>८ </item>
+        <item>९ </item>
+        <item>१०</item>
+        <item>११ </item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item> २१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६ </item>
+        <item>२७ </item>
+        <item>२८ </item>
+        <item>२९ </item>
+        <item>३० </item>
+        <item>थाहा छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer3">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+    <string name="Phase4Answer4a">क) स्तनपान (आमाको दुधमात्र)</string>
+    <string name="Phase4Answer4b">ख) गेडागुडी</string>
+    <string name="Phase4Answer4c">ग) दूध तथा दूग्ध पदार्थ</string>
+    <string name="Phase4Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase4Answer4e">ङ) अण्डा</string>
+    <string name="Phase4Answer4f">च) पहेंलो फलपूmल र हरियो सागपात</string>
+    <string name="Phase4Answer4g">छ) अन्य फलपूmल तथा तरकारी</string>
+    <string name="Phase4Answer4h">ज)अन्न वा कन्दमुल</string>
+
+    <string name="Phase4Answer5a">क) बिहान  </string>
+    <string name="Phase4Answer5b"> ख) दिउँसो  </string>
+    <string name="Phase4Answer5c">ग) साझ  </string>
+    <string name="Phase4Answer5d">घ) अबेर राती  </string>
+
+    <string-array name="Phase4Answer6">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer7">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer8">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+
+    <string-array name="Phase4Answer9">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+
+    <string-array name="Phase4Answer10">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer11">
+        <item>१ </item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item> ११</item>
+    </string-array>
+
+
+    <string-array name="Phase4Answer13">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+
+    <string name="Phase4Answer14a"> क) रेडियो      </string>
+    <string name="Phase4Answer14b">ख) टि.भि. </string>
+    <string name="Phase4Answer14c">ग) स्वास्थ्य संस्था </string>
+    <string name="Phase4Answer14d">घ) स्वास्थ्य स्वयं सेविका </string>
+    <string name="Phase4Answer14e">ङ) वडा नागरिक मञ्च  </string>
+    <string name="Phase4Answer14f"> च)आमा समुहको बैठकमा</string>
+    <string name="Phase4Answer14g">छ) बाल क्लब</string>
+    <string name="Phase4Answer14h">ज) परिवारका सदस्य</string>
+    <string name="Phase4Answer14i"> झ)छिमेकी</string>
+    <string name="Phase4Answer14j"> ञ) बचत तथा ऋण समूह</string>
+    <string name="Phase4Answer14k">ट) अन्य</string>
+
+    <string name="Phase4Answer15a"> क) श्रीमान</string>
+    <string name="Phase4Answer15b">ख) सासु</string>
+    <string name="Phase4Answer15c">ग) ससुरा</string>
+    <string name="Phase4Answer15d">घ) जेठानी÷ देउरानी</string>
+    <string name="Phase4Answer15e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase4Answer15f">च) ठुला बालबालिकाहरु</string>
+    <string name="Phase4Answer15g">छ) खासै सघाउनु हुन्न</string>
+
+    <string name="Phase4Answer16a"> क) बच्चालाई खाना खुवाउन</string>
+    <string name="Phase4Answer16b"> ख) बच्चालाई खाना बनाउन</string>
+    <string name="Phase4Answer16c">ग) बच्चाको सरसफाईमा</string>
+    <string name="Phase4Answer16d">घ) स्वास्थ्य संस्था लैजान</string>
+    <string name="Phase4Answer16e">ङ) बच्चालाई खेलाउन</string>
+
+    <string-array name="Phase4Answer17">
+        <item>क) चर्पि</item>
+        <item>ख) खेतबारी</item>
+        <item>ग) खोल वा पोखरीको नजिक</item>
+        <item>घ) जङ्गल वा झाडी</item>
+    </string-array>
+
+    <string name="Phase4Answer18a">क) चर्पि</string>
+    <string name="Phase4Answer18b">ख) खेतबारी</string>
+    <string name="Phase4Answer18c">ग) खोल वा पोखरीको नजिक</string>
+    <string name="Phase4Answer18d">घ) जङ्गल वा झाडी</string>
+    <string name="Phase4Answer18e">ङ) कुकुरले खान्छ</string>
+
+    <string name="Phase4Answer19a"> क) खाना पकाउनुअघि</string>
+    <string name="Phase4Answer19b">ख) खाना खानु वा खुवाउनु अघि</string>
+    <string name="Phase4Answer19c">ग) चर्पीको प्रयोग गरेपछि</string>
+    <string name="Phase4Answer19d">घ) बच्चाको दिसा धोएपछि</string>
+    <string name="Phase4Answer19e">ङ) फोहर चलाएपछि</string>
+    <string name="selectevents">एवेन्त छानुहोस: </string>
+    <string name="datePick">मिती छानुहोस</string>
+
+
+    <!--Events One List -->
+    <string name="event1option1">जिल्ला समन्वय समिति</string>
+    <string name="event1option2">जिल्ला कृषि कार्यालय</string>
+    <string name="event1option3">जिल्ला पशु बिकास कार्यालय</string>
+    <string name="event1option4">महिला तथा बालबालिका कार्यालय</string>
+    <string name="event1option5">जिल्ला शिक्षा कार्यालय</string>
+    <string name="event1option6">जिल्ला स्वास्थ्य÷जनस्वास्थ्य कार्यालय</string>
+    <string name="event1option7">पत्रकार÷सञ्चारकर्मी</string>
+    <string name="event1option8">गैर सरकारी संस्था</string>
+    <string name="event1option9">सुआहारा</string>
+    <string name="event1option10">अन्य</string>
+
+    <!--Events Two List -->
+    <string name="event2option1">गाँउपालिकाको समन्वय समिति </string>
+    <string name="event2option2">सामाजिक परिचालक </string>
+    <string name="event2option3">कृषि कार्यालय </string>
+    <string name="event2option4">पशु बिकास कार्यालय </string>
+    <string name="event2option5">महिला तथा बालबालिका </string>
+    <string name="event2option6">शिक्षक÷विद्मालय </string>
+    <string name="event2option7">स्वास्थ्य संस्था </string>
+    <string name="event2option8">गैर सरकारी संस्था</string>
+    <string name="event2option9">सुआहारा</string>
+
+
+    <string name="agenda">एजेन्दा </string>
+    <string name="Nirnaya">निर्णय </string>
+    <string name="female">महिला </string>
+    <string name="male">पुरुष </string>
+    <string name="total">Total Here</string>
+    <string name="totalDays">Total Days</string>
+    <string name="totalMedia">Total Media</string>
+    <string name="totalParticipants">Total Participants</string>
+    <string name="presentName">उपस्थिती</string>
+    <string name="contact">सम्पर्क</string>
+    <string name="address">ठेगाना</string>
+    <string name="aabalokan">अवलोकन गर्ने </string>
+    <string name="saved">Saved</string>
+    <string name="savedEvents">Saved Events</string>
+    <string name="savedActivity">Saved Activity</string>
+    <string name="savedBehavior">Saved Behavior</string>
+    <string name="errorMessage">कृपया आफ्नो  युसर र पास्वर्ड चेक गर्नुहोस ।</string>
+    <string name="error">एर्‍ओर</string>
+    <string name="ok">ओके</string>
+    <string name="blank">खाली</string>
+    <string name="quit">बन्द</string>
+    <string name="quitMessage">एप बन्द गर्न चाहनुहुन्छ ?</string>
+    <string name="yes">हुन्छ</string>
+    <string name="no">हुँदैन</string>
+
+    <string-array name="Phase4Answer20">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer21">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <string-array name="Phase4Answer22">
+        <item>छ</item>
+        <item>छैन </item>
+    </string-array>
+    <!--    Phase Four Answer Finished -->
+
+
+    <!--Events List -->
+    <string-array name="event_list">
+        <item>१. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </item>
+        <item>२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम÷अभिमुखिकरण </item>
+        <item>३. सञ्चारकर्मीसँग अन्तरक्रिया </item>
+        <item>४. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </item>
+        <item>५. गाउँपालिकास्तरिय तालिम÷अभिमुखिकरण </item>
+        <item>६. महिला स्वास्थ्य स्वंयम सेविका तालिम÷अभिमुखिकरण </item>
+        <item>७. समुदायस्तरिय बैठक </item>
+        <item>८. सडक नाटक </item>
+        <item>९. घरभेट </item>
+        <item>१०. अन्य चेतनामुलक कार्यक्रम </item>
+    </string-array>
+
+
+    <!--Events List -->
+    <string name="event1">१. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </string>
+    <string name="event2">२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम÷अभिमुखिकरण </string>
+    <string name="event3">३. सञ्चारकर्मीसँग अन्तरक्रिया </string>
+    <string name="event4">४. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </string>
+    <string name="event5">५. गाउँपालिकास्तरिय तालिम÷अभिमुखिकरण </string>
+    <string name="event6">६. महिला स्वास्थ्य स्वंयम सेविका तालिम÷अभिमुखिकरण </string>
+    <string name="event7">७. समुदायस्तरिय बैठक </string>
+    <string name="event8">८. सडक नाटक </string>
+    <string name="event9">९. घरभेट </string>
+    <string name="event10">१०. अन्य चेतनामुलक कार्यक्रम </string>
+
+
+
+</resources>

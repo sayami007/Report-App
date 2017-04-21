@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="questionSize">18sp</dimen>
+    <dimen name="left_margin">10sp</dimen>
+    <dimen name="eventTextSize">12sp</dimen>
+</resources>

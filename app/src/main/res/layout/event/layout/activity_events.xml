@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/event1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event1"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event2"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event3"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event4"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event5"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/event6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event6"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event7"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/event8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event8"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/event9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event9"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/event10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:contentDescription="@string/events"
+            android:src="@drawable/events" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:gravity="center|left"
+            android:text="@string/event10"
+            android:textSize="@dimen/eventTextSize" />
+
+    </LinearLayout>
+</LinearLayout>
