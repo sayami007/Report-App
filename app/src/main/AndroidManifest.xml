@@ -57,5 +57,7 @@
         <activity android:name=".Events.Question.Event8Q_"/>
         <activity android:name=".Events.Question.Event9Q_"/>
         <activity android:name=".Events.Question.Event10Q_"/>
+        <activity android:name=".Events.Question.Event11Q_"/>
+
     </application>
 </manifest>

@@ -33,18 +33,15 @@ android {
     }
 }
 def ver = '4.3.0'
-dependencies {
-    annotationProcessor "org.androidannotations:androidannotations:$ver"
-    compile "org.androidannotations:androidannotations-api:$ver"
-
-}
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor "org.androidannotations:androidannotations:$ver"
+    compile "org.androidannotations:androidannotations-api:$ver"
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
     compile 'com.android.support:appcompat-v7:25.3.0'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:25.+'
