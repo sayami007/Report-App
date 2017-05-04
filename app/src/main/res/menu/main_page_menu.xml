@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
-        <item
-            android:icon="@mipmap/ic_launcher"
-            android:id="@+id/savedBehavior"
-            android:title="@string/behaviourS" />
-
-
-        <item
-            android:id="@+id/savedActivity"
-            android:title="@string/activityS" />
-
-
-        <item
-            android:id="@+id/savedEvents"
-            android:title="@string/eventsS" />
-
-
-
-
     <item
+        android:icon="@drawable/out"
+        app:showAsAction="withText"
         android:id="@+id/signOut"
         android:title="@string/logout" />
-
-
 </menu>

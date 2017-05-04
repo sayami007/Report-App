@@ -69,6 +69,15 @@ public class Events extends AppCompatActivity {
         Event10Q_.intent(this).start();
     }
 
+    @Click(R.id.event11)
+    void event11() {
+        Event11Q_.intent(this).start();
+    }
+
+    @Click(R.id.event12)
+    void event12() {
+        Event12Q_.intent(this).start();
+    }
 
 
 }

@@ -4,13 +4,13 @@
     <string name="title_activity_main_page">Reporting</string>
     <string name="app_name">रिपोर्टिङ </string>
     <string name="name">नाम</string>
-    <string name="save">सेव  </string>
+    <string name="save">सेव गर्नुहोस </string>
     <string name="exit">बन्द </string>
     <string name="age">उमेर</string>
 
     <!--    Login Page Localization  -->
-    <string name="user">युसर</string>
-    <string name="password">पास्वर्ड</string>
+    <string name="user">प्रयोगकर्ता </string>
+    <string name="password">पासवर्ड </string>
     <string name="login">लगिन</string>
 
     <!--Numbers -->
@@ -28,7 +28,7 @@
     <!--    Main Page Localization  -->
     <string name="behaviour">अनुगमन  </string>
     <string name="activity">सर्वे  </string>
-    <string name="events">गतिबिधी  </string>
+    <string name="events">क्रियाकलाप   </string>
 
     <string name="behaviourS">अनुगमनहरु   </string>
     <string name="activityS">सर्वेहरु   </string>
@@ -70,6 +70,7 @@
 
     <!--    Phase One Answers  -->
     <string-array name="Phase1Answer1">
+        <item>उत्तर छान्नुहोस </item>
         <item>६ </item>
         <item>७ </item>
         <item>८ </item>
@@ -98,6 +99,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase1Answer2">
+        <item>उत्तर छान्नुहोस </item>
         <item>८ </item>
         <item>९ </item>
         <item>१०</item>
@@ -124,6 +126,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase1Answer3">
+        <item>उत्तर छान्नुहोस </item>
         <item>१</item>
         <item>२ </item>
         <item>३ </item>
@@ -135,6 +138,7 @@
         <item>९ </item>
     </string-array>
     <string-array name="Phase1Answer4">
+        <item>उत्तर छान्नुहोस </item>
         <item>१</item>
         <item>२ </item>
         <item>३ </item>
@@ -144,6 +148,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase1Answer5">
+        <item>उत्तर छान्नुहोस </item>
         <item>१</item>
         <item>२ </item>
         <item>३ </item>
@@ -163,6 +168,7 @@
     <string name="Phase1Answer6i">साथी</string>
     <string name="Phase1Answer6j">महिला स्वंयम सेविका</string>
     <string-array name="Phase1Answer7">
+        <item>उत्तर छान्नुहोस </item>
         <item>१</item>
         <item>२ </item>
         <item>३ </item>
@@ -174,11 +180,12 @@
     <string name="Phase1Answer8a">अन्न वा कन्दमुल</string>
     <string name="Phase1Answer8b">गेडागुडी</string>
     <string name="Phase1Answer8c">दूध तथा दूग्ध पदार्थ</string>
-    <string name="Phase1Answer8d">पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase1Answer8d">पशुपंक्षीजन्य स्रोत (माछा/मासु)</string>
     <string name="Phase1Answer8e">अण्डा</string>
     <string name="Phase1Answer8f">पहेंलो फलफूल र हरियो सागपात</string>
     <string name="Phase1Answer8g">अन्य फलफूल तथा तरकारी</string>
     <string-array name="Phase1Answer9">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -196,8 +203,8 @@
     <string name="Phase1Answer11a">श्रीमान</string>
     <string name="Phase1Answer11b">सासु</string>
     <string name="Phase1Answer11c">ससुरा</string>
-    <string name="Phase1Answer11d">जेठानी÷ देउरानी</string>
-    <string name="Phase1Answer11e">नन्द÷आमाजु</string>
+    <string name="Phase1Answer11d">जेठानी/ देउरानी</string>
+    <string name="Phase1Answer11e">नन्द/आमाजु</string>
     <string name="Phase1Answer11f">ठुला बालबालिकाहरु</string>
     <string name="Phase1Answer11g">खासै सघाउनु हुन्न</string>
     <string name="Phase1Answer12a"> स्वास्थ्य संस्था लैजान</string>
@@ -212,17 +219,19 @@
     <string name="Phase1Answer13b">आमा</string>
     <string name="Phase1Answer13c">सासु</string>
     <string name="Phase1Answer13d">साथी</string>
-    <string name="Phase1Answer13e">जेठानी÷देउरानी  </string>
+    <string name="Phase1Answer13e">जेठानी/देउरानी  </string>
     <string name="Phase1Answer13f">नन्द आमाजु</string>
     <string name="Phase1Answer13g"> दिदि बहिनी  </string>
     <string name="Phase1Answer13h">खासै छलफल हुंदैन</string>
     <string-array name="Phase1Answer14">
+        <item>उत्तर छान्नुहोस </item>
         <item>स्वास्थ्य संस्थामा</item>
         <item>अस्पतालमा</item>
         <item>घरमा</item>
         <item>दक्ष प्रसुती कर्मीबाट घरमा</item>
     </string-array>
     <string-array name="Phase1Answer15">
+        <item>उत्तर छान्नुहोस </item>
         <item>चर्पि</item>
         <item> खेतबारी </item>
         <item>खोल वा पोखरीको नजिक </item>
@@ -234,14 +243,17 @@
     <string name="Phase1Answer16d">बच्चाको दिसा धोएपछि</string>
     <string name="Phase1Answer16e">फोहर चलाएपछि</string>
     <string-array name="Phase1Answer17">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase1Answer18">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase1Answer19">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -285,6 +297,7 @@
 
     <!--    Phase Two Answer  -->
     <string-array name="Phase2Answer1">
+        <item>उत्तर छान्नुहोस </item>
         <item>६ </item>
         <item>७ </item>
         <item>८ </item>
@@ -313,6 +326,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase2Answer2">
+        <item>उत्तर छान्नुहोस </item>
         <item>८ </item>
         <item>९ </item>
         <item>१०</item>
@@ -339,16 +353,19 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase2Answer3">
+        <item>उत्तर छान्नुहोस </item>
         <item>क) स्वास्थ्य संस्थामा </item>
         <item>ख) अस्पतालमा</item>
         <item>ग) घरमा</item>
         <item>घ) दक्ष प्रसुती कर्मीबाट घरमा </item>
     </string-array>
     <string-array name="Phase2Answer4">
+        <item>उत्तर छान्नुहोस </item>
         <item>क) छ </item>
         <item>   ख) छैन </item>
     </string-array>
     <string-array name="Phase2Answer5">
+        <item>उत्तर छान्नुहोस </item>
         <item>०</item>
         <item>१ </item>
         <item>२</item>
@@ -375,6 +392,7 @@
     <string name="Phase2Answer7i">झ) साथी</string>
     <string name="Phase2Answer7j">ञ) महिला स्वंयम सेविका</string>
     <string-array name="Phase2Answer9">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -385,11 +403,12 @@
     <string name="Phase2Answer10a"> क) अन्न वा कन्दमुल</string>
     <string name="Phase2Answer10b">ख) गेडागुडी </string>
     <string name="Phase2Answer10c">ग) दूध तथा दूग्ध पदार्थ </string>
-    <string name="Phase2Answer10d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase2Answer10d">घ) पशुपंक्षीजन्य स्रोत (माछा/मासु)</string>
     <string name="Phase2Answer10e"> ङ) अण्डा</string>
     <string name="Phase2Answer10f">च) पहेंलो फलपूmल र हरियो सागपात </string>
     <string name="Phase2Answer10g">  छ) अन्य फलपूmल तथा तरकारी</string>
     <string-array name="Phase2Answer11">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -398,10 +417,12 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase2Answer12">
+        <item>उत्तर छान्नुहोस </item>
         <item> जन्मेको २४ घण्टा आगाडि </item>
         <item>जन्मेको २४ घण्टा पछाडि</item>
     </string-array>
     <string-array name="Phase2Answer13">
+        <item>उत्तर छान्नुहोस </item>
         <item>क) आमाको दूध मात्र</item>
         <item>ख) गाइभैसी वा बाख्राको दूध</item>
         <item>ग) बट्टाको दूध</item>
@@ -409,6 +430,7 @@
         <item>ङ) सेरलेक</item>
     </string-array>
     <string-array name="Phase2Answer14">
+        <item>उत्तर छान्नुहोस </item>
         <item>०</item>
         <item>१ </item>
         <item>२</item>
@@ -419,10 +441,12 @@
         <item>७</item>
     </string-array>
     <string-array name="Phase2Answer15">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase2Answer16">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -432,6 +456,7 @@
         <item>७</item>
     </string-array>
     <string-array name="Phase2Answer17">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -441,15 +466,18 @@
         <item>७</item>
     </string-array>
     <string-array name="Phase2Answer18">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase2Answer19">
+        <item>उत्तर छान्नुहोस </item>
 
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase2Answer20">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -459,6 +487,7 @@
         <item>७</item>
     </string-array>
     <string-array name="Phase2Answer22">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -478,8 +507,8 @@
     <string name="Phase2Answer24a"> क) श्रीमान</string>
     <string name="Phase2Answer24b">ख) सासु</string>
     <string name="Phase2Answer24c">ग) ससुरा</string>
-    <string name="Phase2Answer24d">घ) जेठानी÷ देउरानी</string>
-    <string name="Phase2Answer24e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase2Answer24d">घ) जेठानी/ देउरानी</string>
+    <string name="Phase2Answer24e">ङ) नन्द/आमाजु</string>
     <string name="Phase2Answer24f">च) ठुला बालबालिकाहरु</string>
     <string name="Phase2Answer24g">छ) खासै सघाउनु हुन्न</string>
     <string name="Phase2Answer25a"> क) बच्चालाई खाना खुवाउन</string>
@@ -488,6 +517,7 @@
     <string name="Phase2Answer25d">घ) स्वास्थ्य संस्था लैजान</string>
     <string name="Phase2Answer25e">ङ) बच्चालाई खेलाउन</string>
     <string-array name="Phase2Answer26">
+        <item>उत्तर छान्नुहोस </item>
         <item>क) चर्पि</item>
         <item>ख) खेतबारी</item>
         <item>ग) खोल वा पोखरीको नजिक</item>
@@ -504,14 +534,17 @@
     <string name="Phase2Answer28d">घ) बच्चाको दिसा धोएपछि</string>
     <string name="Phase2Answer28e">ङ) फोहर चलाएपछि</string>
     <string-array name="Phase2Answer29">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase2Answer30">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase2Answer31">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -546,6 +579,7 @@
 
     <!--    Phase Three Answer  -->
     <string-array name="Phase3Answer1">
+        <item>उत्तर छान्नुहोस </item>
         <item>६ </item>
         <item>७ </item>
         <item>८ </item>
@@ -574,6 +608,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase3Answer2">
+        <item>उत्तर छान्नुहोस </item>
         <item>८ </item>
         <item>९ </item>
         <item>१०</item>
@@ -600,6 +635,7 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase3Answer3">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -615,7 +651,7 @@
     <string name="Phase3Answer4a">क) स्तनपान (आमाको दुधमात्र)</string>
     <string name="Phase3Answer4b">ख) गेडागुडी</string>
     <string name="Phase3Answer4c">ग) दूध तथा दूग्ध पदार्थ</string>
-    <string name="Phase3Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase3Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा/मासु)</string>
     <string name="Phase3Answer4e">ङ) अण्डा</string>
     <string name="Phase3Answer4f">च) पहेंलो फलपूmल र हरियो सागपात</string>
     <string name="Phase3Answer4g">छ) अन्य फलपूmल तथा तरकारी</string>
@@ -626,18 +662,22 @@
     <string name="Phase3Answer5c">ग) साझ  </string>
     <string name="Phase3Answer5d">घ) अबेर राती  </string>
     <string-array name="Phase3Answer6">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer7">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer8">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer9">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -652,10 +692,12 @@
     </string-array>
 
     <string-array name="Phase3Answer10">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer11">
+        <item>उत्तर छान्नुहोस </item>
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -669,6 +711,7 @@
         <item> ११</item>
     </string-array>
     <string-array name="Phase3Answer13">
+        <item>उत्तर छान्नुहोस </item>
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -687,8 +730,8 @@
     <string name="Phase3Answer15a"> क) श्रीमान</string>
     <string name="Phase3Answer15b">ख) सासु</string>
     <string name="Phase3Answer15c">ग) ससुरा</string>
-    <string name="Phase3Answer15d">घ) जेठानी÷ देउरानी</string>
-    <string name="Phase3Answer15e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase3Answer15d">घ) जेठानी/ देउरानी</string>
+    <string name="Phase3Answer15e">ङ) नन्द/आमाजु</string>
     <string name="Phase3Answer15f">च) ठुला बालबालिकाहरु</string>
     <string name="Phase3Answer15g">छ) खासै सघाउनु हुन्न</string>
 
@@ -699,6 +742,7 @@
     <string name="Phase3Answer16e">ङ) बच्चालाई खेलाउन</string>
 
     <string-array name="Phase3Answer17">
+        <item>उत्तर छान्नुहोस </item>
         <item>क) चर्पि</item>
         <item>ख) खेतबारी</item>
         <item>ग) खोल वा पोखरीको नजिक</item>
@@ -716,16 +760,21 @@
     <string name="Phase3Answer19c">ग) चर्पीको प्रयोग गरेपछि</string>
     <string name="Phase3Answer19d">घ) बच्चाको दिसा धोएपछि</string>
     <string name="Phase3Answer19e">ङ) फोहर चलाएपछि</string>
-
     <string-array name="Phase3Answer20">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer21">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase3Answer22">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -759,6 +808,8 @@
 
     <!--    Phase Four Answer  -->
     <string-array name="Phase4Answer1">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>६ </item>
         <item>७ </item>
         <item>८ </item>
@@ -787,6 +838,8 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase4Answer2">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>८ </item>
         <item>९ </item>
         <item>१०</item>
@@ -813,6 +866,8 @@
         <item>थाहा छैन </item>
     </string-array>
     <string-array name="Phase4Answer3">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -828,7 +883,7 @@
     <string name="Phase4Answer4a">क) स्तनपान (आमाको दुधमात्र)</string>
     <string name="Phase4Answer4b">ख) गेडागुडी</string>
     <string name="Phase4Answer4c">ग) दूध तथा दूग्ध पदार्थ</string>
-    <string name="Phase4Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा÷मासु)</string>
+    <string name="Phase4Answer4d">घ) पशुपंक्षीजन्य स्रोत (माछा/मासु)</string>
     <string name="Phase4Answer4e">ङ) अण्डा</string>
     <string name="Phase4Answer4f">च) पहेंलो फलपूmल र हरियो सागपात</string>
     <string name="Phase4Answer4g">छ) अन्य फलपूmल तथा तरकारी</string>
@@ -840,14 +895,20 @@
     <string name="Phase4Answer5d">घ) अबेर राती  </string>
 
     <string-array name="Phase4Answer6">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase4Answer7">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase4Answer8">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -862,6 +923,8 @@
     </string-array>
 
     <string-array name="Phase4Answer9">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -876,10 +939,14 @@
     </string-array>
 
     <string-array name="Phase4Answer10">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase4Answer11">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>१ </item>
         <item>२</item>
         <item>३</item>
@@ -895,6 +962,8 @@
 
 
     <string-array name="Phase4Answer13">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -914,8 +983,8 @@
     <string name="Phase4Answer15a"> क) श्रीमान</string>
     <string name="Phase4Answer15b">ख) सासु</string>
     <string name="Phase4Answer15c">ग) ससुरा</string>
-    <string name="Phase4Answer15d">घ) जेठानी÷ देउरानी</string>
-    <string name="Phase4Answer15e">ङ) नन्द÷आमाजु</string>
+    <string name="Phase4Answer15d">घ) जेठानी/ देउरानी</string>
+    <string name="Phase4Answer15e">ङ) नन्द/आमाजु</string>
     <string name="Phase4Answer15f">च) ठुला बालबालिकाहरु</string>
     <string name="Phase4Answer15g">छ) खासै सघाउनु हुन्न</string>
 
@@ -926,6 +995,8 @@
     <string name="Phase4Answer16e">ङ) बच्चालाई खेलाउन</string>
 
     <string-array name="Phase4Answer17">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>क) चर्पि</item>
         <item>ख) खेतबारी</item>
         <item>ग) खोल वा पोखरीको नजिक</item>
@@ -953,8 +1024,8 @@
     <string name="event1option3">जिल्ला पशु बिकास कार्यालय</string>
     <string name="event1option4">महिला तथा बालबालिका कार्यालय</string>
     <string name="event1option5">जिल्ला शिक्षा कार्यालय</string>
-    <string name="event1option6">जिल्ला स्वास्थ्य÷जनस्वास्थ्य कार्यालय</string>
-    <string name="event1option7">पत्रकार÷सञ्चारकर्मी</string>
+    <string name="event1option6">जिल्ला स्वास्थ्य/जनस्वास्थ्य कार्यालय</string>
+    <string name="event1option7">पत्रकार/सञ्चारकर्मी</string>
     <string name="event1option8">गैर सरकारी संस्था</string>
     <string name="event1option9">सुआहारा</string>
     <string name="event1option10">अन्य</string>
@@ -965,7 +1036,7 @@
     <string name="event2option3">कृषि कार्यालय </string>
     <string name="event2option4">पशु बिकास कार्यालय </string>
     <string name="event2option5">महिला तथा बालबालिका </string>
-    <string name="event2option6">शिक्षक÷विद्मालय </string>
+    <string name="event2option6">शिक्षक/विद्मालय </string>
     <string name="event2option7">स्वास्थ्य संस्था </string>
     <string name="event2option8">गैर सरकारी संस्था</string>
     <string name="event2option9">सुआहारा</string>
@@ -987,7 +1058,7 @@
     <string name="savedEvents">Saved Events</string>
     <string name="savedActivity">Saved Activity</string>
     <string name="savedBehavior">Saved Behavior</string>
-    <string name="errorMessage">कृपया आफ्नो  युसर र पास्वर्ड चेक गर्नुहोस ।</string>
+    <string name="errorMessage">कृपया आफ्नो  प्रयोगकर्ता र पासवर्ड चेक गर्नुहोस ।</string>
     <string name="error">एर्‍ओर</string>
     <string name="ok">ओके</string>
     <string name="blank">खाली</string>
@@ -997,14 +1068,20 @@
     <string name="no">हुँदैन</string>
 
     <string-array name="Phase4Answer20">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase4Answer21">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
     <string-array name="Phase4Answer22">
+        <item>उत्तर छान्नुहोस </item>
+
         <item>छ</item>
         <item>छैन </item>
     </string-array>
@@ -1014,11 +1091,11 @@
     <!--Events List -->
     <string-array name="event_list">
         <item>१. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </item>
-        <item>२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम÷अभिमुखिकरण </item>
+        <item>२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम/अभिमुखिकरण </item>
         <item>३. सञ्चारकर्मीसँग अन्तरक्रिया </item>
         <item>४. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </item>
-        <item>५. गाउँपालिकास्तरिय तालिम÷अभिमुखिकरण </item>
-        <item>६. महिला स्वास्थ्य स्वंयम सेविका तालिम÷अभिमुखिकरण </item>
+        <item>५. गाउँपालिकास्तरिय तालिम/अभिमुखिकरण </item>
+        <item>६. महिला स्वास्थ्य स्वंयम सेविका तालिम/अभिमुखिकरण </item>
         <item>७. समुदायस्तरिय बैठक </item>
         <item>८. सडक नाटक </item>
         <item>९. घरभेट </item>
@@ -1028,16 +1105,54 @@
 
     <!--Events List -->
     <string name="event1">१. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </string>
-    <string name="event2">२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम÷अभिमुखिकरण </string>
+    <string name="event2">२. जिल्लास्तरिय प्रशिक्षक प्रशिक्षण तालिम/अभिमुखिकरण </string>
     <string name="event3">३. सञ्चारकर्मीसँग अन्तरक्रिया </string>
     <string name="event4">४. जिल्ला पोषण तथा खाध सुरक्षा समन्वय समिति बैठक </string>
-    <string name="event5">५. गाउँपालिकास्तरिय तालिम÷अभिमुखिकरण </string>
-    <string name="event6">६. महिला स्वास्थ्य स्वंयम सेविका तालिम÷अभिमुखिकरण </string>
+    <string name="event5">५. गाउँपालिकास्तरिय तालिम/अभिमुखिकरण </string>
+    <string name="event6">६. महिला स्वास्थ्य स्वंयम सेविका तालिम/अभिमुखिकरण </string>
     <string name="event7">७. समुदायस्तरिय बैठक </string>
     <string name="event8">८. सडक नाटक </string>
     <string name="event9">९. घरभेट </string>
     <string name="event10">१०. अन्य चेतनामुलक कार्यक्रम </string>
+    <string name="event11">११. फेल्कस् स्थापना</string>
+    <string name="event12">१२. शैक्षिक सामग्रीहरुको वितरण</string>
     <string name="choose">Choose</string>
+    <string name="sankhya">Sankhya</string>
 
+    <!--Event 12 products-->
+    <string name="product1">फ्लायर १</string>
+    <string name="product2">फ्लायर २</string>
+    <string name="product3">फ्लायर ३</string>
+    <string name="product4">फ्लायर ४</string>
+    <string name="product5">फ्लायर ५</string>
+    <string name="product6">बेबी बिब्स्	</string>
+    <string name="product7">रुमाल</string>
+    <string name="product8">३ डि पोस्टर</string>
+    <string name="product">Product</string>
+    <string name="ward">Ward</string>
+    <string name="village">गाँउ/टोल</string>
+    <string name="chairedby">Meeting Chaired By</string>
+    <string name="add">रेकोर्ड थप्नुहोस </string>
+    <string name="signoutMessage">लग आउट गर्न चाहानुहुन्छ  ?</string>
+    <string name="chooseDate">मिती छान्नुहोस</string>
+
+
+    <string-array name="allEvents">
+        <item>र्याली</item>
+        <item>मेला</item>
+        <item>अन्य</item>
+    </string-array>
+
+    <string-array name="allTopic">
+        <item>सुनौला १००० दिन</item>
+        <item>गर्भवती स्याहार</item>
+        <item>प्रसूती स्याहार</item>
+        <item>सुत्केरी तथा नवजात शिशु स्याहार</item>
+        <item>पूर्ण स्तनपान</item>
+        <item>शिशु तथा बाल्यकालिन पोषण</item>
+        <item>वृद्धि अनुगमन तथा बाल उत्प्रेरणा</item>
+        <item>खोप तथा वृद्धि अनुगमन</item>
+        <item>धन्यवाद् तथा प्रंशशा–पत्र वितरण</item>
+    </string-array>
 
 </resources>

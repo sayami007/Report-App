@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/pickDateEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/chooseDate"/>
+
+
+    <Button
+        android:id="@+id/pickStartDateEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Choose date" />
+
+
+    <Button
+        android:id="@+id/pickEndDateEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Choose date" />
+
+    <EditText
+        android:id="@+id/maleEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/male" />
+
+
+    <EditText
+        android:id="@+id/femaleEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/female" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participants name"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Participants address"/>
+
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:text="@string/save" />
+
 
 </LinearLayout>

@@ -12,4 +12,6 @@ import mic.unlimited.com.reportingapp.R;
 
 @EActivity(R.layout.activity_phase1_answer)
 public class Phase1A extends AppCompatActivity {
+
+
 }

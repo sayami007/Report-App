@@ -35,7 +35,7 @@
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/name"
+                android:hint="@string/user"
                 android:inputType="text"
                 android:textColor="@color/black" />
 
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="100"
-            android:background="#7cd16b"
+            android:background="@color/buttonColor"
             android:text="@string/login"
             android:textColor="#ffffff" />
 

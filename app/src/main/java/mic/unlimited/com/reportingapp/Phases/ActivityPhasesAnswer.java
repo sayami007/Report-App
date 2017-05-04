@@ -16,26 +16,26 @@ import mic.unlimited.com.reportingapp.R;
 public class ActivityPhasesAnswer extends AppCompatActivity {
     @Click(R.id.phase1Question)
     void phase1() {
-        Phase1A_.intent(this).start();
+        Phase1UserList_.intent(this).start();
     }
 
     @Click(R.id.phase2Question)
     void phase2() {
-        Phase2A_.intent(this).start();
+        Phase2UserList_.intent(this).start();
 
     }
 
 
     @Click(R.id.phase3Question)
     void phase3() {
-        Phase3A_.intent(this).start();
+        Phase3UserList_.intent(this).start();
 
     }
 
 
     @Click(R.id.phase4Question)
     void phase4() {
-        Phase4A_.intent(this).start();
+        Phase4UserList_.intent(this).start();
 
     }
 
