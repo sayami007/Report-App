@@ -9,9 +9,10 @@
     <string name="age">उमेर</string>
 
     <!--    Login Page Localization  -->
-    <string name="user">प्रयोगकर्ता </string>
+    <string name="user">प्रयोगकर्ताहरु </string>
+    <string name="use">प्रयोगकर्ता</string>
     <string name="password">पासवर्ड </string>
-    <string name="login">लगिन</string>
+    <string name="login">लगिन गर्नुहोस </string>
 
     <!--Numbers -->
     <string name="one">1</string>
@@ -1015,7 +1016,7 @@
     <string name="Phase4Answer19d">घ) बच्चाको दिसा धोएपछि</string>
     <string name="Phase4Answer19e">ङ) फोहर चलाएपछि</string>
     <string name="selectevents">एवेन्त छानुहोस: </string>
-    <string name="datePick">मिती छानुहोस</string>
+    <string name="datePick">मिति छानुहोस</string>
 
 
     <!--Events One List -->
@@ -1051,7 +1052,7 @@
     <string name="totalMedia">Total Media</string>
     <string name="totalParticipants">Total Participants</string>
     <string name="presentName">उपस्थिती</string>
-    <string name="contact">सम्पर्क</string>
+    <string name="contact">सम्पर्क नम्बर </string>
     <string name="address">ठेगाना</string>
     <string name="aabalokan">अवलोकन गर्ने </string>
     <string name="saved">Saved</string>
@@ -1063,7 +1064,7 @@
     <string name="ok">ओके</string>
     <string name="blank">खाली</string>
     <string name="quit">बन्द</string>
-    <string name="quitMessage">एप बन्द गर्न चाहनुहुन्छ ?</string>
+    <string name="quitMessage">के तपाईं एप बन्द गर्न चाहनुहुन्छ ?</string>
     <string name="yes">हुन्छ</string>
     <string name="no">हुँदैन</string>
 
@@ -1133,8 +1134,9 @@
     <string name="village">गाँउ/टोल</string>
     <string name="chairedby">Meeting Chaired By</string>
     <string name="add">रेकोर्ड थप्नुहोस </string>
-    <string name="signoutMessage">लग आउट गर्न चाहानुहुन्छ  ?</string>
-    <string name="chooseDate">मिती छान्नुहोस</string>
+    <string name="signoutMessage">के तपाईं लगआउट गर्न चाहनुहुन्छ ?</string>
+    <string name="chooseDate">मिति छान्नुहोस</string>
+    <string name="district">स्वास्थ चौकी</string>
 
 
     <string-array name="allEvents">

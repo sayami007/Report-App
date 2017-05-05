@@ -87,11 +87,27 @@
         </LinearLayout>
 
 
-        <Spinner
-            android:id="@+id/healthPostPhase1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/answerColor" />
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/district" />
+
+            <Spinner
+                android:id="@+id/healthPostPhase1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/answerColor" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

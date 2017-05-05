@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:icon="@drawable/out"
-        app:showAsAction="withText"
+        app:showAsAction="collapseActionView|withText"
         android:id="@+id/signOut"
         android:title="@string/logout" />
 </menu>
