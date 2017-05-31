@@ -31,11 +31,12 @@ public class SavedBehavior extends AppCompatActivity {
 
     @AfterViews
     void run() {
-
         String[] names = {"१. सिता श्रेष्ठ ", "२. गिता पुन", "३. रिता श्रेष्ठ "};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,names);
         behaviorUsers.setAdapter(adapter);
     }
+
+
 
 
 }

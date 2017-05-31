@@ -1137,6 +1137,10 @@
     <string name="signoutMessage">के तपाईं लगआउट गर्न चाहनुहुन्छ ?</string>
     <string name="chooseDate">मिति छान्नुहोस</string>
     <string name="district">स्वास्थ चौकी</string>
+    <string name="addMember">Add Member</string>
+    <string name="addTopic">Add Topic</string>
+    <string name="startDate">StartDate</string>
+    <string name="endDate">End Date</string>
 
 
     <string-array name="allEvents">

@@ -41,32 +41,18 @@
         android:layout_height="wrap_content"
         android:hint="@string/female" />
 
-    <TableLayout
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/la"></LinearLayout>
 
-        <TableRow>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Participants name"
-                android:gravity="center"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Participants address"/>
-
-        </TableRow>
-
-        <TableRow>
-
-        </TableRow>
-    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addMember"
+        android:id="@+id/inc"/>
 
 
     <Button
@@ -74,7 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/buttonColor"
-        android:text="@string/save" />
+        android:text="@string/save"
+        android:id="@+id/saveing"/>
 
 
 </LinearLayout>

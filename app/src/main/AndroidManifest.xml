@@ -64,6 +64,8 @@
         <activity android:name=".Phases.Answer.Phase2UserList_"/>
         <activity android:name=".Phases.Answer.Phase3UserList_"/>
         <activity android:name=".Phases.Answer.Phase4UserList_"/>
+
+        <activity android:name=".Behavior.BehaviorPhase1_"/>
     </application>
 
 </manifest>
