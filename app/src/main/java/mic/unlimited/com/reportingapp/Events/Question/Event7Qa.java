@@ -16,9 +16,4 @@ import mic.unlimited.com.reportingapp.R;
 
 @EActivity(R.layout.activity_q_event7a)
 public class Event7Qa extends AppCompatActivity {
-
-    @Click(R.id.clc)
-    void fun() {
-        Log.v("sdf", "SDf");
-    }
 }
