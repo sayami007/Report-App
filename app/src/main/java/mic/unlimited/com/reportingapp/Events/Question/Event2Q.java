@@ -22,8 +22,9 @@ import mic.unlimited.com.reportingapp.R;
 public class Event2Q extends AppCompatActivity{
     public int count = 0;
     EditText text;
+
     @Click(R.id.inc)
-    void makeIncrease(){
+    void makeMember(){
         LinearLayout la =(LinearLayout)findViewById(R.id.la);
         text = new EditText(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {

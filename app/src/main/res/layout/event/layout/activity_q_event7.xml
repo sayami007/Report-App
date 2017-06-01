@@ -2,19 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/button"
+    android:padding="20sp"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hello" />
+        android:text="@string/event7"
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/clc"
+    <Spinner
+        android:id="@+id/spinnerEvent7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click me" />
+        android:entries="@array/event7Q" />
 
-
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/replace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

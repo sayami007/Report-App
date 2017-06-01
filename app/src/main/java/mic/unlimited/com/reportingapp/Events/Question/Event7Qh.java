@@ -7,11 +7,11 @@ import org.androidannotations.annotations.EActivity;
 import mic.unlimited.com.reportingapp.R;
 
 /**
- * Created by Bibesh on 4/21/17.
+ * Created by Bibesh on 5/31/17.
  */
 
 
-@EActivity(R.layout.activity_q_event6)
-public class Event6Q extends AppCompatActivity {
 
+@EActivity(R.layout.activity_q_event7h)
+public class Event7Qh extends AppCompatActivity {
 }

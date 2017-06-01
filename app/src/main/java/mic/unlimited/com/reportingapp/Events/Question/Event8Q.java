@@ -13,4 +13,5 @@ import mic.unlimited.com.reportingapp.R;
 
 @EActivity(R.layout.activity_q_event8)
 public class Event8Q extends AppCompatActivity {
+
 }

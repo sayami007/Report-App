@@ -1161,4 +1161,14 @@
         <item>धन्यवाद् तथा प्रंशशा–पत्र वितरण</item>
     </string-array>
 
+    <string-array name="event7Q">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+    </string-array>
 </resources>
