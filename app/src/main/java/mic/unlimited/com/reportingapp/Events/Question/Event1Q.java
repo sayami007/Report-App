@@ -43,6 +43,11 @@ public class Event1Q extends AppCompatActivity {
             }
         });
         dateTimePicker.show();
+    }
 
+
+    @Click(R.id.saveEvent1)
+    void saveEvent(){
+        Toast.makeText(this,"Saved",Toast.LENGTH_LONG).show();
     }
 }
