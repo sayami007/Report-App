@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/menu/plus.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/menu/plus.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/menu/main_page_menu.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/menu/main_page_menu.xml"
+    }
+]

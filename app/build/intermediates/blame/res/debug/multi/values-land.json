@@ -1,0 +1,199 @@
+[
+    {
+        "outputFile": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 69,
+                    "endOffset": 120
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 69,
+                        "endOffset": 120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 125,
+                    "endColumn": 63,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 125,
+                        "endColumn": 63,
+                        "endOffset": 184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 70,
+                    "endOffset": 255
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 70,
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 260,
+                    "endColumn": 67,
+                    "endOffset": 323
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 260,
+                        "endColumn": 67,
+                        "endOffset": 323
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 328,
+                    "endColumn": 46,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 46,
+                        "endOffset": 250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 375,
+                    "endColumn": 48,
+                    "endOffset": 419
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 256,
+                        "endColumn": 48,
+                        "endOffset": 300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 424,
+                    "endColumn": 54,
+                    "endOffset": 474
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 306,
+                        "endColumn": 54,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 479,
+                    "endColumn": 55,
+                    "endOffset": 530
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 362,
+                        "endColumn": 55,
+                        "endOffset": 413
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 535,
+                    "endColumn": 54,
+                    "endOffset": 585
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-land/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 419,
+                        "endColumn": 54,
+                        "endOffset": 469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 590,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 767
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 232
+                    }
+                }
+            }
+        ]
+    }
+]

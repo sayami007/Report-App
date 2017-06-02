@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

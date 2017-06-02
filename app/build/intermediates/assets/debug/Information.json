@@ -1,0 +1,718 @@
+[
+  {
+    "district": [
+      {
+        "district_id": "1",
+        "district_name": "Jumla",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Barna Dhoj Shahi",
+            "supervisor_uid": "JUM_BARNA",
+            "supervisor_pwd": "JUM_BARNA",
+            "vdc": [
+              {
+                "vdc_name": "Kudari ",
+                "vdc_post": "Kudari HF"
+              },
+              {
+                "vdc_name": "Tatopani",
+                "vdc_post": "Tatopani HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Muna Prasad Devkota",
+            "supervisor_uid": "JUM_MUNA",
+            "supervisor_pwd": "JUM_MUNA",
+            "vdc": [
+              {
+                "vdc_name": "Mahabhaipatharkhola  ",
+                "vdc_post": "Mahabhaipatharkhola  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Kamala Sejuwal",
+            "supervisor_uid": "JUM_KAMALA",
+            "supervisor_pwd": "JUM_KAMALA",
+            "vdc": [
+              {
+                "vdc_name": "Kalikasetu   ",
+                "vdc_post": "Kalikasetu   HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Parimal Bohara",
+            "supervisor_uid": "JUM_PARIMAL",
+            "supervisor_pwd": "JUM_PARIMAL",
+            "vdc": [
+              {
+                "vdc_name": "Chhumchaur  ",
+                "vdc_post": "Chhumchaur  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Goma Mahat",
+            "supervisor_uid": "JUM_GOMA",
+            "supervisor_pwd": "JUM_GOMA",
+            "vdc": [
+              {
+                "vdc_name": "Gargangkot  ",
+                "vdc_post": "Gargangkot  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "6",
+            "supervisor_name": "Sandip Raj Shahi",
+            "supervisor_uid": "JUM_SANDIP",
+            "supervisor_pwd": "JUM_SANDIP",
+            "vdc": [
+              {
+                "vdc_name": "Talihum   ",
+                "vdc_post": "Talihum   HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "7",
+            "supervisor_name": "Nirmala Shahi",
+            "supervisor_uid": "JUM_NIRMALA",
+            "supervisor_pwd": "JUM_NIRMALA",
+            "vdc": [
+              {
+                "vdc_name": "Badki  ",
+                "vdc_post": "Badki  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "8",
+            "supervisor_name": "Kulendra Shahi",
+            "supervisor_uid": "JUM_KULENDRA",
+            "supervisor_pwd": "JUM_KULENDRA",
+            "vdc": [
+              {
+                "vdc_name": "Godemahadev  ",
+                "vdc_post": "Godemahadev  HF"
+              },
+              {
+                "vdc_name": "Raralihi  ",
+                "vdc_post": "Raralihi  HF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "district_id": "2",
+        "district_name": "Parsa",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Dipendra Tiwari",
+            "supervisor_uid": "PAR_DIPENDRA",
+            "supervisor_pwd": "PAR_DIPENDRA",
+            "vdc": [
+              {
+                "vdc_name": "Dhore ",
+                "vdc_post": "Dhore HF"
+              },
+              {
+                "vdc_name": "Gamahariya",
+                "vdc_post": "Gamahariya HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Sandhaya Kumari",
+            "supervisor_uid": "PAR_SANDHYA",
+            "supervisor_pwd": "PAR_SANDHYA",
+            "vdc": [
+              {
+                "vdc_name": "Madhubanmathaul ",
+                "vdc_post": "Madhubanmathaul HF"
+              },
+              {
+                "vdc_name": "Bagwana",
+                "vdc_post": "Bagwana HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Rabina Chaurasiya",
+            "supervisor_uid": "PAR_RABINA",
+            "supervisor_pwd": "PAR_RABINA",
+            "vdc": [
+              {
+                "vdc_name": "Jhauwaguthi ",
+                "vdc_post": "Jhauwaguthi HF"
+              },
+              {
+                "vdc_name": "Amarpatti",
+                "vdc_post": "Amarpatti HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Ajit Kumar Chaurasiya",
+            "supervisor_uid": "PAR_AJIT",
+            "supervisor_pwd": "PAR_AJIT",
+            "vdc": [
+              {
+                "vdc_name": "Belwaprasauni ",
+                "vdc_post": "Belwaprasauni HF"
+              },
+              {
+                "vdc_name": "Basidilawa",
+                "vdc_post": "Basidilawa HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Ashok Kumar Sinha",
+            "supervisor_uid": "PAR_ASHOK",
+            "supervisor_pwd": "PAR_ASHOK",
+            "vdc": [
+              {
+                "vdc_name": "Harpur ",
+                "vdc_post": "Harpur HF"
+              },
+              {
+                "vdc_name": "Panchrukhi",
+                "vdc_post": "Panchrukhi HF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "district_id": "3",
+        "district_name": "Kapilvastu",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Prince Kumar Srivastav",
+            "supervisor_uid": "KAP_PRINCE",
+            "supervisor_pwd": "KAP_PRINCE",
+            "vdc": [
+              {
+                "vdc_name": "Hathihawa ",
+                "vdc_post": "Hathihawa HF"
+              },
+              {
+                "vdc_name": "Baskhor",
+                "vdc_post": "Baskhor HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Bijay Kumar Kurmi",
+            "supervisor_uid": "KAP_BIJAY",
+            "supervisor_pwd": "KAP_BIJAY",
+            "vdc": [
+              {
+                "vdc_name": "Bhagwanpur ",
+                "vdc_post": "Bhagwanpur HF"
+              },
+              {
+                "vdc_name": "Ganeshpur",
+                "vdc_post": "Ganeshpur HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Krishana Kumar Yadav",
+            "supervisor_uid": "KAP_KRISHNA",
+            "supervisor_pwd": "KAP_KRISHNA",
+            "vdc": [
+              {
+                "vdc_name": "Sisawa ",
+                "vdc_post": "Sisawa HF"
+              },
+              {
+                "vdc_name": "Kajrahawa",
+                "vdc_post": "Kajrahawa HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Tulsa Aryal",
+            "supervisor_uid": "KAP_TULSA",
+            "supervisor_pwd": "KAP_TULSA",
+            "vdc": [
+              {
+                "vdc_name": "Rajpur ",
+                "vdc_post": "Rajpur HF"
+              },
+              {
+                "vdc_name": "Mahuwa",
+                "vdc_post": "Mahuwa HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Parbati Acharya",
+            "supervisor_uid": "KAP_PARBATI",
+            "supervisor_pwd": "KAP_PARBATI",
+            "vdc": [
+              {
+                "vdc_name": "Sauraha ",
+                "vdc_post": "Sauraha HF"
+              },
+              {
+                "vdc_name": "Singhkhor",
+                "vdc_post": "Singhkhor HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "6",
+            "supervisor_name": "Babita K.C.",
+            "supervisor_uid": "KAP_BABITA",
+            "supervisor_pwd": "KAP_BABITA",
+            "vdc": [
+              {
+                "vdc_name": "Patherdaiya ",
+                "vdc_post": "Patherdaiya HF"
+              },
+              {
+                "vdc_name": "Khurhuriya",
+                "vdc_post": "Khurhuriya HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "7",
+            "supervisor_name": "Lal Kumari Dangi",
+            "supervisor_uid": "KAP_LAL",
+            "supervisor_pwd": "KAP_LAL",
+            "vdc": [
+              {
+                "vdc_name": "Gagauli ",
+                "vdc_post": "Gagauli HF"
+              },
+              {
+                "vdc_name": "Sivgadhi",
+                "vdc_post": "Sivgadhi HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "8",
+            "supervisor_name": "Om Prakash Gupta",
+            "supervisor_uid": "KAP_OM",
+            "supervisor_pwd": "KAP_OM",
+            "vdc": [
+              {
+                "vdc_name": "Manpur ",
+                "vdc_post": "Manpur HF"
+              },
+              {
+                "vdc_name": "Udayapur",
+                "vdc_post": "Udayapur HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "9",
+            "supervisor_name": "Laxmi Paudel (Ghimire)",
+            "supervisor_uid": "KAP_LAXMI",
+            "supervisor_pwd": "KAP_LAXMI",
+            "vdc": [
+              {
+                "vdc_name": "Patana ",
+                "vdc_post": "Patana HF"
+              },
+              {
+                "vdc_name": "Jahadi",
+                "vdc_post": "Jahadi HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "10",
+            "supervisor_name": "Ashis Pandey",
+            "supervisor_uid": "KAP_ASHIS",
+            "supervisor_pwd": "KAP_ASHIS",
+            "vdc": [
+              {
+                "vdc_name": "Labani ",
+                "vdc_post": "Labani HF"
+              },
+              {
+                "vdc_name": "Patariya",
+                "vdc_post": "Patariya HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "11",
+            "supervisor_name": "Bharat Paudel",
+            "supervisor_uid": "KAP_BHARAT",
+            "supervisor_pwd": "KAP_BHARAT",
+            "vdc": [
+              {
+                "vdc_name": "Budhi ",
+                "vdc_post": "Budhi HF"
+              },
+              {
+                "vdc_name": "Dubiya",
+                "vdc_post": "Dubiya HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "12",
+            "supervisor_name": "Sunita Singh Paudel",
+            "supervisor_uid": "KAP_SUNITA",
+            "supervisor_pwd": "KAP_SUNITA",
+            "vdc": [
+              {
+                "vdc_name": "Barkulpur ",
+                "vdc_post": "Barkulpur HF"
+              },
+              {
+                "vdc_name": "Hariharpur",
+                "vdc_post": "Hariharpur HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "13",
+            "supervisor_name": "Basanta Paudel",
+            "supervisor_uid": "KAP_BASANTA",
+            "supervisor_pwd": "KAP_BASANTA",
+            "vdc": [
+              {
+                "vdc_name": "Thuniya ",
+                "vdc_post": "Thuniya HF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "district_id": "4",
+        "district_name": "Bajura",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Kabita Kumari Budha",
+            "supervisor_uid": "BAJ_KABITA",
+            "supervisor_pwd": "BAJ_KABITA",
+            "vdc": [
+              {
+                "vdc_name": "Jayabageshori ",
+                "vdc_post": "Jayabageshori HF"
+              },
+              {
+                "vdc_name": "Barabis",
+                "vdc_post": "Barabis HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Bhubaneshori Joshi",
+            "supervisor_uid": "BAJ_BHUBANESHWORI",
+            "supervisor_pwd": "BAJ_BHUBANESHWORI",
+            "vdc": [
+              {
+                "vdc_name": "Kuldevmandu ",
+                "vdc_post": "Kuldevmandu HF"
+              },
+              {
+                "vdc_name": "Dogadi",
+                "vdc_post": "Dogadi HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Malati Thapa",
+            "supervisor_uid": "BAJ_MALATI",
+            "supervisor_pwd": "BAJ_MALATI",
+            "vdc": [
+              {
+                "vdc_name": "Budhiganga ",
+                "vdc_post": "Budhiganga HF"
+              },
+              {
+                "vdc_name": "Kailashmandu",
+                "vdc_post": "Kailashmandu HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Dhurba Raj Joshi",
+            "supervisor_uid": "BAJ_DHURBA",
+            "supervisor_pwd": "BAJ_DHURBA",
+            "vdc": [
+              {
+                "vdc_name": "Martadi ",
+                "vdc_post": "Martadi HF"
+              },
+              {
+                "vdc_name": "Dahakot",
+                "vdc_post": "Dahakot HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Shriya Neupane",
+            "supervisor_uid": "BAJ_SHRIYA",
+            "supervisor_pwd": "BAJ_SHRIYA",
+            "vdc": [
+              {
+                "vdc_name": "Kolti ",
+                "vdc_post": "Kolti HF"
+              },
+              {
+                "vdc_name": "Pandusain",
+                "vdc_post": "Pandusain HF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "district_id": "5",
+        "district_name": "Panchthar",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Bishnu Maya Tamang",
+            "supervisor_uid": "PAN_BISHNU",
+            "supervisor_pwd": "PAN_BISHNU",
+            "vdc": [
+              {
+                "vdc_name": "Aangna ",
+                "vdc_post": "Aangna HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Pramila Tamang",
+            "supervisor_uid": "PAN_PRAMILA",
+            "supervisor_pwd": "PAN_PRAMILA",
+            "vdc": [
+              {
+                "vdc_name": "Amarpur  ",
+                "vdc_post": "Amarpur  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Sumitra Tamang",
+            "supervisor_uid": "PAN_SUMITRA",
+            "supervisor_pwd": "PAN_SUMITRA",
+            "vdc": [
+              {
+                "vdc_name": "Embung  ",
+                "vdc_post": "Embung  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Shushma Khadka",
+            "supervisor_uid": "PAN_SHUSHMA",
+            "supervisor_pwd": "PAN_SHUSHMA",
+            "vdc": [
+              {
+                "vdc_name": "Hangum  ",
+                "vdc_post": "Hangum  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Kumari Gurung",
+            "supervisor_uid": "PAN_KUMARI",
+            "supervisor_pwd": "PAN_KUMARI",
+            "vdc": [
+              {
+                "vdc_name": "Lungrupa  ",
+                "vdc_post": "Lungrupa  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "6",
+            "supervisor_name": "Junita Limbu",
+            "supervisor_uid": "PAN_JUNITA",
+            "supervisor_pwd": "PAN_JUNITA",
+            "vdc": [
+              {
+                "vdc_name": "Memeng  ",
+                "vdc_post": "Memeng  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "7",
+            "supervisor_name": "Bishnu Maya Tamang",
+            "supervisor_uid": "PAN_BISHNU",
+            "supervisor_pwd": "PAN_BISHNU",
+            "vdc": [
+              {
+                "vdc_name": "Prangbung  ",
+                "vdc_post": "Prangbung  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "8",
+            "supervisor_name": "Chandrakala Rai",
+            "supervisor_uid": "PAN_CHANDRAKALA",
+            "supervisor_pwd": "PAN_CHANDRAKALA",
+            "vdc": [
+              {
+                "vdc_name": "Sarangdanda  ",
+                "vdc_post": "Sarangdanda  HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "9",
+            "supervisor_name": "Karun Bohora",
+            "supervisor_uid": "PAN_KARUN",
+            "supervisor_pwd": "PAN_KARUN",
+            "vdc": [
+              {
+                "vdc_name": "Syabrumba  ",
+                "vdc_post": "Syabrumba  HF"
+              },
+              {
+                "vdc_name": "Yasok  ",
+                "vdc_post": "Yasok  HF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "district_id": "6",
+        "district_name": "Achham",
+        "supervision": [
+          {
+            "supervisor_id": "1",
+            "supervisor_name": "Kabita Bayak",
+            "supervisor_uid": "ACH_KABITA",
+            "supervisor_pwd": "ACH_KABITA",
+            "vdc": [
+              {
+                "vdc_name": "Bhairabsthan ",
+                "vdc_post": "Bhairabsthan HF"
+              },
+              {
+                "vdc_name": "Turmkhand",
+                "vdc_post": "Turmkhand HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "2",
+            "supervisor_name": "Nirmala Kumari Shah",
+            "supervisor_uid": "ACH_NIRMALA",
+            "supervisor_pwd": "ACH_NIRMALA",
+            "vdc": [
+              {
+                "vdc_name": "Siudi ",
+                "vdc_post": "Siudi HF"
+              },
+              {
+                "vdc_name": "Soukat",
+                "vdc_post": "Soukat HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "3",
+            "supervisor_name": "Alija Kumari Shahi",
+            "supervisor_uid": "ACH_ALIJA",
+            "supervisor_pwd": "ACH_ALIJA",
+            "vdc": [
+              {
+                "vdc_name": "Ramarosan ",
+                "vdc_post": "Kalekanda HF"
+              },
+              {
+                "vdc_name": "Binayak",
+                "vdc_post": "Warla HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "4",
+            "supervisor_name": "Bimal Kunwar",
+            "supervisor_uid": "ACH_BIMAL",
+            "supervisor_pwd": "ACH_BIMAL",
+            "vdc": [
+              {
+                "vdc_name": "Babala ",
+                "vdc_post": "Babala HF"
+              },
+              {
+                "vdc_name": "Devisthan",
+                "vdc_post": "Devisthan HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Bhajan Shahi",
+            "supervisor_uid": "ACH_BHAJAN",
+            "supervisor_pwd": "ACH_BHAJAN",
+            "vdc": [
+              {
+                "vdc_name": "Kalekanda ",
+                "vdc_post": "Kalekanda HF"
+              },
+              {
+                "vdc_name": "Warla",
+                "vdc_post": "Warla HF"
+              }
+            ]
+          },
+          {
+            "supervisor_id": "5",
+            "supervisor_name": "Bhajan Shahi",
+            "supervisor_uid": "1",
+            "supervisor_pwd": "1",
+            "vdc": [
+              {
+                "vdc_name": "Kalekanda ",
+                "vdc_post": "Kalekanda HF"
+              },
+              {
+                "vdc_name": "Warla",
+                "vdc_post": "Warla HF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

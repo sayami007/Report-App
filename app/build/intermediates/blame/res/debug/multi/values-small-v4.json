@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 67,
+                    "endOffset": 118
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-small/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 209,
+                        "endColumn": 67,
+                        "endOffset": 272
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 123,
+                    "endColumn": 66,
+                    "endOffset": 185
+                },
+                "from": {
+                    "file": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/values-small/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 278,
+                        "endColumn": 66,
+                        "endOffset": 340
+                    }
+                }
+            }
+        ]
+    }
+]

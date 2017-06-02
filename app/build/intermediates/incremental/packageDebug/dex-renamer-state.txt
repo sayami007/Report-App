@@ -1,0 +1,7 @@
+#Fri Jun 02 11:52:00 NPT 2017
+base.0=/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5754f1184b4cc91e12c002038c5982190b5f4f6e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_af6e3bbb12bb12491381587c7fcf5f34de887a49/classes.dex
+base.1=/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_af6e3bbb12bb12491381587c7fcf5f34de887a49
+file.0=/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5754f1184b4cc91e12c002038c5982190b5f4f6e/classes.dex

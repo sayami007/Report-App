@@ -1,0 +1,458 @@
+[
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7e.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7e.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/savedbehavior.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/behavior/layout/savedbehavior.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phases.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_phases.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event9.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event9.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/date_picker_header_view.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/date_picker_header_view.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7d.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7d.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event8.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event8.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7f.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7f.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/date_picker_done_button.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/date_picker_done_button.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/phase_user.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/phase_user.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7c.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7c.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event6.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event6.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event11.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event11.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/date_picker_dialog.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/date_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/date_picker_selected_date.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/date_picker_selected_date.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event7.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event7.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase4_answer.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase4_answer.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/main/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase3_answer.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase3_answer.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7h.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7h.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase1_answer.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase1_answer.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event1.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event1.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase2_answer.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase2_answer.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event2.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event2.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/datetime_pick.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/main/layout/datetime_pick.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event10.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event10.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event8.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event8.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/date_picker_view_animator.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/date_picker_view_animator.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event4.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event4.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase1.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase1.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event1.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event1.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase4.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase4.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/behavior_phase2.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/behavior/layout/behavior_phase2.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event11.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event11.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7b.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7b.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event4.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event4.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_events.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_events.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase3.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase3.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event2.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event2.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/behavior_phase1.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/behavior/layout/behavior_phase1.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event5.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event5.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/time_picker_dialog.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/time_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_splashscreen.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/main/layout/activity_splashscreen.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_main_page.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/main/layout/activity_main_page.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/time_header_label.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/time_header_label.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event10.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event10.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/behavior_phase3.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/behavior/layout/behavior_phase3.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event3.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event3.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_phase2.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/phase/layout/activity_phase2.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/year_label_text_view.xml",
+        "source": "/Users/Bibesh/.android/build-cache/ba971470bbcd7fd3e3909866ff31c0f68ddfaa21/output/res/layout/year_label_text_view.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/behavior_phase4.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/behavior/layout/behavior_phase4.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7a.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7a.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event12.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event12.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event5.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event5.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_q_event7g.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_q_event7g.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/Bibesh/.android/build-cache/9b41918c614a453a51579796128acf74e34743fa/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event12.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event12.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event9.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event9.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event6.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event6.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/activity_a_event3.xml",
+        "source": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/src/main/res/layout/event/layout/activity_a_event3.xml"
+    },
+    {
+        "merged": "/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/Bibesh/.android/build-cache/c2d27e9bfd0b8ed6ce250f628add3f4c10d1ac61/output/res/layout/notification_template_media.xml"
+    }
+]
