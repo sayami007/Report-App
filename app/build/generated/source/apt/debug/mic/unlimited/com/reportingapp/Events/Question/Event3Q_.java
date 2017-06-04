@@ -16,6 +16,7 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
@@ -74,9 +75,21 @@ public final class Event3Q_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        this.selectedDateEvent3 = ((TextView) hasViews.findViewById(R.id.selectedDateEvent3));
+        View view_pickDate = hasViews.findViewById(R.id.pickDate);
         View view_addTopic = hasViews.findViewById(R.id.addTopic);
         View view_saveEvent3 = hasViews.findViewById(R.id.saveEvent3);
 
+        if (view_pickDate!= null) {
+            view_pickDate.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event3Q_.this.openDateTimePicker();
+                }
+            }
+            );
+        }
         if (view_addTopic!= null) {
             view_addTopic.setOnClickListener(new OnClickListener() {
 

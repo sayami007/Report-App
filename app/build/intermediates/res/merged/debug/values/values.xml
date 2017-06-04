@@ -1588,6 +1588,7 @@
     <string name="Phase4Question7">७)   तपाईको बच्चाको तौल जाँच गराउनु भएको छ ?</string>
     <string name="Phase4Question8">८)  यदि छ भने, तपाईको बच्चाको तौल पछिल्लो पटक कुन महिनामा  लिनु भएको थियो ?</string>
     <string name="Phase4Question9">९)  यदि छ भने, तपाईको बच्चाको तौल कति समयको फरकमा लिने गर्नु भएको छ ?</string>
+    <string name="Topic">Topic</string>
     <string name="aabalokan">अवलोकन गर्ने </string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -3310,6 +3311,10 @@
         <item name="android:textSize">@dimen/ampm_label_size</item>
         <item name="android:textColor">@color/ampm_text_color</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="br">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20sp</item>
     </style>
     <style name="day_of_week_label_condensed"/>
     <style name="time_label">
