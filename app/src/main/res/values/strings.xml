@@ -1148,6 +1148,7 @@
     <string name="decision">Decision</string>
     <string name="supervisor">Supervisor</string>
     <string name="member">Members</string>
+    <string name="Topic">Topic</string>
 
 
     <string-array name="allEvents">

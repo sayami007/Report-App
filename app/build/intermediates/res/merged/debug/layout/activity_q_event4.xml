@@ -1,87 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/drawable_background"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-
-    <Button
-        android:id="@+id/pickDateEvent2"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
-        android:background="@drawable/button"
-        android:text="@string/chooseDate" />
+        android:layout_height="0dp"
+        android:background="@drawable/drawable_background"
+        android:orientation="vertical"
+        android:padding="@dimen/left_margin">
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Meeting chaired by" />
+        <Button
+            android:id="@+id/pickDateEvent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/button"
+            android:text="@string/chooseDate" />
+
+        <TextView
+            android:id="@+id/selectedDateEvent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="male" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="female" />
+            <EditText
+                android:id="@+id/supervisorPosEvent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supervisor" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Representative" />
-
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Village Coordiantio Comiite" />
+        </android.support.design.widget.TextInputLayout>
 
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Teacher /School" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event4Chairperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meeting chaired by" />
+
+        </android.support.design.widget.TextInputLayout>
 
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Socail Mobilizer" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/maleEvent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/male" />
+        </android.support.design.widget.TextInputLayout>
 
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Junior Technical Assistance" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Others" />
+            <EditText
+                android:id="@+id/femaleEvent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/female" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/br" />
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Agenda" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Representative"
+            android:textSize="20sp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Decision" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save " />
+        <CheckBox
+            android:id="@+id/event4check1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Village Coordiantio Comiite" />
 
 
-</LinearLayout>
+        <CheckBox
+            android:id="@+id/event4check2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher /School" />
+
+
+        <CheckBox
+            android:id="@+id/event4check3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Socail Mobilizer" />
+
+
+        <CheckBox
+            android:id="@+id/event4check4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Junior Technical Assistance" />
+
+
+        <CheckBox
+            android:id="@+id/event4check5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event4Agenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Agenda" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event4Decision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Decision" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonColor"
+            android:text="Save " />
+
+
+    </LinearLayout>
+</ScrollView>
