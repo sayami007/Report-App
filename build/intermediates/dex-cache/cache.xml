@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
+        jar="/Users/Bibesh/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.8.0_ace807624092a697c8e9fcbb875975b30a85cd7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4b57ead1e47b2149c4125483ce35d2c5e89a8ac0">
+        sha1="e40b98aba2834ab3884929f7e4932000918a6328">
         <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5754f1184b4cc91e12c002038c5982190b5f4f6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bibesh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.3.0_44fcac7a948805e5144603c69b3ee10667d7759e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +36,24 @@
         revision="25.0.2"
         sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
         <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_af6e3bbb12bb12491381587c7fcf5f34de887a49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bibesh/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_7709416b97b9adc70d4f5144298afcba11749359/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bibesh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.3.0_ee9bd7efed39721c946c29ea82f60f3000b18045/classes.dex" />
     </item>
 
 </items>

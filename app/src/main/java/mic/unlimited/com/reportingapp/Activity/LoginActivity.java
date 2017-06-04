@@ -1,8 +1,17 @@
 package mic.unlimited.com.reportingapp.Activity;
 
+import io.realm.Realm;
 import mic.unlimited.com.reportingapp.CustomClass.UserInformation;
 import mic.unlimited.com.reportingapp.CustomClass.Vdc;
 import mic.unlimited.com.reportingapp.R;
+import mic.unlimited.com.reportingapp.Retrofit.Model.SupDetail;
+import mic.unlimited.com.reportingapp.Retrofit.Model.Supervisor;
+import mic.unlimited.com.reportingapp.Retrofit.Service.API;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 import android.content.Context;
@@ -35,6 +44,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This is the Login Screen
@@ -43,6 +53,8 @@ import java.util.ArrayList;
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends AppCompatActivity {
 
+    private String URL = "http://10.6.1.48/reporting/";
+    private Retrofit retrofit;
     //Logger information saved
     ArrayList<UserInformation> userInfo;
 
@@ -87,39 +99,75 @@ public class LoginActivity extends AppCompatActivity {
         if (username.getText().toString().equals("") || password.getText().toString().equals("")) {
             Toast.makeText(this, R.string.blank, Toast.LENGTH_SHORT).show();
         } else {
-            progressBar.setVisibility(View.VISIBLE);
-            signInButton.setEnabled(false);
-            CountDownTimer pause = new CountDownTimer(2000, 1000) {
+            String uname = username.getText().toString();
+            String pwd = password.getText().toString();
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(this.URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+
+            API api = retrofit.create(API.class);
+            Call<Supervisor> supervisor = api.login(uname, pwd);
+            supervisor.enqueue(new Callback<Supervisor>() {
                 @Override
-                public void onTick(long millisUntilFinished) {
-
-                }
-
-                @Override
-                public void onFinish() {
-                    progressBar.setVisibility(View.INVISIBLE);
-                    signInButton.setEnabled(true);
-                    if (validateUsers(username.getText().toString(), password.getText().toString())) {
-                        MainPage_.intent(LoginActivity.this).start();
-
-                        //Gson converts list into string in JSON format
-                        Gson gson = new GsonBuilder().create();
-                        JsonArray myCustomArray = gson.toJsonTree(userInfo).getAsJsonArray();
-                        String logger = myCustomArray.toString();
-
-                        //Saved into shared and preference
-                        user.fullInformation().put(logger);
-
-                        LoginActivity.this.finish();
-                    } else {
-                        //Incorrect information pops up error message
+                public void onResponse(Call<Supervisor> call, Response<Supervisor> response) {
+                    Supervisor supervisor = response.body();
+                    if (supervisor.getSupervisorId() == 0) {
                         showErrorMessage();
+                    } else {
+                        getDetails(supervisor.getSupervisorId());
+
+
                     }
                 }
-            };
-            pause.start();
+
+                @Override
+                public void onFailure(Call<Supervisor> call, Throwable t) {
+                    Log.v("ERROR", t.getMessage());
+                }
+            });
+
+
         }
     }
+
+
+//        if (username.getText().toString().equals("") || password.getText().toString().equals("")) {
+//            Toast.makeText(this, R.string.blank, Toast.LENGTH_SHORT).show();
+//        } else {
+//            progressBar.setVisibility(View.VISIBLE);
+//            signInButton.setEnabled(false);
+//            CountDownTimer pause = new CountDownTimer(2000, 1000) {
+//                @Override
+//                public void onTick(long millisUntilFinished) {
+//
+//                }
+//
+//                @Override
+//                public void onFinish() {
+//                    progressBar.setVisibility(View.INVISIBLE);
+//                    signInButton.setEnabled(true);
+//                    if (validateUsers(username.getText().toString(), password.getText().toString())) {
+//                        MainPage_.intent(LoginActivity.this).start();
+//
+//                        //Gson converts list into string in JSON format
+//                        Gson gson = new GsonBuilder().create();
+//                        JsonArray myCustomArray = gson.toJsonTree(userInfo).getAsJsonArray();
+//                        String logger = myCustomArray.toString();
+//
+//                        //Saved into shared and preference
+//                        user.fullInformation().put(logger);
+//
+//                        LoginActivity.this.finish();
+//                    } else {
+//                        //Incorrect information pops up error message
+//                        showErrorMessage();
+//                    }
+//                }
+//            };
+//            pause.start();
+//        }
+//    }
 
     //Validating Username and password
     private boolean validateUsers(String username, String password) {
@@ -186,5 +234,32 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         errorDialog.show();
+    }
+
+
+    private void getDetails(final int supervisorId) {
+        Retrofit rf = new Retrofit.Builder().baseUrl(URL).addConverterFactory(GsonConverterFactory.create()).build();
+        API api1 = rf.create(API.class);
+        final Call<List<SupDetail>> detail = api1.details(supervisorId);
+        detail.enqueue(new Callback<List<SupDetail>>() {
+            @Override
+            public void onResponse(Call<List<SupDetail>> call, Response<List<SupDetail>> response) {
+                Realm.init(getApplicationContext());
+                Realm mReal = Realm.getDefaultInstance();
+                mReal.beginTransaction();
+                mic.unlimited.com.reportingapp.Database.Supervisor single = mReal.createObject(mic.unlimited.com.reportingapp.Database.Supervisor.class,supervisorId);
+                single.setSupervisorName(response.body().get(0).getSupervisorName());
+                single.setSupervisorPhone(response.body().get(0).getSupervisorPhone());
+                single.setUsernameText(response.body().get(0).getUsernameText());
+                single.setPasswordText(response.body().get(0).getPasswordText());
+                single.setDistrictId(response.body().get(0).getDistrictId());
+                mReal.commitTransaction();
+            }
+
+            @Override
+            public void onFailure(Call<List<SupDetail>> call, Throwable t) {
+                Log.v("ERRORS", t.getMessage());
+            }
+        });
     }
 }
