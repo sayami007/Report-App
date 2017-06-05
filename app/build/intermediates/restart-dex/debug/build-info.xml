@@ -6,25 +6,25 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1496563409275"
+    timestamp="1496663201617"
     token="-1487602082503891100"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3165" />
+        duration="2667" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="13" />
+        duration="8" />
     <task
         name="verifier"
         duration="3" />
 
     <artifact
-        location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -32,75 +32,64 @@
 
     <build
         build-mode="FULL"
-        timestamp="1496558587375"
+        timestamp="1496657425052"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1496559006171"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496561349439"
+        timestamp="1496660939259"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496562900937"
+        timestamp="1496661034458"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496563271773"
+        timestamp="1496661653194"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -108,10 +97,10 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496563409275"
+        timestamp="1496663201617"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_7.apk"

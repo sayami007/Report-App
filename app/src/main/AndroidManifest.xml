@@ -59,8 +59,6 @@
         <activity android:name=".Events.Question.Event10Q_" />
         <activity android:name=".Events.Question.Event11Q_"></activity>
         <activity android:name=".Events.Question.Event12Q_"></activity>
-        <activity android:name=".Behavior.SavedBehavior_"/>
-        <activity android:name=".Behavior.AddBehavior_"/>
 
         <activity android:name=".Phases.Answer.Phase1UserList_"/>
         <activity android:name=".Phases.Answer.Phase2UserList_"/>
@@ -68,6 +66,10 @@
         <activity android:name=".Phases.Answer.Phase4UserList_"/>
 
         <activity android:name=".Behavior.BehaviorPhase1_"/>
+        <activity android:name=".Behavior.SavedBehavior_"/>
+        <activity android:name=".Behavior.AddBehavior_"/>
+
+        <service android:name=".Background.FetchData_"/>
     </application>
 
 </manifest>

@@ -14,11 +14,11 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
-import mic.unlimited.com.reportingapp.Activity.LoginActivity_;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
@@ -42,7 +42,6 @@ public final class PhaseOneQ_
     }
 
     private void init_(Bundle savedInstanceState) {
-        this.user = new LoginActivity_.preference_(this);
         OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
@@ -150,7 +149,19 @@ public final class PhaseOneQ_
         this.Phase1Answer17 = ((Spinner) hasViews.findViewById(R.id.Phase1Answer17));
         this.Phase1Answer18 = ((Spinner) hasViews.findViewById(R.id.Phase1Answer18));
         this.Phase1Answer19 = ((Spinner) hasViews.findViewById(R.id.Phase1Answer19));
-        loadFirst();
+        View view_saveLocalPhase1 = hasViews.findViewById(R.id.saveLocalPhase1);
+
+        if (view_saveLocalPhase1 != null) {
+            view_saveLocalPhase1 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    PhaseOneQ_.this.save();
+                }
+            }
+            );
+        }
+        begin();
     }
 
     public static class IntentBuilder_

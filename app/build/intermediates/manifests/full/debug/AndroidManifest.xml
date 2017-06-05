@@ -71,13 +71,15 @@
         <activity android:name="mic.unlimited.com.reportingapp.Events.Question.Event10Q_" />
         <activity android:name="mic.unlimited.com.reportingapp.Events.Question.Event11Q_" />
         <activity android:name="mic.unlimited.com.reportingapp.Events.Question.Event12Q_" />
-        <activity android:name="mic.unlimited.com.reportingapp.Behavior.SavedBehavior_" />
-        <activity android:name="mic.unlimited.com.reportingapp.Behavior.AddBehavior_" />
         <activity android:name="mic.unlimited.com.reportingapp.Phases.Answer.Phase1UserList_" />
         <activity android:name="mic.unlimited.com.reportingapp.Phases.Answer.Phase2UserList_" />
         <activity android:name="mic.unlimited.com.reportingapp.Phases.Answer.Phase3UserList_" />
         <activity android:name="mic.unlimited.com.reportingapp.Phases.Answer.Phase4UserList_" />
         <activity android:name="mic.unlimited.com.reportingapp.Behavior.BehaviorPhase1_" />
+        <activity android:name="mic.unlimited.com.reportingapp.Behavior.SavedBehavior_" />
+        <activity android:name="mic.unlimited.com.reportingapp.Behavior.AddBehavior_" />
+
+        <service android:name="mic.unlimited.com.reportingapp.Background.FetchData_" />
     </application>
 
 </manifest>

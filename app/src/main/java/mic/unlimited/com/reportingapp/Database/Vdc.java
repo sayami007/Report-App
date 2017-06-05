@@ -8,9 +8,42 @@ import io.realm.annotations.PrimaryKey;
  */
 
 public class Vdc extends RealmObject {
-    @PrimaryKey
+
     private int vdcId;
     private String vdcName;
     private String vdcHealthPost;
-    private District district;
+    private int district;
+
+
+    public int getVdcId() {
+        return vdcId;
+    }
+
+    public void setVdcId(int vdcId) {
+        this.vdcId = vdcId;
+    }
+
+    public String getVdcName() {
+        return vdcName;
+    }
+
+    public void setVdcName(String vdcName) {
+        this.vdcName = vdcName;
+    }
+
+    public String getVdcHealthPost() {
+        return vdcHealthPost;
+    }
+
+    public void setVdcHealthPost(String vdcHealthPost) {
+        this.vdcHealthPost = vdcHealthPost;
+    }
+
+    public int getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(int district) {
+        this.district = district;
+    }
 }
