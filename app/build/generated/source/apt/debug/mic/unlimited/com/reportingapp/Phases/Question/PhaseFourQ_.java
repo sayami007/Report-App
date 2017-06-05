@@ -15,18 +15,15 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.Spinner;
-import mic.unlimited.com.reportingapp.Activity.LoginActivity_;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
-import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class PhaseFourQ_
     extends PhaseFourQ
-    implements HasViews, OnViewChangedListener
+    implements HasViews
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -40,8 +37,6 @@ public final class PhaseFourQ_
     }
 
     private void init_(Bundle savedInstanceState) {
-        this.user = new LoginActivity_.preference_(this);
-        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -72,12 +67,6 @@ public final class PhaseFourQ_
 
     public static PhaseFourQ_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new PhaseFourQ_.IntentBuilder_(supportFragment);
-    }
-
-    @Override
-    public void onViewChanged(HasViews hasViews) {
-        this.healthPostPhase4 = ((Spinner) hasViews.findViewById(R.id.healthPostPhase4));
-        loadFirst();
     }
 
     public static class IntentBuilder_

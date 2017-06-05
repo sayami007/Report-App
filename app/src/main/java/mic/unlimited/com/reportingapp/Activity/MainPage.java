@@ -1,11 +1,10 @@
 package mic.unlimited.com.reportingapp.Activity;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
-import android.widget.Toast;
+import android.util.Log;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
@@ -13,9 +12,12 @@ import org.androidannotations.annotations.OptionsItem;
 import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.sharedpreferences.Pref;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
 import mic.unlimited.com.reportingapp.Behavior.SavedBehavior_;
+import mic.unlimited.com.reportingapp.Database.Vdc;
 import mic.unlimited.com.reportingapp.Events.Events_;
-import mic.unlimited.com.reportingapp.Phases.ActivityPhasesAnswer;
 import mic.unlimited.com.reportingapp.Phases.ActivityPhasesAnswer_;
 import mic.unlimited.com.reportingapp.R;
 
@@ -23,10 +25,9 @@ import mic.unlimited.com.reportingapp.R;
 @EActivity(R.layout.activity_main_page)
 public class MainPage extends AppCompatActivity {
 
-    //Shared and preference
+    //Shared and preferences
     @Pref
-    LoginActivity_.preference_ user;
-
+    LoginActivity_.Preferences_ mypref;
 
     //Go to Behavior Page
     @Click(R.id.behavior)
@@ -46,28 +47,6 @@ public class MainPage extends AppCompatActivity {
         Events_.intent(this).start();
     }
 
-
-    //Sign Out Options
-    @OptionsItem(R.id.signOut)
-    void signOut() {
-        AlertDialog.Builder signOut = new AlertDialog.Builder(this);
-        signOut.setMessage(R.string.signoutMessage);
-        signOut.setPositiveButton(R.string.no, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        signOut.setNegativeButton(R.string.yes, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                user.clear();
-                LoginActivity_.intent(getApplicationContext()).start();
-                finish();
-            }
-        });
-        signOut.show();
-    }
 
     //On back Button Pressed
     @Override
@@ -89,4 +68,35 @@ public class MainPage extends AppCompatActivity {
         });
         quit.show();
     }
+
+
+    //Sign out button
+    @OptionsItem(R.id.signOut)
+    void signOut() {
+        AlertDialog.Builder signOut = new AlertDialog.Builder(this);
+        signOut.setMessage(R.string.signoutMessage);
+        signOut.setPositiveButton(R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        signOut.setNegativeButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Realm.init(getApplicationContext());
+                RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+                Realm realm = Realm.getInstance(config);
+                realm.beginTransaction();
+                realm.deleteAll();
+                realm.commitTransaction();
+                realm.close();
+                mypref.clear();
+                LoginActivity_.intent(getApplicationContext()).start();
+                finish();
+            }
+        });
+        signOut.show();
+    }
+
 }

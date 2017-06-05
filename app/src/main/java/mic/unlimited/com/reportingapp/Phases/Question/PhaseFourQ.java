@@ -25,42 +25,42 @@ import mic.unlimited.com.reportingapp.R;
 
 @EActivity(R.layout.activity_phase4)
 public class PhaseFourQ extends AppCompatActivity {
-    ArrayList<String> vdcList;
-
-    //Shared and preference
-    @Pref
-    LoginActivity_.preference_ user;
-
-    //Taking the reference of layout
-    @ViewById
-    Spinner healthPostPhase4;
-
-    //Load the page for the first time
-    @AfterViews
-    void loadFirst() {
-        vdcList = new ArrayList<>();
-        try {
-            //get the user information from the saved shared preference
-            String information = user.fullInformation().get();
-
-            //Convert the information into array
-            JSONArray infoArray = new JSONArray(information);
-            for (int i = 0; i < infoArray.length(); i++) {
-                JSONObject object = infoArray.getJSONObject(i);
-                JSONArray vdcArray = new JSONArray(object.getString("vdc"));
-                for (int j = 0; j < vdcArray.length(); j++) {
-                    //Get the String value of the JSON Object from the information array
-                    JSONObject posts = vdcArray.getJSONObject(j);
-                    vdcList.add(posts.getString("vdcHealthPost"));
-                }
-            }
-        } catch (JSONException err) {
-            Toast.makeText(this, "" + err.getMessage(), Toast.LENGTH_SHORT).show();
-        } finally {
-            //Create Adapter for the Spinner that show the list of the VDC health post
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, vdcList);
-            healthPostPhase4.setAdapter(adapter);
-        }
-    }
+//    ArrayList<String> vdcList;
+//
+//    //Shared and preference
+//    @Pref
+//    LoginActivity_.preference_ user;
+//
+//    //Taking the reference of layout
+//    @ViewById
+//    Spinner healthPostPhase4;
+//
+//    //Load the page for the first time
+//    @AfterViews
+//    void loadFirst() {
+//        vdcList = new ArrayList<>();
+//        try {
+//            //get the user information from the saved shared preference
+//            String information = user.fullInformation().get();
+//
+//            //Convert the information into array
+//            JSONArray infoArray = new JSONArray(information);
+//            for (int i = 0; i < infoArray.length(); i++) {
+//                JSONObject object = infoArray.getJSONObject(i);
+//                JSONArray vdcArray = new JSONArray(object.getString("vdc"));
+//                for (int j = 0; j < vdcArray.length(); j++) {
+//                    //Get the String value of the JSON Object from the information array
+//                    JSONObject posts = vdcArray.getJSONObject(j);
+//                    vdcList.add(posts.getString("vdcHealthPost"));
+//                }
+//            }
+//        } catch (JSONException err) {
+//            Toast.makeText(this, "" + err.getMessage(), Toast.LENGTH_SHORT).show();
+//        } finally {
+//            //Create Adapter for the Spinner that show the list of the VDC health post
+//            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, vdcList);
+//            healthPostPhase4.setAdapter(adapter);
+//        }
+//    }
 
 }

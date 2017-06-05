@@ -42,7 +42,7 @@ public final class MainPage_
     }
 
     private void init_(Bundle savedInstanceState) {
-        this.user = new LoginActivity_.preference_(this);
+        this.mypref = new LoginActivity_.Preferences_(this);
         OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 

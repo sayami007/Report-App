@@ -24,9 +24,9 @@ import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.sharedpreferences.EditorHelper;
+import org.androidannotations.api.sharedpreferences.IntPrefEditorField;
+import org.androidannotations.api.sharedpreferences.IntPrefField;
 import org.androidannotations.api.sharedpreferences.SharedPreferencesHelper;
-import org.androidannotations.api.sharedpreferences.StringPrefEditorField;
-import org.androidannotations.api.sharedpreferences.StringPrefField;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
@@ -47,7 +47,7 @@ public final class LoginActivity_
     }
 
     private void init_(Bundle savedInstanceState) {
-        this.user = new LoginActivity_.preference_(this);
+        this.mypref = new LoginActivity_.Preferences_(this);
         OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
@@ -97,7 +97,7 @@ public final class LoginActivity_
             }
             );
         }
-        checkPreference();
+        cleanAll();
     }
 
     public static class IntentBuilder_
@@ -148,39 +148,39 @@ public final class LoginActivity_
         }
     }
 
-    public final static class preference_
+    public final static class Preferences_
         extends SharedPreferencesHelper
     {
 
-        public preference_(Context context) {
-            super(context.getSharedPreferences("preference", 0));
+        public Preferences_(Context context) {
+            super(context.getSharedPreferences("Preferences", 0));
         }
 
-        public LoginActivity_.preference_.preferenceEditor_ edit() {
-            return new LoginActivity_.preference_.preferenceEditor_(getSharedPreferences());
+        public LoginActivity_.Preferences_.PreferencesEditor_ edit() {
+            return new LoginActivity_.Preferences_.PreferencesEditor_(getSharedPreferences());
         }
 
         /**
-         * <p><b>Defaults to</b>: "NA"</p>
+         * <p><b>Defaults to</b>: 0</p>
          * 
          * 
          * @return
-         *     a {@link StringPrefField} instance to retrieve or write the pref value
+         *     a {@link IntPrefField} instance to retrieve or write the pref value
          */
-        public StringPrefField fullInformation() {
-            return stringField("fullInformation", "NA");
+        public IntPrefField supervisorId() {
+            return intField("supervisorId", 0);
         }
 
-        public final static class preferenceEditor_
-            extends EditorHelper<LoginActivity_.preference_.preferenceEditor_>
+        public final static class PreferencesEditor_
+            extends EditorHelper<LoginActivity_.Preferences_.PreferencesEditor_>
         {
 
-            preferenceEditor_(SharedPreferences sharedPreferences) {
+            PreferencesEditor_(SharedPreferences sharedPreferences) {
                 super(sharedPreferences);
             }
 
-            public StringPrefEditorField<LoginActivity_.preference_.preferenceEditor_> fullInformation() {
-                return stringField("fullInformation");
+            public IntPrefEditorField<LoginActivity_.Preferences_.PreferencesEditor_> supervisorId() {
+                return intField("supervisorId");
             }
         }
     }
