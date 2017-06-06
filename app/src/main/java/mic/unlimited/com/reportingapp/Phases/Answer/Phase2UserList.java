@@ -60,6 +60,7 @@ public class Phase2UserList extends AppCompatActivity {
             if (m1.equals(null)) {
                 continue;
             }
+            //HEL
             names.add(m1.getMotherName());
         }
 

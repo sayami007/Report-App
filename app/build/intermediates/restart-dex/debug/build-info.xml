@@ -6,13 +6,13 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1496749331090"
+    timestamp="1496749648396"
     token="-1487602082503891100"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2523" />
+        duration="2723" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -89,7 +89,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496749331090"
+        timestamp="1496749648396"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"

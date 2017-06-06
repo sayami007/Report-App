@@ -973,3 +973,12 @@
 17:27:11.515 [Daemon worker Thread 19] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qf_ is not registered in the AndroidManifest.xml file.
 17:27:11.516 [Daemon worker Thread 19] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qg_ is not registered in the AndroidManifest.xml file.
 17:27:11.516 [Daemon worker Thread 19] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qh_ is not registered in the AndroidManifest.xml file.
+17:32:30.125 [Daemon worker Thread 20] WARN  o.a.i.h.AndroidManifestFinder:339 - A class activity declared in the AndroidManifest.xml cannot be found in the compile path: [mic.unlimited.com.reportingapp.Background.FetchData_]
+17:32:30.141 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qa_ is not registered in the AndroidManifest.xml file.
+17:32:30.141 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qb_ is not registered in the AndroidManifest.xml file.
+17:32:30.141 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qc_ is not registered in the AndroidManifest.xml file.
+17:32:30.141 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qd_ is not registered in the AndroidManifest.xml file.
+17:32:30.141 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qe_ is not registered in the AndroidManifest.xml file.
+17:32:30.142 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qf_ is not registered in the AndroidManifest.xml file.
+17:32:30.142 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qg_ is not registered in the AndroidManifest.xml file.
+17:32:30.142 [Daemon worker Thread 20] WARN  o.a.i.p.ModelValidator:81 - The component Event7Qh_ is not registered in the AndroidManifest.xml file.
