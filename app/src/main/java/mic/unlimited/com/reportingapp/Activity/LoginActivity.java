@@ -2,14 +2,12 @@ package mic.unlimited.com.reportingapp.Activity;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
-import io.realm.RealmResults;
 import io.realm.exceptions.RealmPrimaryKeyConstraintException;
 import mic.unlimited.com.reportingapp.Database.Supervisor;
 import mic.unlimited.com.reportingapp.Database.Vdc;
 import mic.unlimited.com.reportingapp.R;
 
 
-import android.app.IntentService;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -24,8 +22,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -54,7 +50,10 @@ public class LoginActivity extends AppCompatActivity {
     private Realm mReal;
 
     //These are the URLs
-    //private String URL = "http://192.168.10.6/reporting/api";
+//    private String LOGIN_URL = "http://192.168.10.2/reporting/api";
+//    private String GET_SUPERVISORS = "http://192.168.10.2/reporting/api/detailsup";
+//    private String GET_VDC = "http://192.168.10.2/reporting/api/getvdc?dis=";
+
     private String LOGIN_URL = "http://10.6.1.48/reporting/api";
     private String GET_SUPERVISORS = "http://10.6.1.48/reporting/api/detailsup";
     private String GET_VDC = "http://10.6.1.48/reporting/api/getvdc?dis=";
@@ -91,6 +90,7 @@ public class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         if (username.getText().toString().equals("") || password.getText().toString().equals("")) {
             Toast.makeText(this, R.string.blank, Toast.LENGTH_SHORT).show();
+            progressBar.setVisibility(View.INVISIBLE);
         } else {
             queue = Volley.newRequestQueue(getApplicationContext());
             StringRequest query = new StringRequest(Request.Method.POST, LOGIN_URL, new Response.Listener<String>() {
@@ -133,9 +133,11 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
+                progressBar.setVisibility(View.INVISIBLE);
             }
         });
         errorDialog.show();
+
     }
 
 

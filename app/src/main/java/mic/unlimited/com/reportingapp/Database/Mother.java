@@ -7,7 +7,16 @@ import io.realm.annotations.PrimaryKey;
  * Created by Bibesh on 6/4/17.
  */
 
-public class Mother extends RealmObject{
+public class Mother extends RealmObject {
+
+    @PrimaryKey
+    private int motherId;
+    private String motherName;
+    private int motherAge;
+    private long motherContact;
+    private Supervisor supervisorId;
+    private int vdcId;
+
     public int getMotherId() {
         return motherId;
     }
@@ -48,10 +57,11 @@ public class Mother extends RealmObject{
         this.supervisorId = supervisorId;
     }
 
-    @PrimaryKey
-    private int motherId;
-    private String motherName;
-    private int motherAge;
-    private long motherContact;
-    private Supervisor supervisorId;
+    public int getVdcId() {
+        return vdcId;
+    }
+
+    public void setVdcId(int vdcId) {
+        this.vdcId = vdcId;
+    }
 }

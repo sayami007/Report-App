@@ -14,16 +14,21 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Spinner;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class PhaseTwoQ_
     extends PhaseTwoQ
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -37,6 +42,7 @@ public final class PhaseTwoQ_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +73,104 @@ public final class PhaseTwoQ_
 
     public static PhaseTwoQ_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new PhaseTwoQ_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        this.motherNamePhase2 = ((EditText) hasViews.findViewById(R.id.motherNamePhase2));
+        this.motherAgePhase2 = ((EditText) hasViews.findViewById(R.id.motherAgePhase2));
+        this.motherContactPhase2 = ((EditText) hasViews.findViewById(R.id.motherContactPhase2));
+        this.motherAddressPhase2 = ((EditText) hasViews.findViewById(R.id.motherAddressPhase2));
+        this.Phase2Answer1 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer1));
+        this.Phase2Answer2 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer2));
+        this.Phase2Answer3 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer3));
+        this.Phase2Answer4 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer4));
+        this.Phase2Answer5 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer5));
+        this.Phase2Answer6a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer6a));
+        this.Phase2Answer6b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer6b));
+        this.Phase2Answer6c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer6c));
+        this.Phase2Answer6d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer6d));
+        this.Phase2Answer7a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7a));
+        this.Phase2Answer7b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7b));
+        this.Phase2Answer7c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7c));
+        this.Phase2Answer7d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7d));
+        this.Phase2Answer7e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7e));
+        this.Phase2Answer7f = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7f));
+        this.Phase2Answer7g = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7g));
+        this.Phase2Answer7h = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7h));
+        this.Phase2Answer7i = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7i));
+        this.Phase2Answer7j = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer7j));
+        this.Phase2Answer9 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer9));
+        this.Phase2Answer10a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10a));
+        this.Phase2Answer10b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10b));
+        this.Phase2Answer10c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10c));
+        this.Phase2Answer10d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10d));
+        this.Phase2Answer10e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10e));
+        this.Phase2Answer10f = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10f));
+        this.Phase2Answer10g = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer10g));
+        this.Phase2Answer11 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer11));
+        this.Phase2Answer12 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer12));
+        this.Phase2Answer13 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer13));
+        this.Phase2Answer14 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer14));
+        this.Phase2Answer15 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer15));
+        this.Phase2Answer16 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer16));
+        this.Phase2Answer17 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer17));
+        this.Phase2Answer18 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer18));
+        this.Phase2Answer19 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer19));
+        this.Phase2Answer20 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer20));
+        this.Phase2Answer21 = ((EditText) hasViews.findViewById(R.id.Phase2Answer21));
+        this.Phase2Answer22 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer22));
+        this.Phase2Answer23a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23a));
+        this.Phase2Answer23b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23b));
+        this.Phase2Answer23c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23c));
+        this.Phase2Answer23d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23d));
+        this.Phase2Answer23e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23e));
+        this.Phase2Answer23f = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23f));
+        this.Phase2Answer23g = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23g));
+        this.Phase2Answer23h = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23h));
+        this.Phase2Answer23i = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23i));
+        this.Phase2Answer23j = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23j));
+        this.Phase2Answer23k = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer23k));
+        this.Phase2Answer24a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24a));
+        this.Phase2Answer24b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24b));
+        this.Phase2Answer24c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24c));
+        this.Phase2Answer24d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24d));
+        this.Phase2Answer24e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24e));
+        this.Phase2Answer24f = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24f));
+        this.Phase2Answer24g = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer24g));
+        this.Phase2Answer25a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer25a));
+        this.Phase2Answer25b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer25b));
+        this.Phase2Answer25c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer25c));
+        this.Phase2Answer25d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer25d));
+        this.Phase2Answer25e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer25e));
+        this.Phase2Answer26 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer26));
+        this.Phase2Answer27a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer27a));
+        this.Phase2Answer27b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer27b));
+        this.Phase2Answer27c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer27c));
+        this.Phase2Answer27d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer27d));
+        this.Phase2Answer27e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer27e));
+        this.Phase2Answer28a = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer28a));
+        this.Phase2Answer28b = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer28b));
+        this.Phase2Answer28c = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer28c));
+        this.Phase2Answer28d = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer28d));
+        this.Phase2Answer28e = ((CheckBox) hasViews.findViewById(R.id.Phase2Answer28e));
+        this.Phase2Answer29 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer29));
+        this.Phase2Answer30 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer30));
+        this.Phase2Answer31 = ((Spinner) hasViews.findViewById(R.id.Phase2Answer31));
+        this.healthPostPhase2 = ((Spinner) hasViews.findViewById(R.id.healthPostPhase2));
+        View view_saveLocalPhase2 = hasViews.findViewById(R.id.saveLocalPhase2);
+
+        if (view_saveLocalPhase2 != null) {
+            view_saveLocalPhase2 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    PhaseTwoQ_.this.saveInformation();
+                }
+            }
+            );
+        }
+        begin();
     }
 
     public static class IntentBuilder_

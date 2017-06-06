@@ -14,16 +14,21 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Spinner;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class PhaseFourQ_
     extends PhaseFourQ
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -37,6 +42,7 @@ public final class PhaseFourQ_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +73,82 @@ public final class PhaseFourQ_
 
     public static PhaseFourQ_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new PhaseFourQ_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        this.Phase4Answer1 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer1));
+        this.Phase4Answer2 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer2));
+        this.Phase4Answer3 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer3));
+        this.Phase4Answer4a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4a));
+        this.Phase4Answer4b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4b));
+        this.Phase4Answer4c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4c));
+        this.Phase4Answer4d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4d));
+        this.Phase4Answer4e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4e));
+        this.Phase4Answer4f = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4f));
+        this.Phase4Answer4g = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4g));
+        this.Phase4Answer4h = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer4h));
+        this.Phase4Answer5a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer5a));
+        this.Phase4Answer5b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer5b));
+        this.Phase4Answer5c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer5c));
+        this.Phase4Answer5d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer5d));
+        this.Phase4Answer6 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer6));
+        this.Phase4Answer7 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer7));
+        this.Phase4Answer8 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer8));
+        this.Phase4Answer9 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer9));
+        this.Phase4Answer10 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer10));
+        this.Phase4Answer11 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer11));
+        this.Phase4Answer12 = ((EditText) hasViews.findViewById(R.id.Phase4Answer12));
+        this.Phase4Answer13 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer13));
+        this.Phase4Answer14a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14a));
+        this.Phase4Answer14b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14b));
+        this.Phase4Answer14c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14c));
+        this.Phase4Answer14d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14d));
+        this.Phase4Answer14e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14e));
+        this.Phase4Answer14f = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14f));
+        this.Phase4Answer14g = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14g));
+        this.Phase4Answer14h = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14h));
+        this.Phase4Answer14i = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14i));
+        this.Phase4Answer14j = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14j));
+        this.Phase4Answer14k = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer14k));
+        this.Phase4Answer15a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15a));
+        this.Phase4Answer15b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15b));
+        this.Phase4Answer15c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15c));
+        this.Phase4Answer15d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15d));
+        this.Phase4Answer15e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15e));
+        this.Phase4Answer15f = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15f));
+        this.Phase4Answer15g = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer15g));
+        this.Phase4Answer16a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer16a));
+        this.Phase4Answer16b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer16b));
+        this.Phase4Answer16c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer16c));
+        this.Phase4Answer16d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer16d));
+        this.Phase4Answer16e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer16e));
+        this.Phase4Answer17 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer17));
+        this.Phase4Answer18a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer18a));
+        this.Phase4Answer18b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer18b));
+        this.Phase4Answer18c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer18c));
+        this.Phase4Answer18d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer18d));
+        this.Phase4Answer18e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer18e));
+        this.Phase4Answer19a = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer19a));
+        this.Phase4Answer19b = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer19b));
+        this.Phase4Answer19c = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer19c));
+        this.Phase4Answer19d = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer19d));
+        this.Phase4Answer19e = ((CheckBox) hasViews.findViewById(R.id.Phase4Answer19e));
+        this.Phase4Answer20 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer20));
+        this.Phase4Answer21 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer21));
+        this.Phase4Answer22 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer22));
+        View view_saveLocalPhase4 = hasViews.findViewById(R.id.saveLocalPhase4);
+
+        if (view_saveLocalPhase4 != null) {
+            view_saveLocalPhase4 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    PhaseFourQ_.this.saveInformation();
+                }
+            }
+            );
+        }
     }
 
     public static class IntentBuilder_

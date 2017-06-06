@@ -32,6 +32,8 @@ import mic.unlimited.com.reportingapp.Database.Activity.ActivityPhase1Db;
 import mic.unlimited.com.reportingapp.Database.Mother;
 import mic.unlimited.com.reportingapp.Database.Supervisor;
 import mic.unlimited.com.reportingapp.Database.Vdc;
+import mic.unlimited.com.reportingapp.Phases.Answer.Phase1UserList;
+import mic.unlimited.com.reportingapp.Phases.Answer.Phase1UserList_;
 import mic.unlimited.com.reportingapp.R;
 
 /**
@@ -214,11 +216,35 @@ public class PhaseOneQ extends AppCompatActivity {
         int motherAge = Integer.parseInt(motherAgePhase1.getText().toString());
         long motherContact = Long.parseLong(motherContactPhase1.getText().toString());
         Supervisor supervisor = getSupervisor();
-        saveMother(motherId, motherName, motherAge, motherContact, supervisor);
+        boolean checkMother = checkMother(motherId, motherName, motherAge, motherContact, supervisor);
+        if (checkMother) {
+            if (getValue()) {
+                saveMother(motherId, motherName, motherAge, motherContact, supervisor);
+                saveValues(motherId);
+                Toast.makeText(this, "Save Successfull", Toast.LENGTH_SHORT).show();
+                Phase1UserList_.intent(this).start();
+                this.finish();
+            }
+        } else {
+            Toast.makeText(this, "Entry Not saved", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
-    private boolean saveMother(int a, String b, int c, long d, Supervisor e) {
+    private boolean checkMother(int a, String b, int c, long d, Supervisor e) {
+        try {
+            if (b.equals(null) && c == 0 && d == 0 && e.equals(null)) {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (Exception err) {
+            Toast.makeText(this, "" + err.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
+
+    private void saveMother(int a, String b, int c, long d, Supervisor e) {
         Realm.init(getApplicationContext());
         RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
         Realm mReal = Realm.getInstance(config);
@@ -230,7 +256,6 @@ public class PhaseOneQ extends AppCompatActivity {
         result.setSupervisorId(e);
         mReal.commitTransaction();
         mReal.close();
-        return false;
     }
 
     //Generate random motherId
@@ -241,9 +266,10 @@ public class PhaseOneQ extends AppCompatActivity {
         Realm mReal = Realm.getInstance(config);
         RealmResults<Mother> mother = mReal.where(Mother.class).findAll();
         if (mother.size() == 0) {
+            mReal.close();
             return motherId;
         } else {
-            Log.v("VALUES", "" + mother.size());
+            mReal.close();
             return mother.size() + 1;
         }
     }
@@ -274,251 +300,330 @@ public class PhaseOneQ extends AppCompatActivity {
         mReal.close();
     }
 
-//    //Shared and preference
-//    @Pref
-//    LoginActivity_.preference_ user;
-//
-//    //Load the page for the first time
-//    @AfterViews
-//    void loadFirst() {
-//        vdcList = new ArrayList<>();
-//        try {
-//            //get the user information from the saved shared preference
-//            String information = user.fullInformation().get();
-//
-//            //Convert the information into array
-//            JSONArray infoArray = new JSONArray(information);
-//            for (int i = 0; i < infoArray.length(); i++) {
-//                JSONObject object = infoArray.getJSONObject(i);
-//                JSONArray vdcArray = new JSONArray(object.getString("vdc"));
-//                for (int j = 0; j < vdcArray.length(); j++) {
-//                    //Get the String value of the JSON Object from the information array
-//                    JSONObject posts = vdcArray.getJSONObject(j);
-//                    vdcList.add(posts.getString("vdcHealthPost"));
-//                }
-//            }
-//        } catch (JSONException err) {
-//            Toast.makeText(this, "" + err.getMessage(), Toast.LENGTH_SHORT).show();
-//        } finally {
-//            //Create Adapter for the Spinner that show the list of the VDC health post
-//            ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, vdcList);
-//            healthPostPhase1.setAdapter(adapter);
-//        }
-//    }
-//
-////
-////    @Click(R.id.saveLocalPhase1)
-////    private void saveIntoLocalDb() {
-////        final Realm mReal;
-////        Realm.init(this);
-////        mReal = Realm.getDefaultInstance();
-////        mReal.executeTransaction(new Realm.Transaction() {
-////            @Override
-////            public void execute(Realm realm) {
-////                Phase1Answer6.toString()
-////                ActivityPhase1Db db = mReal.createObject(ActivityPhase1Db.class);
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////                db.setPhase1Answer1Db(Phase1Answer1.getSelectedItem().toString());
-////            }
-////        });
-////    }
-////
-////
-////    void aperndin(){
-////        if (Phase1Answer6a.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6a.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer6b.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6b.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer6c.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6c.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer6d.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6d.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer6e.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6e.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer6f.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6f.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer6g.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6g.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer6h.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6h.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer6i.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6i.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer6j.isChecked()) {
-////            Phase1Answer6.append(Phase1Answer6j.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer8a.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8a.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer8b.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8b.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer8c.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8c.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer8d.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8d.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer8e.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8e.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer8f.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8f.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer8g.isChecked()) {
-////            Phase1Answer8.append(Phase1Answer8g.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer10a.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10a.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer10b.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10b.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer10c.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10c.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer10d.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10d.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer10e.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10e.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer10f.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10f.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer10g.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10g.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer10h.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10h.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer10i.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10i.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer10j.isChecked()) {
-////            Phase1Answer10.append(Phase1Answer10j.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer11a.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11a.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer11b.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11b.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer11c.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11c.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer11d.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11d.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer11e.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11e.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer11f.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11f.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer11g.isChecked()) {
-////            Phase1Answer11.append(Phase1Answer11g.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer12a.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12a.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer12b.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12b.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer12c.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12c.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer12d.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12d.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer12e.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12e.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer12f.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12f.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer12g.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12g.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer12h.isChecked()) {
-////            Phase1Answer12.append(Phase1Answer12h.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer13a.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13a.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer13b.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13b.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13c.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13c.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13d.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13d.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13e.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13e.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13f.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13f.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13g.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13g.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer13h.isChecked()) {
-////            Phase1Answer13.append(Phase1Answer13h.getText().toString() + " ");
-////        }
-////
-////
-////        if (Phase1Answer16a.isChecked()) {
-////            Phase1Answer16.append(Phase1Answer16a.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer16b.isChecked()) {
-////            Phase1Answer16.append(Phase1Answer16b.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer16c.isChecked()) {
-////            Phase1Answer16.append(Phase1Answer16c.getText().toString() + " ,");
-////        }
-////        if (Phase1Answer16d.isChecked()) {
-////            Phase1Answer16.append(Phase1Answer16d.getText().toString() + ", ");
-////        }
-////        if (Phase1Answer16e.isChecked()) {
-////            Phase1Answer16.append(Phase1Answer16e.getText().toString() + " ");
-////        }
-////    }
+    public void saveValues(int motherId) {
+
+
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Mother> mothers = mReal.where(Mother.class).equalTo("motherId", motherId).findAll();
+
+        mReal.beginTransaction();
+        ActivityPhase1Db db = mReal.createObject(ActivityPhase1Db.class);
+
+        db.setMother(mothers.get(0));
+        db.setPhaseAnswer1(Phase1Answer1.getSelectedItem().toString());
+        db.setPhaseAnswer2(Phase1Answer2.getSelectedItem().toString());
+        db.setPhaseAnswer3(Phase1Answer3.getSelectedItem().toString());
+        db.setPhaseAnswer4(Phase1Answer4.getSelectedItem().toString());
+        db.setPhaseAnswer5(Phase1Answer5.getSelectedItem().toString());
+        db.setPhaseAnswer6(Phase1Answer6.toString());
+        db.setPhaseAnswer7(Phase1Answer7.getSelectedItem().toString());
+        db.setPhaseAnswer8(Phase1Answer8.toString());
+        db.setPhaseAnswer9(Phase1Answer9.getSelectedItem().toString());
+        db.setPhaseAnswer10(Phase1Answer10.toString());
+        db.setPhaseAnswer11(Phase1Answer11.toString());
+        db.setPhaseAnswer12(Phase1Answer12.toString());
+        db.setPhaseAnswer13(Phase1Answer13.toString());
+        db.setPhaseAnswer14(Phase1Answer14.getSelectedItem().toString());
+        db.setPhaseAnswer15(Phase1Answer15.getSelectedItem().toString());
+        db.setPhaseAnswer16(Phase1Answer16.toString());
+        db.setPhaseAnswer17(Phase1Answer17.getSelectedItem().toString());
+        db.setPhaseAnswer18(Phase1Answer18.getSelectedItem().toString());
+        db.setPhaseAnswer19(Phase1Answer19.getSelectedItem().toString());
+
+
+        Log.v("Values", "" + (Phase1Answer1.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer2.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer3.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer4.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer5.getSelectedItem().toString()));
+
+        Log.v("Values", "" + (Phase1Answer6.toString()));
+        Log.v("Values", "" + (Phase1Answer7.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer8.toString()));
+        Log.v("Values", "" + (Phase1Answer9.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer10.toString()));
+        Log.v("Values", "" + (Phase1Answer11.toString()));
+        Log.v("Values", "" + (Phase1Answer12.toString()));
+        Log.v("Values", "" + (Phase1Answer13.toString()));
+        Log.v("Values", "" + (Phase1Answer14.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer15.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer16.toString()));
+        Log.v("Values", "" + (Phase1Answer17.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer18.getSelectedItem().toString()));
+        Log.v("Values", "" + (Phase1Answer19.getSelectedItem().toString()));
+
+        mReal.close();
+    }
+
+
+    private boolean getValue() {
+        if (Phase1Answer1.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer2.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer3.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer4.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer5.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer7.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer9.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer14.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer15.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer17.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer18.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer19.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Kripaya Aru Uttar channuhos", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        Phase1Answer6 = new StringBuffer();
+        Phase1Answer8 = new StringBuffer();
+        Phase1Answer10 = new StringBuffer();
+        Phase1Answer11 = new StringBuffer();
+        Phase1Answer12 = new StringBuffer();
+        Phase1Answer13 = new StringBuffer();
+        Phase1Answer16 = new StringBuffer();
+
+
+        if (Phase1Answer6a.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6a.getText().toString() + ", ");
+        }
+        if (Phase1Answer6b.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6b.getText().toString() + " ,");
+        }
+        if (Phase1Answer6c.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6c.getText().toString() + ", ");
+        }
+        if (Phase1Answer6d.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6d.getText().toString() + ", ");
+        }
+        if (Phase1Answer6e.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6e.getText().toString() + ", ");
+        }
+        if (Phase1Answer6f.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6f.getText().toString() + " ,");
+        }
+        if (Phase1Answer6g.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6g.getText().toString() + " ,");
+        }
+        if (Phase1Answer6h.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6h.getText().toString() + ", ");
+        }
+        if (Phase1Answer6i.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6i.getText().toString() + " ,");
+        }
+        if (Phase1Answer6j.isChecked()) {
+            Phase1Answer6.append(Phase1Answer6j.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer8a.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8a.getText().toString() + " ,");
+        }
+        if (Phase1Answer8b.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8b.getText().toString() + " ,");
+        }
+        if (Phase1Answer8c.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8c.getText().toString() + " ,");
+        }
+        if (Phase1Answer8d.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8d.getText().toString() + ", ");
+        }
+        if (Phase1Answer8e.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8e.getText().toString() + ", ");
+        }
+        if (Phase1Answer8f.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8f.getText().toString() + " ,");
+        }
+        if (Phase1Answer8g.isChecked()) {
+            Phase1Answer8.append(Phase1Answer8g.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer10a.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10a.getText().toString() + ", ");
+        }
+        if (Phase1Answer10b.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10b.getText().toString() + ", ");
+        }
+        if (Phase1Answer10c.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10c.getText().toString() + " ,");
+        }
+        if (Phase1Answer10d.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10d.getText().toString() + " ,");
+        }
+        if (Phase1Answer10e.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10e.getText().toString() + " ,");
+        }
+        if (Phase1Answer10f.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10f.getText().toString() + " ,");
+        }
+        if (Phase1Answer10g.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10g.getText().toString() + ", ");
+        }
+        if (Phase1Answer10h.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10h.getText().toString() + " ,");
+        }
+        if (Phase1Answer10i.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10i.getText().toString() + ", ");
+        }
+        if (Phase1Answer10j.isChecked()) {
+            Phase1Answer10.append(Phase1Answer10j.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer11a.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11a.getText().toString() + " ,");
+        }
+        if (Phase1Answer11b.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11b.getText().toString() + ", ");
+        }
+        if (Phase1Answer11c.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11c.getText().toString() + " ,");
+        }
+        if (Phase1Answer11d.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11d.getText().toString() + ", ");
+        }
+        if (Phase1Answer11e.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11e.getText().toString() + ", ");
+        }
+        if (Phase1Answer11f.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11f.getText().toString() + ", ");
+        }
+        if (Phase1Answer11g.isChecked()) {
+            Phase1Answer11.append(Phase1Answer11g.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer12a.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12a.getText().toString() + ", ");
+        }
+        if (Phase1Answer12b.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12b.getText().toString() + " ,");
+        }
+        if (Phase1Answer12c.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12c.getText().toString() + " ,");
+        }
+        if (Phase1Answer12d.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12d.getText().toString() + " ,");
+        }
+        if (Phase1Answer12e.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12e.getText().toString() + ", ");
+        }
+        if (Phase1Answer12f.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12f.getText().toString() + " ,");
+        }
+        if (Phase1Answer12g.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12g.getText().toString() + ", ");
+        }
+        if (Phase1Answer12h.isChecked()) {
+            Phase1Answer12.append(Phase1Answer12h.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer13a.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13a.getText().toString() + " ,");
+        }
+        if (Phase1Answer13b.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13b.getText().toString() + ", ");
+        }
+        if (Phase1Answer13c.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13c.getText().toString() + ", ");
+        }
+        if (Phase1Answer13d.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13d.getText().toString() + ", ");
+        }
+        if (Phase1Answer13e.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13e.getText().toString() + ", ");
+        }
+        if (Phase1Answer13f.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13f.getText().toString() + ", ");
+        }
+        if (Phase1Answer13g.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13g.getText().toString() + ", ");
+        }
+        if (Phase1Answer13h.isChecked()) {
+            Phase1Answer13.append(Phase1Answer13h.getText().toString() + " ");
+        }
+
+
+        if (Phase1Answer16a.isChecked()) {
+            Phase1Answer16.append(Phase1Answer16a.getText().toString() + " ,");
+        }
+        if (Phase1Answer16b.isChecked()) {
+            Phase1Answer16.append(Phase1Answer16b.getText().toString() + " ,");
+        }
+        if (Phase1Answer16c.isChecked()) {
+            Phase1Answer16.append(Phase1Answer16c.getText().toString() + " ,");
+        }
+        if (Phase1Answer16d.isChecked()) {
+            Phase1Answer16.append(Phase1Answer16d.getText().toString() + ", ");
+        }
+        if (Phase1Answer16e.isChecked()) {
+            Phase1Answer16.append(Phase1Answer16e.getText().toString() + " ");
+        }
+
+        if (Phase1Answer6.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer8.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer10.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer11.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer12.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer13.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (Phase1Answer16.length() == 0) {
+            Toast.makeText(this, "Please make a selection ", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
 }
 

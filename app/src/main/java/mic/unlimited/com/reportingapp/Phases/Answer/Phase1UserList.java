@@ -10,6 +10,12 @@ import org.androidannotations.annotations.OptionsItem;
 import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.ViewById;
 
+import java.util.ArrayList;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
+import mic.unlimited.com.reportingapp.Database.Mother;
 import mic.unlimited.com.reportingapp.Phases.ActivityPhases;
 import mic.unlimited.com.reportingapp.Phases.ActivityPhases_;
 import mic.unlimited.com.reportingapp.Phases.Question.PhaseOneQ_;
@@ -23,19 +29,33 @@ import mic.unlimited.com.reportingapp.R;
 @EActivity(R.layout.phase_user)
 public class Phase1UserList extends AppCompatActivity {
 
+    ArrayList<String> names;
     @ViewById
     ListView phaseUser;
 
     @AfterViews
     void run() {
-
-        String[] names = {"१. सिता श्रेष्ठ ", "२. गिता पुन", "३. रिता श्रेष्ठ "};
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,names);
+        getName();
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, names);
         phaseUser.setAdapter(adapter);
     }
 
     @OptionsItem(R.id.add)
-    void addPhase(){
+    void addPhase() {
         PhaseOneQ_.intent(this).start();
+        this.finish();
+    }
+
+
+    public void getName() {
+        names = new ArrayList<>();
+        Realm.init(getApplicationContext());
+        RealmConfiguration configuration = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(configuration);
+        RealmResults<Mother> mothers = mReal.where(Mother.class).findAll();
+        for (int i = 0; i < mothers.size(); i++) {
+            Mother mother = mothers.get(i);
+            names.add(mother.getMotherName());
+        }
     }
 }

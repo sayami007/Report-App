@@ -16,6 +16,7 @@ public class Supervisor extends RealmObject {
     private String passwordText;
     private int districtId;
 
+
     public int getSupervisroId() {
         return supervisroId;
     }
