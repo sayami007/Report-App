@@ -1149,6 +1149,9 @@
     <string name="supervisor">Supervisor</string>
     <string name="member">Members</string>
     <string name="Topic">Topic</string>
+    <string name="supervisorPosition">Supervisor Position</string>
+    <string name="place">Place</string>
+    <string name="product6a">Baby bips</string>
 
 
     <string-array name="allEvents">

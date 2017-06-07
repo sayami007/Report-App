@@ -14,16 +14,20 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
+import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class Event11Q_
     extends Event11Q
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -37,6 +41,7 @@ public final class Event11Q_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +72,37 @@ public final class Event11Q_
 
     public static Event11Q_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new Event11Q_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        this.event11Date = ((TextView) hasViews.findViewById(R.id.event11Date));
+        this.supervisorPosEvent11 = ((EditText) hasViews.findViewById(R.id.supervisorPosEvent11));
+        this.place11 = ((EditText) hasViews.findViewById(R.id.place11));
+        this.topic11 = ((EditText) hasViews.findViewById(R.id.topic11));
+        View view_pickDate11 = hasViews.findViewById(R.id.pickDate11);
+        View view_saveEvent11 = hasViews.findViewById(R.id.saveEvent11);
+
+        if (view_pickDate11 != null) {
+            view_pickDate11 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event11Q_.this.pickDate();
+                }
+            }
+            );
+        }
+        if (view_saveEvent11 != null) {
+            view_saveEvent11 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event11Q_.this.run();
+                }
+            }
+            );
+        }
     }
 
     public static class IntentBuilder_

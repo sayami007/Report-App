@@ -75,7 +75,6 @@ public final class Event5Q_
     @Override
     public void onViewChanged(HasViews hasViews) {
         View view_inc = hasViews.findViewById(R.id.inc);
-        View view_saveing = hasViews.findViewById(R.id.saveing);
 
         if (view_inc!= null) {
             view_inc.setOnClickListener(new OnClickListener() {
@@ -83,16 +82,6 @@ public final class Event5Q_
                 @Override
                 public void onClick(View view) {
                     Event5Q_.this.makeIncrease();
-                }
-            }
-            );
-        }
-        if (view_saveing!= null) {
-            view_saveing.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View view) {
-                    Event5Q_.this.sav();
                 }
             }
             );

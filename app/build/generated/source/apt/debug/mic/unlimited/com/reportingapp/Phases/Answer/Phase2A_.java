@@ -9,6 +9,7 @@ package mic.unlimited.com.reportingapp.Phases.Answer;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
@@ -19,13 +20,15 @@ import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class Phase2A_
     extends Phase2A
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
+    public final static String MOTHER_ID_EXTRA = "motherId";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public final class Phase2A_
     }
 
     private void init_(Bundle savedInstanceState) {
+        injectExtras_();
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +72,26 @@ public final class Phase2A_
 
     public static Phase2A_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new Phase2A_.IntentBuilder_(supportFragment);
+    }
+
+    private void injectExtras_() {
+        Bundle extras_ = getIntent().getExtras();
+        if (extras_!= null) {
+            if (extras_.containsKey(MOTHER_ID_EXTRA)) {
+                this.motherId = extras_.getString(MOTHER_ID_EXTRA);
+            }
+        }
+    }
+
+    @Override
+    public void setIntent(Intent newIntent) {
+        super.setIntent(newIntent);
+        injectExtras_();
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        init();
     }
 
     public static class IntentBuilder_
@@ -114,6 +139,16 @@ public final class Phase2A_
                 }
             }
             return new PostActivityStarter(context);
+        }
+
+        /**
+         * @param motherId
+         *     the value for this extra
+         * @return
+         *     the IntentBuilder to chain calls
+         */
+        public Phase2A_.IntentBuilder_ motherId(String motherId) {
+            return super.extra(MOTHER_ID_EXTRA, motherId);
         }
     }
 }

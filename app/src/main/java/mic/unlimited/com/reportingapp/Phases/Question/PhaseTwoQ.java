@@ -182,7 +182,6 @@ public class PhaseTwoQ extends AppCompatActivity {
     CheckBox Phase2Answer24g;
 
 
-
     @ViewById
     CheckBox Phase2Answer25a;
     @ViewById
@@ -284,13 +283,8 @@ public class PhaseTwoQ extends AppCompatActivity {
                 if (getValues()) {
                     saveMother(motherId, motherName, motherAge, motherNumber, sup, vdcId);
                     saveToDb(motherId);
-                    Log.v("3", "" + "" + motherId + "" + motherName + "" + motherAge + "" + motherNumber + "" + sup + "" + vdcId);
-
                     Toast.makeText(this, "Succesful Entry", Toast.LENGTH_SHORT).show();
-                    Log.v("4", "" + "" + motherId + "" + motherName + "" + motherAge + "" + motherNumber + "" + sup + "" + vdcId);
-
                     this.finish();
-
                 }
             }
         } catch (Exception err) {
@@ -565,7 +559,6 @@ public class PhaseTwoQ extends AppCompatActivity {
         }
 
 
-
         if (Phase2Answer25a.isChecked()) {
             Phase2Answer25.append(Phase2Answer25a.getText().toString() + ", ");
         }
@@ -747,7 +740,7 @@ public class PhaseTwoQ extends AppCompatActivity {
         db.setPhaseAnswer27(Phase2Answer28.toString());
         db.setPhaseAnswer28(Phase2Answer29.getSelectedItem().toString());
         db.setPhaseAnswer29(Phase2Answer30.getSelectedItem().toString());
-        db.setPhaseAnswer20(Phase2Answer31.getSelectedItem().toString());
+        db.setPhaseAnswer30(Phase2Answer31.getSelectedItem().toString());
         mReal.commitTransaction();
 
         mReal.close();
