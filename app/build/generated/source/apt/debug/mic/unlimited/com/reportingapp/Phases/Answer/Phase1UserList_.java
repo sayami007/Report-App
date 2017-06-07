@@ -18,6 +18,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -78,7 +80,17 @@ public final class Phase1UserList_
     @Override
     public void onViewChanged(HasViews hasViews) {
         this.phaseUser = ((ListView) hasViews.findViewById(R.id.phaseUser));
-        run();
+        if (this.phaseUser!= null) {
+            ((AdapterView<?> ) this.phaseUser).setOnItemClickListener(new OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Phase1UserList_.this.run();
+                }
+            }
+            );
+        }
+        init();
     }
 
     @Override

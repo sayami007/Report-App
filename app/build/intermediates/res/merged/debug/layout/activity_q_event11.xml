@@ -12,7 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:text="@string/chooseDate"/>
+        android:text="@string/chooseDate" />
+
+    <TextView
+        android:id="@+id/event11Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -21,10 +26,24 @@
 
         <EditText
 
-            android:id="@+id/ward11"
+            android:id="@+id/supervisorPosEvent11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/ward" />
+            android:hint="@string/supervisorPosition" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <EditText
+
+            android:id="@+id/place11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/place" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -34,10 +53,10 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/number"
+            android:id="@+id/topic11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/sankhya" />
+            android:hint="@string/Topic" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -47,7 +66,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15sp"
         android:background="@color/buttonColor"
-        android:text="@string/save" />
+        android:text="@string/save"
+        android:id="@+id/saveEvent11"/>
 
 
 </LinearLayout>

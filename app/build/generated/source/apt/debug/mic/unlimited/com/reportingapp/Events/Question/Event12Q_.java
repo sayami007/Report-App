@@ -14,16 +14,19 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class Event12Q_
     extends Event12Q
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -37,6 +40,7 @@ public final class Event12Q_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +71,31 @@ public final class Event12Q_
 
     public static Event12Q_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new Event12Q_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        this.supervisorPosEvent11 = ((EditText) hasViews.findViewById(R.id.supervisorPosEvent11));
+        this.flyer1 = ((EditText) hasViews.findViewById(R.id.flyer1));
+        this.flyer2 = ((EditText) hasViews.findViewById(R.id.flyer2));
+        this.flyer3 = ((EditText) hasViews.findViewById(R.id.flyer3));
+        this.flyer4 = ((EditText) hasViews.findViewById(R.id.flyer4));
+        this.flyer5 = ((EditText) hasViews.findViewById(R.id.flyer5));
+        this.babybibs = ((EditText) hasViews.findViewById(R.id.babybibs));
+        this.towel = ((EditText) hasViews.findViewById(R.id.towel));
+        this.d3 = ((EditText) hasViews.findViewById(R.id.d3));
+        View view_saveEvent12 = hasViews.findViewById(R.id.saveEvent12);
+
+        if (view_saveEvent12 != null) {
+            view_saveEvent12 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event12Q_.this.save();
+                }
+            }
+            );
+        }
     }
 
     public static class IntentBuilder_

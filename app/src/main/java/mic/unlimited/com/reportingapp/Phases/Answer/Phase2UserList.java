@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ItemClick;
+import org.androidannotations.annotations.ItemSelect;
 import org.androidannotations.annotations.OptionsItem;
 import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.ViewById;
@@ -42,6 +44,12 @@ public class Phase2UserList extends AppCompatActivity {
         phaseUser.setAdapter(adapter);
     }
 
+
+    @ItemClick(R.id.phaseUser)
+    void ok(String pos) {
+        Phase2A_.intent(getApplicationContext()).extra("motherId",pos).start();;
+    }
+
     @OptionsItem(R.id.add)
     void addPhase() {
         PhaseTwoQ_.intent(this).start();
@@ -56,12 +64,11 @@ public class Phase2UserList extends AppCompatActivity {
         RealmResults<ActivityPhase2Db> phase2 = mReal.where(ActivityPhase2Db.class).findAll();
         for (int i = 0; i < phase2.size(); i++) {
             ActivityPhase2Db phase2Db = phase2.get(i);
-            Mother m1 = phase2Db.getMother();
-            if (m1.equals(null)) {
+            Mother m2 = phase2Db.getMother();
+            if (m2.equals(null)) {
                 continue;
             }
-            //HEL
-            names.add(m1.getMotherName());
+            names.add(m2.getMotherId() + ") " + m2.getMotherName());
         }
 
     }

@@ -1718,6 +1718,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="place">Place</string>
     <string name="presentName">उपस्थिती</string>
     <string name="pressForMore">अरु </string>
     <string name="product">Product</string>
@@ -1727,6 +1728,7 @@
     <string name="product4">फ्लायर ४</string>
     <string name="product5">फ्लायर ५</string>
     <string name="product6">बेबी बिब्स्	</string>
+    <string name="product6a">Baby bips</string>
     <string name="product7">रुमाल</string>
     <string name="product8">३ डि पोस्टर</string>
     <string name="question">Questions</string>
@@ -1753,6 +1755,7 @@
     <string name="startDate">StartDate</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="supervisor">Supervisor</string>
+    <string name="supervisorPosition">Supervisor Position</string>
     <string name="ten">10</string>
     <item format="float" name="text_size_multiplier_inner" type="string">0.14</item>
     <item format="float" name="text_size_multiplier_normal" type="string">0.17</item>

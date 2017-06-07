@@ -216,6 +216,7 @@ public class PhaseOneQ extends AppCompatActivity {
         int motherAge = Integer.parseInt(motherAgePhase1.getText().toString());
         long motherContact = Long.parseLong(motherContactPhase1.getText().toString());
         Supervisor supervisor = getSupervisor();
+        int vdcId = getVdcId();
         boolean checkMother = checkMother(motherId, motherName, motherAge, motherContact, supervisor);
         if (checkMother) {
             if (getValue()) {
@@ -230,6 +231,12 @@ public class PhaseOneQ extends AppCompatActivity {
         }
     }
 
+    //Generate Vdc Id
+    private int getVdcId() {
+        String value = healthPostPhase1.getSelectedItem().toString();
+        int v = Integer.parseInt(value.replaceAll("[^0-9]", ""));
+        return v;
+    }
 
     private boolean checkMother(int a, String b, int c, long d, Supervisor e) {
         try {
@@ -302,7 +309,6 @@ public class PhaseOneQ extends AppCompatActivity {
 
     public void saveValues(int motherId) {
 
-
         Realm.init(getApplicationContext());
         RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
         Realm mReal = Realm.getInstance(config);
@@ -331,6 +337,8 @@ public class PhaseOneQ extends AppCompatActivity {
         db.setPhaseAnswer17(Phase1Answer17.getSelectedItem().toString());
         db.setPhaseAnswer18(Phase1Answer18.getSelectedItem().toString());
         db.setPhaseAnswer19(Phase1Answer19.getSelectedItem().toString());
+
+        mReal.commitTransaction();
 
 
         Log.v("Values", "" + (Phase1Answer1.getSelectedItem().toString()));

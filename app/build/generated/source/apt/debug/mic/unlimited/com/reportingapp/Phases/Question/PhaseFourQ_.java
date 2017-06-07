@@ -137,6 +137,11 @@ public final class PhaseFourQ_
         this.Phase4Answer20 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer20));
         this.Phase4Answer21 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer21));
         this.Phase4Answer22 = ((Spinner) hasViews.findViewById(R.id.Phase4Answer22));
+        this.motherNamePhase4 = ((EditText) hasViews.findViewById(R.id.motherNamePhase4));
+        this.motherAgePhase4 = ((EditText) hasViews.findViewById(R.id.motherAgePhase4));
+        this.motherContactPhase4 = ((EditText) hasViews.findViewById(R.id.motherContactPhase4));
+        this.motherAddressPhase4 = ((EditText) hasViews.findViewById(R.id.motherAddressPhase4));
+        this.healthPostPhase4 = ((Spinner) hasViews.findViewById(R.id.healthPostPhase4));
         View view_saveLocalPhase4 = hasViews.findViewById(R.id.saveLocalPhase4);
 
         if (view_saveLocalPhase4 != null) {
@@ -149,6 +154,7 @@ public final class PhaseFourQ_
             }
             );
         }
+        init();
     }
 
     public static class IntentBuilder_

@@ -16,6 +16,8 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -76,7 +78,19 @@ public final class Event4Q_
     @Override
     public void onViewChanged(HasViews hasViews) {
         this.selectedDateEvent4 = ((TextView) hasViews.findViewById(R.id.selectedDateEvent4));
+        this.supervisorPosEvent4 = ((EditText) hasViews.findViewById(R.id.supervisorPosEvent4));
+        this.maleEvent4 = ((EditText) hasViews.findViewById(R.id.maleEvent4));
+        this.femaleEvent4 = ((EditText) hasViews.findViewById(R.id.femaleEvent4));
+        this.event4Chairperson = ((EditText) hasViews.findViewById(R.id.event4Chairperson));
+        this.event4check1 = ((CheckBox) hasViews.findViewById(R.id.event4check1));
+        this.event4check2 = ((CheckBox) hasViews.findViewById(R.id.event4check2));
+        this.event4check3 = ((CheckBox) hasViews.findViewById(R.id.event4check3));
+        this.event4check4 = ((CheckBox) hasViews.findViewById(R.id.event4check4));
+        this.event4check5 = ((CheckBox) hasViews.findViewById(R.id.event4check5));
+        this.event4Agenda = ((EditText) hasViews.findViewById(R.id.event4Agenda));
+        this.event4Decision = ((EditText) hasViews.findViewById(R.id.event4Decision));
         View view_pickDateEvent4 = hasViews.findViewById(R.id.pickDateEvent4);
+        View view_saveEvent4 = hasViews.findViewById(R.id.saveEvent4);
 
         if (view_pickDateEvent4 != null) {
             view_pickDateEvent4 .setOnClickListener(new OnClickListener() {
@@ -88,6 +102,17 @@ public final class Event4Q_
             }
             );
         }
+        if (view_saveEvent4 != null) {
+            view_saveEvent4 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event4Q_.this.values();
+                }
+            }
+            );
+        }
+        init();
     }
 
     public static class IntentBuilder_

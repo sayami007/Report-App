@@ -4,7 +4,7 @@ import java.util.Date;
 
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
-import mic.unlimited.com.reportingapp.Database.AllEvent;
+import mic.unlimited.com.reportingapp.Database.EventName;
 import mic.unlimited.com.reportingapp.Database.Supervisor;
 
 /**
@@ -12,14 +12,17 @@ import mic.unlimited.com.reportingapp.Database.Supervisor;
  */
 
 public class Event2Db extends RealmObject {
+
     @PrimaryKey
     private int id;
-    private AllEvent event;
+    private EventName event;
     private Supervisor supervisor;
     private String supervisorPos;
-    private Date date;
-    private Date startDate;
-    private Date endDate;
+
+    private String date;
+    private String startDate;
+    private String endDate;
+
     private int maleNumber;
     private int femaleNumber;
 

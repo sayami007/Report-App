@@ -112,6 +112,7 @@ public final class MainPage_
             }
             );
         }
+        init();
     }
 
     @Override

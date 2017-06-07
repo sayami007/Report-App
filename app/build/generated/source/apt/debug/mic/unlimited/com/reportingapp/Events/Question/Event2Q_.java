@@ -16,6 +16,7 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
 import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -75,14 +76,18 @@ public final class Event2Q_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        this.supervisorPositionEvent2 = ((EditText) hasViews.findViewById(R.id.supervisorPositionEvent2));
+        this.maleEvent2 = ((EditText) hasViews.findViewById(R.id.maleEvent2));
+        this.femaleEvent2 = ((EditText) hasViews.findViewById(R.id.femaleEvent2));
         this.event2date = ((TextView) hasViews.findViewById(R.id.event2date));
         this.startDate = ((TextView) hasViews.findViewById(R.id.startDate));
         this.endDate = ((TextView) hasViews.findViewById(R.id.endDate));
         View view_inc = hasViews.findViewById(R.id.inc);
-        View view_saveing = hasViews.findViewById(R.id.saveing);
         View view_pickDateEvent2 = hasViews.findViewById(R.id.pickDateEvent2);
         View view_pickStartDateEvent2 = hasViews.findViewById(R.id.pickStartDateEvent2);
         View view_pickEndDateEvent2 = hasViews.findViewById(R.id.pickEndDateEvent2);
+        View view_saveEvent2 = hasViews.findViewById(R.id.saveEvent2);
+        View view_saveMember = hasViews.findViewById(R.id.saveMember);
 
         if (view_inc!= null) {
             view_inc.setOnClickListener(new OnClickListener() {
@@ -90,16 +95,6 @@ public final class Event2Q_
                 @Override
                 public void onClick(View view) {
                     Event2Q_.this.makeMember();
-                }
-            }
-            );
-        }
-        if (view_saveing!= null) {
-            view_saveing.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View view) {
-                    Event2Q_.this.sav();
                 }
             }
             );
@@ -134,6 +129,27 @@ public final class Event2Q_
             }
             );
         }
+        if (view_saveEvent2 != null) {
+            view_saveEvent2 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event2Q_.this.collect();
+                }
+            }
+            );
+        }
+        if (view_saveMember!= null) {
+            view_saveMember.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event2Q_.this.saveMember();
+                }
+            }
+            );
+        }
+        init();
     }
 
     public static class IntentBuilder_

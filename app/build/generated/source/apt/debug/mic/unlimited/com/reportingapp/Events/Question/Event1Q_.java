@@ -16,6 +16,8 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -76,6 +78,22 @@ public final class Event1Q_
     @Override
     public void onViewChanged(HasViews hasViews) {
         this.selectedDate = ((TextView) hasViews.findViewById(R.id.selectedDate));
+        this.supervisorPosEvent1 = ((EditText) hasViews.findViewById(R.id.supervisorPosEvent1));
+        this.event1Chairperson = ((EditText) hasViews.findViewById(R.id.event1Chairperson));
+        this.maleEvent1 = ((EditText) hasViews.findViewById(R.id.maleEvent1));
+        this.femaleEvent1 = ((EditText) hasViews.findViewById(R.id.femaleEvent1));
+        this.event1Agenda = ((EditText) hasViews.findViewById(R.id.event1Agenda));
+        this.event1Decision = ((EditText) hasViews.findViewById(R.id.event1Decision));
+        this.event1check1 = ((CheckBox) hasViews.findViewById(R.id.event1check1));
+        this.event1check2 = ((CheckBox) hasViews.findViewById(R.id.event1check2));
+        this.event1check3 = ((CheckBox) hasViews.findViewById(R.id.event1check3));
+        this.event1check4 = ((CheckBox) hasViews.findViewById(R.id.event1check4));
+        this.event1check5 = ((CheckBox) hasViews.findViewById(R.id.event1check5));
+        this.event1check6 = ((CheckBox) hasViews.findViewById(R.id.event1check6));
+        this.event1check7 = ((CheckBox) hasViews.findViewById(R.id.event1check7));
+        this.event1check8 = ((CheckBox) hasViews.findViewById(R.id.event1check8));
+        this.event1check9 = ((CheckBox) hasViews.findViewById(R.id.event1check9));
+        this.event1check10 = ((CheckBox) hasViews.findViewById(R.id.event1check10));
         View view_pickDate = hasViews.findViewById(R.id.pickDate);
         View view_saveEvent1 = hasViews.findViewById(R.id.saveEvent1);
 
@@ -94,7 +112,7 @@ public final class Event1Q_
 
                 @Override
                 public void onClick(View view) {
-                    Event1Q_.this.saveEvent();
+                    Event1Q_.this.init();
                 }
             }
             );

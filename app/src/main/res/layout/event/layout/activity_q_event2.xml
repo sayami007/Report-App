@@ -16,6 +16,19 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/supervisorPositionEvent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supervisorPosition" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
                 android:id="@+id/supervisorPosEvent2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,9 +112,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/member"
-                android:textSize="20sp"/>
-            <View
-                style="@style/Divider"/>
+                android:textSize="20sp" />
+
+            <View style="@style/Divider" />
 
             <LinearLayout
                 android:id="@+id/la"
@@ -109,17 +122,34 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"></LinearLayout>
 
-            <Button
-                android:id="@+id/inc"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/addMember" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/inc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/addMember" />
+
+
+                <Button
+                    android:id="@+id/saveMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/saveing"
+            android:id="@+id/saveEvent2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"

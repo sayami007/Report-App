@@ -6,10 +6,19 @@ import android.widget.ListView;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ItemClick;
 import org.androidannotations.annotations.OptionsItem;
 import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.ViewById;
 
+import java.util.ArrayList;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
+import mic.unlimited.com.reportingapp.Database.Activity.ActivityPhase1Db;
+import mic.unlimited.com.reportingapp.Database.Activity.ActivityPhase3Db;
+import mic.unlimited.com.reportingapp.Database.Mother;
 import mic.unlimited.com.reportingapp.Phases.ActivityPhases_;
 import mic.unlimited.com.reportingapp.Phases.Question.PhaseOneQ_;
 import mic.unlimited.com.reportingapp.Phases.Question.PhaseThreeQ_;
@@ -27,18 +36,42 @@ public class Phase3UserList extends AppCompatActivity {
     @ViewById
     ListView phaseUser;
 
+    ArrayList<String> names;
     @AfterViews
     void run() {
 
-
-        String[] names = {"१. सिता श्रेष्ठ ", "२. गिता पुन", "३. रिता श्रेष्ठ "};
+        getName();
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,names);
         phaseUser.setAdapter(adapter);
     }
 
 
+
+    @ItemClick(R.id.phaseUser)
+    void ok(String pos) {
+        Phase3A_.intent(getApplicationContext()).extra("motherId",pos).start();;
+    }
+
     @OptionsItem(R.id.add)
     void addPhase(){
         PhaseThreeQ_.intent(this).start();
+    }
+
+
+    public void getName() {
+        names = new ArrayList<>();
+        Realm.init(getApplicationContext());
+        RealmConfiguration configuration = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(configuration);
+        RealmResults<ActivityPhase3Db> phase3 = mReal.where(ActivityPhase3Db.class).findAll();
+        for (int i = 0; i < phase3.size(); i++) {
+            ActivityPhase3Db phase3Db = phase3.get(i);
+            Mother m3 = phase3Db.getMotherID();
+            if (m3.equals(null)) {
+                continue;
+            }
+            names.add(m3.getMotherId()+") "+m3.getMotherName());
+        }
+
     }
 }

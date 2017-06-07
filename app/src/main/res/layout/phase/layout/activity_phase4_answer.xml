@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_background"
+    android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/phase3MotherNameAnswer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/phase3MotherAgeAnswer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/phase3MotherNumberAnswer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/phase3MotherAddressAnswer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/phase3MotherVDCAnswer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question1"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question1Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question2"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question2Answer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question3"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question3Answer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question4"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question4Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question5"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question5Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question6"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question6Answer"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Phase4Question7" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question7Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question8"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question8Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question9"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question9Answer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question10"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question10Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question11"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question11Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question12"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question12Answer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question13"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question13Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question14"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question14Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question15"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question15Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question16"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question16Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question17"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question17Answer"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question18"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question18Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question19"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question19Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question20"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question20Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question21"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question21Answer"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Phase4Question22"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Phase4Question22Answer"/>
+
 
 </LinearLayout>

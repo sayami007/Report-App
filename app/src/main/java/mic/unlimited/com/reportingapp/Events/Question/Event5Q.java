@@ -31,11 +31,11 @@ public class Event5Q extends AppCompatActivity {
         la.addView(text);
     }
 
-    @Click(R.id.saveing)
-    void sav(){
-        for(int i = 1; i<=count ; i++) {
-            EditText te = (EditText) findViewById(i);
-            Toast.makeText(this, "" + te.getText().toString(), Toast.LENGTH_SHORT).show();
-        }
-    }
+//    @Click(R.id.saveing)
+//    void sav(){
+//        for(int i = 1; i<=count ; i++) {
+//            EditText te = (EditText) findViewById(i);
+//            Toast.makeText(this, "" + te.getText().toString(), Toast.LENGTH_SHORT).show();
+//        }
+//    }
 }

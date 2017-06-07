@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.util.Log;
 
+import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.OptionsItem;
@@ -16,6 +17,7 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import mic.unlimited.com.reportingapp.Behavior.SavedBehavior_;
+import mic.unlimited.com.reportingapp.Database.EventName;
 import mic.unlimited.com.reportingapp.Database.Vdc;
 import mic.unlimited.com.reportingapp.Events.Events_;
 import mic.unlimited.com.reportingapp.Phases.ActivityPhasesAnswer_;
@@ -84,19 +86,37 @@ public class MainPage extends AppCompatActivity {
         signOut.setNegativeButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Realm.init(getApplicationContext());
-                RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
-                Realm realm = Realm.getInstance(config);
-                realm.beginTransaction();
-                realm.deleteAll();
-                realm.commitTransaction();
-                realm.close();
-                mypref.clear();
-                LoginActivity_.intent(getApplicationContext()).start();
-                finish();
+                signOutAgain();
             }
         });
         signOut.show();
+    }
+
+    void signOutAgain() {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm realm = Realm.getInstance(config);
+        realm.beginTransaction();
+        realm.deleteAll();
+        realm.commitTransaction();
+        realm.close();
+        mypref.clear();
+        LoginActivity_.intent(getApplicationContext()).start();
+        finish();
+    }
+
+    @AfterViews
+    void init() {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm realm = Realm.getInstance(config);
+        RealmResults<EventName> name = realm.where(EventName.class).findAll();
+        for (int i = 0; i < name.size(); i++)
+            Log.v("Values", "" + name.get(i));
+
+        if (name.size() == 0) {
+            signOutAgain();
+        }
     }
 
 }
