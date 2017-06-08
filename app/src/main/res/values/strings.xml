@@ -1152,6 +1152,8 @@
     <string name="supervisorPosition">Supervisor Position</string>
     <string name="place">Place</string>
     <string name="product6a">Baby bips</string>
+    <string name="saveTopic">Save Topic</string>
+    <string name="saveMember">Save Member</string>
 
 
     <string-array name="allEvents">

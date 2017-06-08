@@ -3,20 +3,11 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Bibesh/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
-        <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-1.0.19_fe054b9738d3a651be726ba141946c1becde6c32/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e4ad7ec6715bf94cfa099fe81ceb645fb8e37903">
+        sha1="633fa5dc153c2e61d59469d687866389c26e9901">
         <dex dex="/Users/Bibesh/AndroidStudioProjects/Report-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5754f1184b4cc91e12c002038c5982190b5f4f6e/classes.dex" />
     </item>
     <item

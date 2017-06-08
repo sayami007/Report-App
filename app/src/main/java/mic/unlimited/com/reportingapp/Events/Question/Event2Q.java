@@ -25,6 +25,7 @@ import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import mic.unlimited.com.reportingapp.Database.Event.Event1DB;
 import mic.unlimited.com.reportingapp.Database.Event.Event2Db;
+import mic.unlimited.com.reportingapp.Database.Event.Event2DbParticipants;
 import mic.unlimited.com.reportingapp.Database.EventName;
 import mic.unlimited.com.reportingapp.Database.Supervisor;
 import mic.unlimited.com.reportingapp.R;
@@ -64,14 +65,15 @@ public class Event2Q extends AppCompatActivity {
     public int count = 0;
     EditText name, address;
 
+    LinearLayout la;
+
     @Click(R.id.inc)
     void makeMember() {
-        LinearLayout la = (LinearLayout) findViewById(R.id.la);
-        name = new EditText(this);
-        address = new EditText(this);
-        name.setHint(R.string.name);
-        address.setHint(R.string.address);
         if (check()) {
+            name = new EditText(this);
+            address = new EditText(this);
+            name.setHint(R.string.name);
+            address.setHint(R.string.address);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
                 name.setId(name.generateViewId());
                 address.setId(address.generateViewId());
@@ -84,9 +86,8 @@ public class Event2Q extends AppCompatActivity {
 
     }
 
+    //
     private boolean check() {
-        Log.v("COUNT", "" + count);
-        Log.v("Size", "" + nameValue.size());
         if ((count - nameValue.size()) == 1) {
             Toast.makeText(this, "Please press save button", Toast.LENGTH_SHORT).show();
             return false;
@@ -96,12 +97,6 @@ public class Event2Q extends AppCompatActivity {
 
     @Click(R.id.pickDateEvent2)
     void pickDate() {
-
-        for (int i = 1; i <= count; i++) {
-            EditText te = (EditText) findViewById(i);
-            Toast.makeText(this, "" + te.getText().toString(), Toast.LENGTH_SHORT).show();
-        }
-
         final Dialog dateTimePicker = new Dialog(this);
         dateTimePicker.setContentView(R.layout.datetime_pick);
         final DatePicker date = (DatePicker) dateTimePicker.findViewById(R.id.calendar);
@@ -127,7 +122,7 @@ public class Event2Q extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sDate = date.getYear() + "/" + date.getMonth() + "/" + date.getDayOfMonth();
-                startDate.setText(mainDate);
+                startDate.setText(sDate);
                 dateTimePicker.dismiss();
             }
         });
@@ -144,7 +139,7 @@ public class Event2Q extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 eDate = date.getYear() + "/" + date.getMonth() + "/" + date.getDayOfMonth();
-                endDate.setText(mainDate);
+                endDate.setText(eDate);
                 dateTimePicker.dismiss();
             }
         });
@@ -180,7 +175,45 @@ public class Event2Q extends AppCompatActivity {
             Log.v("NameValue", nameValue.get(i).toString() + "");
             Log.v("Address values", addressValue.get(i).toString() + "");
         }
+
+        try {
+            Realm.init(this);
+            RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+            Realm mReal = Realm.getInstance(config);
+            mReal.beginTransaction();
+
+            Event2Db db = mReal.createObject(Event2Db.class, id);
+            db.setEvent(event);
+            db.setSupervisor(supervisor);
+            db.setSupervisorPos(supervisorPos);
+            db.setDate(date);
+            db.setStartDate(startDate_);
+            db.setEndDate(endDate_);
+            db.setMaleNumber(maleNumber);
+            db.setFemaleNumber(femaleNumber);
+            mReal.commitTransaction();
+            mReal.close();
+
+            Realm mReal2 = Realm.getInstance(config);
+            mReal2.beginTransaction();
+            RealmResults<Event2Db> event2 = mReal2.where(Event2Db.class).equalTo("id", id).findAll();
+            for (int i = 0; i < nameValue.size(); i++) {
+                Event2DbParticipants db2 = mReal.createObject(Event2DbParticipants.class, getPId());
+                db2.setEvent(event2.first());
+                db2.setName(nameValue.get(i).toString());
+                db2.setAddress(addressValue.get(i).toString());
+            }
+            mReal2.commitTransaction();
+            mReal2.close();
+            Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+            this.finish();
+        } catch (Exception err) {
+            Log.v("ERROR", err.getMessage());
+        } finally {
+            showEvent();
+        }
     }
+
 
     //Get Supervisor
     private Supervisor getSupervisor() {
@@ -198,10 +231,8 @@ public class Event2Q extends AppCompatActivity {
         RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
         Realm mReal = Realm.getInstance(config);
         RealmResults<EventName> event1 = mReal.where(EventName.class).equalTo("eventId", 2).findAll();
-        mReal.close();
         return event1.first();
     }
-
 
 
     //Generate Id
@@ -219,9 +250,24 @@ public class Event2Q extends AppCompatActivity {
         }
     }
 
+    //Participants Id
+    public int getPId() {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Event2DbParticipants> event2 = mReal.where(Event2DbParticipants.class).findAll();
+        if (event2.size() == 0) {
+            mReal.close();
+            return 1;
+        } else {
+            mReal.close();
+            return event2.size() + 1;
+        }
+    }
 
     @AfterViews
     void init() {
+        la = (LinearLayout) findViewById(R.id.la);
         nameValue = new ArrayList<>();
         addressValue = new ArrayList<>();
     }
@@ -229,7 +275,6 @@ public class Event2Q extends AppCompatActivity {
     @Click(R.id.saveMember)
     void saveMember() {
         try {
-            Log.v("SDF", "" + name.getText().toString().trim().equals(""));
             if (name.getText().toString().trim().equals("")) {
                 Toast.makeText(this, "Please add values to save.", Toast.LENGTH_SHORT).show();
             } else {
@@ -242,6 +287,25 @@ public class Event2Q extends AppCompatActivity {
             }
         } catch (Exception err) {
             Toast.makeText(this, "Please add new member to save.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void showEvent() {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Event2Db> db = mReal.where(Event2Db.class).findAll();
+        for (int i = 0; i < db.size(); i++)
+            Log.v("VALUES", db.get(i) + "");
+
+        RealmResults<Event2DbParticipants> db2 = mReal.where(Event2DbParticipants.class).findAll();
+        for (int i = 0; i < db2.size(); i++) {
+            Event2DbParticipants a = db2.get(i);
+            Event2Db name = a.getEvent();
+            EventName name2 = name.getEvent();
+            Log.v("Event id", "" + name2.getEventId());
+            Log.v("VALUES", db2.get(i) + "");
+
         }
     }
 }

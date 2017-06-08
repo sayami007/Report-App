@@ -14,16 +14,21 @@ import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
 import org.androidannotations.api.view.HasViews;
+import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
 public final class Event6Q_
     extends Event6Q
-    implements HasViews
+    implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
 
@@ -37,6 +42,7 @@ public final class Event6Q_
     }
 
     private void init_(Bundle savedInstanceState) {
+        OnViewChangedNotifier.registerOnViewChangedListener(this);
     }
 
     @Override
@@ -67,6 +73,85 @@ public final class Event6Q_
 
     public static Event6Q_.IntentBuilder_ intent(android.support.v4.app.Fragment supportFragment) {
         return new Event6Q_.IntentBuilder_(supportFragment);
+    }
+
+    @Override
+    public void onViewChanged(HasViews hasViews) {
+        this.event6Date = ((TextView) hasViews.findViewById(R.id.event6Date));
+        this.event6startDate = ((TextView) hasViews.findViewById(R.id.event6startDate));
+        this.event6endDate = ((TextView) hasViews.findViewById(R.id.event6endDate));
+        this.event6SupervisorPos = ((EditText) hasViews.findViewById(R.id.event6SupervisorPos));
+        this.event6maleMember = ((EditText) hasViews.findViewById(R.id.event6maleMember));
+        this.event6femaleMember = ((EditText) hasViews.findViewById(R.id.event6femaleMember));
+        this.memberEvent6 = ((LinearLayout) hasViews.findViewById(R.id.memberEvent6));
+        View view_pickDateEvent6 = hasViews.findViewById(R.id.pickDateEvent6);
+        View view_pickDateEvent6Start = hasViews.findViewById(R.id.pickDateEvent6Start);
+        View view_pickDateEvent6end = hasViews.findViewById(R.id.pickDateEvent6end);
+        View view_saveEvent6 = hasViews.findViewById(R.id.saveEvent6);
+        View view_addMemberevent6 = hasViews.findViewById(R.id.addMemberevent6);
+        View view_saveMemberevent6 = hasViews.findViewById(R.id.saveMemberevent6);
+
+        if (view_pickDateEvent6 != null) {
+            view_pickDateEvent6 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.pickDate();
+                }
+            }
+            );
+        }
+        if (view_pickDateEvent6Start!= null) {
+            view_pickDateEvent6Start.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.pickDateStart();
+                }
+            }
+            );
+        }
+        if (view_pickDateEvent6end!= null) {
+            view_pickDateEvent6end.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.pickDateEnd();
+                }
+            }
+            );
+        }
+        if (view_saveEvent6 != null) {
+            view_saveEvent6 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.save();
+                }
+            }
+            );
+        }
+        if (view_addMemberevent6 != null) {
+            view_addMemberevent6 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.addMember();
+                }
+            }
+            );
+        }
+        if (view_saveMemberevent6 != null) {
+            view_saveMemberevent6 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event6Q_.this.saveMember();
+                }
+            }
+            );
+        }
+        init();
     }
 
     public static class IntentBuilder_

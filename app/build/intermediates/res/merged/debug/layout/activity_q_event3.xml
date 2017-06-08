@@ -1,128 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
-    android:background="@drawable/drawable_background"
-    android:orientation="vertical"
-    android:padding="@dimen/left_margin">
-
-    <Button
-        android:id="@+id/pickDateEvent2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="@string/chooseDate" />
-
-    <TextView
-        android:id="@+id/selectedDateEvent3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/supervisorPosEvent3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/supervisor" />
-
-    </android.support.design.widget.TextInputLayout>
+    android:background="@drawable/drawable_background">
 
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/event2Chairperson"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/chairedby" />
-
-    </android.support.design.widget.TextInputLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_weight="1">
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/male"
-                android:inputType="number" />
-
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_weight="1">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:hint="@string/female"
-                android:inputType="number" />
-        </android.support.design.widget.TextInputLayout>
-
-    </LinearLayout>
-
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/totalMedia"
-            android:inputType="number" />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10sp"
-        android:text="@string/Topic"
-        android:textSize="20sp" />
-
-    <View style="@style/Divider" />
-
-    <LinearLayout
-        android:id="@+id/topicPlace"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10sp" />
+        android:padding="@dimen/left_margin">
 
-    <Button
-        android:id="@+id/addTopic"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10sp"
-        android:text="@string/addTopic" />
+        <Button
+            android:id="@+id/pickDateEvent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/chooseDate" />
 
-    <Button
-        android:id="@+id/saveEvent3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/buttonColor"
-        android:text="Save" />
+        <TextView
+            android:id="@+id/selectedDateEvent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/supervisorPosEvent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supervisorPosition" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event2Chairperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/chairedby" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1">
+
+
+                <EditText
+                    android:id="@+id/event4male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/male"
+                    android:inputType="number" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/event4female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/female"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event4media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/totalMedia"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="@string/Topic"
+            android:textSize="20sp" />
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:id="@+id/topicPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:text="@string/addTopic" />
+
+            <Button
+                android:id="@+id/saveTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:text="@string/saveTopic" />
+
+        </LinearLayout>
+
+        <View style="@style/br" />
+
+        <Button
+            android:id="@+id/saveEvent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonColor"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</ScrollView>

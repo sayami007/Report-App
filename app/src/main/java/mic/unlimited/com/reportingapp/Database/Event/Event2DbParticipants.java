@@ -15,4 +15,36 @@ public class Event2DbParticipants extends RealmObject {
     private String name;
     private String address;
 
+
+    public int getParticipantId() {
+        return participantId;
+    }
+
+    public void setParticipantId(int participantId) {
+        this.participantId = participantId;
+    }
+
+    public Event2Db getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event2Db event) {
+        this.event = event;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

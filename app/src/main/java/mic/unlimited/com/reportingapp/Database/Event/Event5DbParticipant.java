@@ -10,7 +10,39 @@ import io.realm.annotations.PrimaryKey;
 public class Event5DbParticipant extends RealmObject {
     @PrimaryKey
     private int participantId;
-    private Event5Db id;
+    private int event5id;
     private String name;
     private String address;
+
+    public int getParticipantId() {
+        return participantId;
+    }
+
+    public void setParticipantId(int participantId) {
+        this.participantId = participantId;
+    }
+
+    public int getEvent5id() {
+        return event5id;
+    }
+
+    public void setEvent5id(int event5id) {
+        this.event5id = event5id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

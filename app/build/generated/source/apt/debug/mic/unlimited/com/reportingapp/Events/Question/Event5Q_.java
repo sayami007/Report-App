@@ -16,6 +16,9 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import mic.unlimited.com.reportingapp.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
@@ -74,18 +77,81 @@ public final class Event5Q_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        View view_inc = hasViews.findViewById(R.id.inc);
+        this.event5Date = ((TextView) hasViews.findViewById(R.id.event5Date));
+        this.event5startDate = ((TextView) hasViews.findViewById(R.id.event5startDate));
+        this.event5endDate = ((TextView) hasViews.findViewById(R.id.event5endDate));
+        this.event5SupervisorPos = ((EditText) hasViews.findViewById(R.id.event5SupervisorPos));
+        this.maleMember = ((EditText) hasViews.findViewById(R.id.maleMember));
+        this.femaleMember = ((EditText) hasViews.findViewById(R.id.femaleMember));
+        this.member = ((LinearLayout) hasViews.findViewById(R.id.member));
+        View view_pickDateEvent5 = hasViews.findViewById(R.id.pickDateEvent5);
+        View view_pickDateEvent5Start = hasViews.findViewById(R.id.pickDateEvent5Start);
+        View view_pickDateEvent5end = hasViews.findViewById(R.id.pickDateEvent5end);
+        View view_saveEvent5 = hasViews.findViewById(R.id.saveEvent5);
+        View view_addMember = hasViews.findViewById(R.id.addMember);
+        View view_saveMember = hasViews.findViewById(R.id.saveMember);
 
-        if (view_inc!= null) {
-            view_inc.setOnClickListener(new OnClickListener() {
+        if (view_pickDateEvent5 != null) {
+            view_pickDateEvent5 .setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View view) {
-                    Event5Q_.this.makeIncrease();
+                    Event5Q_.this.pickDate();
                 }
             }
             );
         }
+        if (view_pickDateEvent5Start!= null) {
+            view_pickDateEvent5Start.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event5Q_.this.pickDateStart();
+                }
+            }
+            );
+        }
+        if (view_pickDateEvent5end!= null) {
+            view_pickDateEvent5end.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event5Q_.this.pickDateEnd();
+                }
+            }
+            );
+        }
+        if (view_saveEvent5 != null) {
+            view_saveEvent5 .setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event5Q_.this.save();
+                }
+            }
+            );
+        }
+        if (view_addMember!= null) {
+            view_addMember.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event5Q_.this.addMember();
+                }
+            }
+            );
+        }
+        if (view_saveMember!= null) {
+            view_saveMember.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Event5Q_.this.saveMember();
+                }
+            }
+            );
+        }
+        init();
     }
 
     public static class IntentBuilder_

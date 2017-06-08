@@ -1,70 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/drawable_background"
-    android:orientation="vertical">
+    android:background="@drawable/drawable_background">
 
-
-    <Button
-        android:id="@+id/pickDateEvent2"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
-        android:background="@drawable/button"
-        android:text="@string/chooseDate" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
-        android:background="@drawable/button"
-        android:text="@string/startDate" />
+        <Button
+            android:id="@+id/pickDateEvent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/button"
+            android:text="@string/chooseDate" />
+
+        <TextView
+            android:id="@+id/event5Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pickDateEvent5Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/button"
+            android:text="@string/startDate" />
+
+        <TextView
+            android:id="@+id/event5startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pickDateEvent5end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/button"
+            android:text="@string/endDate" />
+
+        <TextView
+            android:id="@+id/event5endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/event5SupervisorPos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supervisorPosition" />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
-        android:background="@drawable/button"
-        android:text="@string/endDate" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="male" />
+            <EditText
+                android:id="@+id/maleMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="male" />
+        </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="female" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/femaleMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="female" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/br" />
+
+        <View style="@style/br" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/member" />
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:id="@+id/member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/addMember" />
+
+            <Button
+                android:id="@+id/saveMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/saveMember" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveEvent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonColor"
+            android:text="Save " />
 
 
-    <LinearLayout
-        android:id="@+id/la"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/inc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/addMember" />
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save " />
-
-
-</LinearLayout>
+</ScrollView>

@@ -20,7 +20,15 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
 import mic.unlimited.com.reportingapp.Activity.LoginActivity_;
+import mic.unlimited.com.reportingapp.Database.Activity.ActivityPhase3Db;
+import mic.unlimited.com.reportingapp.Database.Activity.ActivityPhase4Db;
+import mic.unlimited.com.reportingapp.Database.Mother;
+import mic.unlimited.com.reportingapp.Database.Supervisor;
+import mic.unlimited.com.reportingapp.Database.Vdc;
 import mic.unlimited.com.reportingapp.R;
 
 /**
@@ -171,14 +179,163 @@ public class PhaseFourQ extends AppCompatActivity {
     @ViewById
     Spinner Phase4Answer22;
 
+    @ViewById
+    EditText motherNamePhase4;
+    @ViewById
+    EditText motherAgePhase4;
+    @ViewById
+    EditText motherContactPhase4;
+    @ViewById
+    EditText motherAddressPhase4;
+    @ViewById
+    Spinner healthPostPhase4;
+
     @Click(R.id.saveLocalPhase4)
     public void saveInformation() {
-        boolean response = getValues();
-        Log.v("RES", "RES" + response);
+        try {
+            Phase4Answer4 = new StringBuffer();
+            Phase4Answer5 = new StringBuffer();
+            Phase4Answer14 = new StringBuffer();
+            Phase4Answer15 = new StringBuffer();
+            Phase4Answer16 = new StringBuffer();
+            Phase4Answer18 = new StringBuffer();
+            Phase4Answer19 = new StringBuffer();
+
+            int motherId = generateMotherId();
+            String motherName = motherNamePhase4.getText().toString();
+            int motherAge = Integer.parseInt(motherAgePhase4.getText().toString());
+            int motherNumber = Integer.parseInt(motherContactPhase4.getText().toString());
+            String motherAddress = motherAddressPhase4.getText().toString();
+            int vdcId = getVdcId();
+            Supervisor sup = getSupervisor();
+
+            if (motherInformation(motherName, motherAge, motherNumber, motherAddress)) {
+                if (getValues()) {
+                    saveMother(motherId, motherName, motherAge, motherNumber, sup, vdcId);
+                    saveToDb(motherId);
+                    Toast.makeText(this, "Succesful Entry", Toast.LENGTH_SHORT).show();
+                    this.finish();
+                }
+            }
+
+            boolean response = getValues();
+            Log.v("RES", "RES" + response);
+        } catch (Exception err) {
+            Log.v("SDSDF", err.getLocalizedMessage());
+        }
     }
 
-    public boolean getValues() {
+    private boolean motherInformation(String a, int b, int c, String d) {
+        if (a.equals(null)) {
+            return false;
+        }
 
+        if (b == 0) {
+            return false;
+        }
+
+        if (c == 0) {
+            return false;
+        }
+
+        if (d.equals(null)) {
+            return false;
+        }
+        return true;
+    }
+
+
+    //Save Mother records
+    private void saveMother(int a, String b, int c, long d, Supervisor e, int vdcId) {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        mReal.beginTransaction();
+        Mother result = mReal.createObject(Mother.class, a);
+        result.setMotherName(b);
+        result.setMotherAge(c);
+        result.setMotherContact(d);
+        result.setSupervisorId(e);
+        result.setVdcId(vdcId);
+        mReal.commitTransaction();
+        mReal.close();
+    }
+
+
+    private void saveToDb(int motherId) {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Mother> mothers = mReal.where(Mother.class).equalTo("motherId", motherId).findAll();
+
+        mReal.beginTransaction();
+        ActivityPhase4Db db = mReal.createObject(ActivityPhase4Db.class);
+        db.setMotherId(mothers.get(0));
+        db.setPhaseAnswer1(Phase4Answer1.getSelectedItem().toString());
+        db.setPhaseAnswer2(Phase4Answer2.getSelectedItem().toString());
+        db.setPhaseAnswer3(Phase4Answer3.getSelectedItem().toString());
+        db.setPhaseAnswer4(Phase4Answer4.toString());
+        db.setPhaseAnswer5(Phase4Answer5.toString());
+        db.setPhaseAnswer6(Phase4Answer6.getSelectedItem().toString());
+        db.setPhaseAnswer7(Phase4Answer7.getSelectedItem().toString());
+        db.setPhaseAnswer8(Phase4Answer8.getSelectedItem().toString());
+        db.setPhaseAnswer9(Phase4Answer9.getSelectedItem().toString());
+        db.setPhaseAnswer10(Phase4Answer10.getSelectedItem().toString());
+        db.setPhaseAnswer11(Phase4Answer11.getSelectedItem().toString());
+        db.setPhaseAnswer12(Phase4Answer12.getText().toString());
+        db.setPhaseAnswer13(Phase4Answer13.getSelectedItem().toString());
+        db.setPhaseAnswer14(Phase4Answer14.toString());
+        db.setPhaseAnswer15(Phase4Answer15.toString());
+        db.setPhaseAnswer16(Phase4Answer16.toString());
+        db.setPhaseAnswer17(Phase4Answer17.getSelectedItem().toString());
+        db.setPhaseAnswer18(Phase4Answer18.toString());
+        db.setPhaseAnswer19(Phase4Answer19.toString());
+        db.setPhaseAnswer20(Phase4Answer20.getSelectedItem().toString());
+        db.setPhaseAnswer21(Phase4Answer21.getSelectedItem().toString());
+        db.setPhaseAnswer22(Phase4Answer22.getSelectedItem().toString());
+        mReal.commitTransaction();
+
+        mReal.close();
+
+    }
+
+
+    //Generate random motherId
+    private int generateMotherId() {
+        int motherId = 1;
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Mother> mother = mReal.where(Mother.class).findAll();
+        if (mother.size() == 0) {
+            mReal.close();
+            return motherId;
+        } else {
+            mReal.close();
+            return mother.size() + 1;
+        }
+    }
+
+
+    //Generate Vdc Id
+    private int getVdcId() {
+        String value = healthPostPhase4.getSelectedItem().toString();
+        int v = Integer.parseInt(value.replaceAll("[^0-9]", ""));
+        return v;
+    }
+
+    //Generate Supervisor
+    private Supervisor getSupervisor() {
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Supervisor> supervisor = mReal.where(Supervisor.class).findAll();
+        mReal.close();
+        return supervisor.get(0);
+    }
+
+    //All the values with validation
+    public boolean getValues() {
         if (Phase4Answer1.getSelectedItemPosition() == 0) {
             Toast.makeText(this, "Spinner", Toast.LENGTH_SHORT).show();
             return false;
@@ -240,14 +397,6 @@ public class PhaseFourQ extends AppCompatActivity {
             return false;
         }
 
-
-        Phase4Answer4 = new StringBuffer();
-        Phase4Answer5 = new StringBuffer();
-        Phase4Answer14 = new StringBuffer();
-        Phase4Answer15 = new StringBuffer();
-        Phase4Answer16 = new StringBuffer();
-        Phase4Answer18 = new StringBuffer();
-        Phase4Answer19 = new StringBuffer();
 
         if (Phase4Answer4a.isChecked()) {
             Phase4Answer4.append(Phase4Answer4a.getText().toString() + ", ");
@@ -396,8 +545,6 @@ public class PhaseFourQ extends AppCompatActivity {
         }
 
 
-
-
         if (Phase4Answer4.length() == 0) {
             Toast.makeText(this, "Spinner", Toast.LENGTH_SHORT).show();
             return false;
@@ -458,65 +605,24 @@ public class PhaseFourQ extends AppCompatActivity {
         return true;
     }
 
+    ArrayList<String> vdcList;
+
+    @AfterViews
+    public void init() {
+
+        Realm.init(getApplicationContext());
+        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        Realm mReal = Realm.getInstance(config);
+        RealmResults<Vdc> vdcs = mReal.where(Vdc.class).findAll();
+        vdcList = new ArrayList<>();
+        for (int i = 0; i < vdcs.size(); i++) {
+            Vdc vdc = vdcs.get(i);
+            vdcList.add(i, vdc.getVdcId() + ") " + vdc.getVdcHealthPost());
+        }
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, vdcList);
+        healthPostPhase4.setAdapter(adapter);
+        mReal.close();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    ArrayList<String> vdcList;
-//
-//    //Shared and preference
-//    @Pref
-//    LoginActivity_.preference_ user;
-//
-//    //Taking the reference of layout
-//    @ViewById
-//    Spinner healthPostPhase4;
-//
-//    //Load the page for the first time
-//    @AfterViews
-//    void loadFirst() {
-//        vdcList = new ArrayList<>();
-//        try {
-//            //get the user information from the saved shared preference
-//            String information = user.fullInformation().get();
-//
-//            //Convert the information into array
-//            JSONArray infoArray = new JSONArray(information);
-//            for (int i = 0; i < infoArray.length(); i++) {
-//                JSONObject object = infoArray.getJSONObject(i);
-//                JSONArray vdcArray = new JSONArray(object.getString("vdc"));
-//                for (int j = 0; j < vdcArray.length(); j++) {
-//                    //Get the String value of the JSON Object from the information array
-//                    JSONObject posts = vdcArray.getJSONObject(j);
-//                    vdcList.add(posts.getString("vdcHealthPost"));
-//                }
-//            }
-//        } catch (JSONException err) {
-//            Toast.makeText(this, "" + err.getMessage(), Toast.LENGTH_SHORT).show();
-//        } finally {
-//            //Create Adapter for the Spinner that show the list of the VDC health post
-//            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, android.R.id.text1, vdcList);
-//            healthPostPhase4.setAdapter(adapter);
-//        }
-//    }
-
+    }
 }

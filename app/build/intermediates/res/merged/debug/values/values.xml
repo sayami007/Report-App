@@ -1738,6 +1738,8 @@
     <string name="sankhya">Sankhya</string>
     <string name="sans_serif" translatable="false">sans-serif</string>
     <string name="save">सेव गर्नुहोस </string>
+    <string name="saveMember">Save Member</string>
+    <string name="saveTopic">Save Topic</string>
     <string name="saved">Saved</string>
     <string name="savedActivity">Saved Activity</string>
     <string name="savedBehavior">Saved Behavior</string>
